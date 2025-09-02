@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הקורסים שלי - פורטל תלמידים</title>
+    <link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container-fluid" style="max-width: 100%; padding: 0 20px;">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h3>פורטל הלמידה שלי</h3>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="dashboard.html">דשבורד</a></li>
+                    <li><a href="my-courses.html" style="font-weight: bold;">הקורסים שלי</a></li>
+                    <li><a href="trading-journal.html">יומן מסחר</a></li>
+                    <li><a href="community.html">קהילה</a></li>
+                    <li><a href="content-library.html">ספריית תוכן</a></li>
+                    <li><a href="support.html">תמיכה</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <span>🔔</span>
+                    <span>שלום, דני!</span>
+                    <button class="btn">פרופיל</button>
+                    <a href="../marketing/home.html" class="btn">יציאה</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="max-width: 1400px;">
+        <!-- Header -->
+        <div style="margin-bottom: 30px;">
+            <h1>הקורסים שלי 📚</h1>
+            <p style="font-size: 18px; color: #666;">ניהול והתקדמות בלימודים</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="tabs" style="margin-bottom: 30px;">
+            <button class="tab-item active">כל הקורסים</button>
+            <button class="tab-item">קורסים פעילים</button>
+            <button class="tab-item">קורסים שהושלמו</button>
+            <button class="tab-item">מועדפים</button>
+        </div>
+
+        <!-- Overall Progress -->
+        <div class="card" style="margin-bottom: 30px;">
+            <div class="card-header">סטטיסטיקות כלליות</div>
+            <div class="card-body">
+                <div class="grid grid-4">
+                    <div class="stat-item">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">קורסים נרכשו</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">קורסים הושלמו</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">147</div>
+                        <div class="stat-label">שיעורים נצפו</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">89.5</div>
+                        <div class="stat-label">שעות למידה</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Continue Learning -->
+        <div class="card" style="margin-bottom: 30px;">
+            <div class="card-header">🎯 המשך מאיפה שהפסקת</div>
+            <div class="card-body">
+                <div style="display: flex; gap: 20px; align-items: center; padding: 20px; border: 2px solid #000;">
+                    <div class="placeholder-img" style="width: 200px; height: 120px;">
+                        תמונת קורס
+                    </div>
+                    <div style="flex: 1;">
+                        <h3>ניתוח טכני למתקדמים</h3>
+                        <p style="color: #666; margin-top: 5px;">מודול 4: דפוסי היפוך מגמה</p>
+                        <p style="color: #666;">שיעור 3 מתוך 8 - "זיהוי דפוס ראש וכתפיים"</p>
+                        <div class="progress" style="margin: 15px 0;">
+                            <div class="progress-bar" style="width: 75%;">75% הושלם (6/8 שיעורים)</div>
+                        </div>
+                        <div style="display: flex; gap: 10px;">
+                            <span style="color: #666; font-size: 14px;">⏱ 15 דקות נותרו</span>
+                            <span style="color: #666; font-size: 14px;">📅 עודכן: לפני 2 ימים</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <button class="btn btn-primary btn-large">▶ המשך צפייה</button>
+                        <button class="btn">📋 ראה סילבוס</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- All Courses -->
+        <div class="grid grid-2">
+            <!-- Active Course 1 -->
+            <div class="card course-card" style="border: 2px solid #000;">
+                <div class="placeholder-img" style="height: 150px;">
+                    תמונת קורס - יסודות המסחר
+                </div>
+                <div class="card-body">
+                    <h3>יסודות המסחר במניות</h3>
+                    <p style="color: #666; margin: 10px 0;">קורס בסיסי למתחילים המעוניינים ללמוד מסחר</p>
+                    
+                    <div class="progress" style="margin: 15px 0;">
+                        <div class="progress-bar" style="width: 100%; background: green;">100% הושלם ✅</div>
+                    </div>
+                    
+                    <div style="display: flex; justify-content: space-between; font-size: 14px; color: #666; margin-bottom: 15px;">
+                        <span>🎥 20/20 שיעורים</span>
+                        <span>⏱ 12.5 שעות</span>
+                        <span>📅 הושלם: 15/08/24</span>
+                    </div>
+                    
+                    <div style="display: flex; gap: 10px;">
+                        <button class="btn btn-primary" style="flex: 1;">🏆 ראה תעודה</button>
+                        <button class="btn">📋 חזרה</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Active Course 2 -->
+            <div class="card course-card" style="border: 2px solid #000;">
+                <div class="placeholder-img" style="height: 150px;">
+                    תמונת קורס - ניתוח טכני
+                </div>
+                <div class="card-body">
+                    <h3>ניתוח טכני למתקדמים</h3>
+                    <p style="color: #666; margin: 10px 0;">למידת כלי ניתוח מתקדמים והחלת אסטרטגיות</p>
+                    
+                    <div class="progress" style="margin: 15px 0;">
+                        <div class="progress-bar" style="width: 75%;">75% בתהליך 🔄</div>
+                    </div>
+                    
+                    <div style="display: flex; justify-content: space-between; font-size: 14px; color: #666; margin-bottom: 15px;">
+                        <span>🎥 6/8 שיעורים</span>
+                        <span>⏱ 8.5/10 שעות</span>
+                        <span>📅 עודכן: לפני יום</span>
+                    </div>
+                    
+                    <div style="display: flex; gap: 10px;">
+                        <button class="btn btn-primary" style="flex: 1;">▶ המשך</button>
+                        <button class="btn">📋 סילבוס</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Active Course 3 -->
+            <div class="card course-card" style="border: 2px solid #000;">
+                <div class="placeholder-img" style="height: 150px;">
+                    תמונת קורס - ניהול סיכונים
+                </div>
+                <div class="card-body">
+                    <h3>ניהול סיכונים ופסיכולוגיה</h3>
+                    <p style="color: #666; margin: 10px 0;">פיתוח משמעת נפשית וכלים לניהול סיכונים</p>
+                    
+                    <div class="progress" style="margin: 15px 0;">
+                        <div class="progress-bar" style="width: 25%;">25% בתהליך 🔄</div>
+                    </div>
+                    
+                    <div style="display: flex; justify-content: space-between; font-size: 14px; color: #666; margin-bottom: 15px;">
+                        <span>🎥 3/12 שיעורים</span>
+                        <span>⏱ 2.5/15 שעות</span>
+                        <span>📅 התחיל: 28/08/24</span>
+                    </div>
+                    
+                    <div style="display: flex; gap: 10px;">
+                        <button class="btn btn-primary" style="flex: 1;">▶ המשך</button>
+                        <button class="btn">📋 סילבוס</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Future Course -->
+            <div class="card course-card" style="border: 2px solid #ccc; opacity: 0.7;">
+                <div class="placeholder-img" style="height: 150px;">
+                    תמונת קורס - אסטרטגיות מתקדמות
+                </div>
+                <div class="card-body">
+                    <h3>אסטרטגיות מסחר מתקדמות 🔒</h3>
+                    <p style="color: #666; margin: 10px 0;">קורס מתקדם - יפתח לאחר השלמת הקורסים הקודמים</p>
+                    
+                    <div style="margin: 15px 0; padding: 10px; background: #f5f5f5; text-align: center;">
+                        <strong>📋 דרישות קדם:</strong>
+                        <br>השלמת "ניתוח טכני למתקדמים"
+                    </div>
+                    
+                    <div style="display: flex; justify-content: space-between; font-size: 14px; color: #666; margin-bottom: 15px;">
+                        <span>🎥 15 שיעורים</span>
+                        <span>⏱ 18 שעות</span>
+                        <span>📅 יפתח בקרוב</span>
+                    </div>
+                    
+                    <button class="btn" style="width: 100%;" disabled>⏸ טרם זמין</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Learning Streak & Gamification -->
+        <div class="card" style="margin-top: 30px;">
+            <div class="card-header">🎮 גמיפיקציה והישגים</div>
+            <div class="card-body">
+                <div class="grid grid-3">
+                    <div style="text-align: center; padding: 20px; border: 1px solid #ccc;">
+                        <div style="font-size: 48px; color: #ff6b35;">🔥</div>
+                        <h3>15</h3>
+                        <p>ימי למידה רצופים</p>
+                        <small style="color: #666;">+5 XP ליום</small>
+                    </div>
+                    
+                    <div style="text-align: center; padding: 20px; border: 1px solid #ccc;">
+                        <div style="font-size: 48px; color: #4ecdc4;">🏆</div>
+                        <h3>1,350</h3>
+                        <p>נקודות XP כוללות</p>
+                        <small style="color: #666;">דירוג: #23 מתוך 847</small>
+                    </div>
+                    
+                    <div style="text-align: center; padding: 20px; border: 1px solid #ccc;">
+                        <div style="font-size: 48px; color: #45b7d1;">📊</div>
+                        <h3>Level 7</h3>
+                        <p>סוחר מתקדם</p>
+                        <div class="progress" style="margin-top: 10px;">
+                            <div class="progress-bar" style="width: 60%;">350/500 XP</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Achievements -->
+                <div style="margin-top: 30px;">
+                    <h4>🏅 הישגים אחרונים:</h4>
+                    <div style="display: flex; gap: 15px; margin-top: 15px; flex-wrap: wrap;">
+                        <div style="display: flex; align-items: center; gap: 10px; padding: 10px; border: 1px solid #ccc;">
+                            <span style="font-size: 24px;">🌟</span>
+                            <div>
+                                <strong>סוחר מתחיל</strong>
+                                <small style="display: block; color: #666;">השלמת הקורס הראשון</small>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; gap: 10px; padding: 10px; border: 1px solid #ccc;">
+                            <span style="font-size: 24px;">🎯</span>
+                            <div>
+                                <strong>צלף מדויק</strong>
+                                <small style="display: block; color: #666;">10 תשובות נכונות במבחנים</small>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; gap: 10px; padding: 10px; border: 1px solid #ccc;">
+                            <span style="font-size: 24px;">📚</span>
+                            <div>
+                                <strong>תלמיד מצטיין</strong>
+                                <small style="display: block; color: #666;">15 ימי למידה רצופים</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Leaderboard -->
+        <div class="card" style="margin-top: 20px;">
+            <div class="card-header">🏆 לוח מובילים - השבוע</div>
+            <div class="card-body">
+                <div style="display: flex; justify-content: space-between; padding: 10px; border-bottom: 1px solid #ccc; font-weight: bold;">
+                    <span>דירוג</span>
+                    <span>שם</span>
+                    <span>XP השבוע</span>
+                    <span>שעות למידה</span>
+                </div>
+                
+                <div style="display: flex; justify-content: space-between; padding: 10px; border-bottom: 1px solid #eee;">
+                    <span>🥇 1</span>
+                    <span>רון כהן</span>
+                    <span>450 XP</span>
+                    <span>12.5 שעות</span>
+                </div>
+                
+                <div style="display: flex; justify-content: space-between; padding: 10px; border-bottom: 1px solid #eee;">
+                    <span>🥈 2</span>
+                    <span>מיכל לוי</span>
+                    <span>380 XP</span>
+                    <span>9.2 שעות</span>
+                </div>
+                
+                <div style="display: flex; justify-content: space-between; padding: 10px; border-bottom: 1px solid #eee; background: #f9f9f9;">
+                    <span>🔥 5</span>
+                    <span><strong>דני (אתה)</strong></span>
+                    <span><strong>285 XP</strong></span>
+                    <span><strong>7.8 שעות</strong></span>
+                </div>
+                
+                <div style="display: flex; justify-content: space-between; padding: 10px; border-bottom: 1px solid #eee;">
+                    <span>6</span>
+                    <span>שרה אברהם</span>
+                    <span>270 XP</span>
+                    <span>6.5 שעות</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="card" style="margin-top: 20px; background: #f9f9f9;">
+            <div class="card-body">
+                <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 10px;">
+                    <button class="btn btn-primary">📚 המשך ללמוד</button>
+                    <button class="btn">📝 הערות אישיות</button>
+                    <button class="btn">📊 דוח התקדמות</button>
+                    <button class="btn">🎯 הגדר יעדים</button>
+                    <button class="btn">📱 הורד לצפייה אופליין</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

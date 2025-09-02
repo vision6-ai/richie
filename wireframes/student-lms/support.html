@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מרכז תמיכה - פורטל תלמידים</title>
+    <link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container-fluid" style="max-width: 100%; padding: 0 20px;">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h3>פורטל הלמידה שלי</h3>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="dashboard.html">דשבורד</a></li>
+                    <li><a href="my-courses.html">הקורסים שלי</a></li>
+                    <li><a href="trading-journal.html">יומן מסחר</a></li>
+                    <li><a href="forum.html">קהילה</a></li>
+                    <li><a href="content-library.html">ספריית תוכן</a></li>
+                    <li><a href="support.html" style="font-weight: bold;">תמיכה</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <span>🔔</span>
+                    <span>שלום, דני!</span>
+                    <button class="btn">פרופיל</button>
+                    <a href="../marketing/home.html" class="btn">יציאה</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="max-width: 1400px;">
+        <!-- Header -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+            <div>
+                <h1>🆘 מרכז תמיכה</h1>
+                <p style="color: #666;">אנחנו כאן כדי לעזור לך בכל שאלה או בעיה</p>
+            </div>
+            <div>
+                <button class="btn">📞 התקשר אלינו</button>
+                <button class="btn btn-primary">💬 צ'אט חי</button>
+            </div>
+        </div>
+
+        <!-- AI Chatbot -->
+        <div class="card" style="margin-bottom: 30px; border: 2px solid #4169E1;">
+            <div class="card-header" style="background: #4169E1; color: white;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="font-size: 24px;">🤖</span>
+                    <div>
+                        <strong>עוזר AI - מענה מיידי 24/7</strong>
+                        <p style="margin: 5px 0; font-size: 14px; opacity: 0.9;">שאל אותי כל שאלה בעברית ואני אעזור לך מיד!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div style="background: #f8f9ff; padding: 20px; border-radius: 5px; margin-bottom: 20px; max-height: 300px; overflow-y: auto;">
+                    <!-- Chat Messages -->
+                    <div style="margin-bottom: 15px;">
+                        <div style="display: flex; align-items: start; gap: 10px;">
+                            <div style="width: 32px; height: 32px; background: #4169E1; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 14px;">🤖</div>
+                            <div style="background: white; padding: 15px; border-radius: 10px; flex: 1;">
+                                <strong>עוזר AI</strong>
+                                <p style="margin-top: 5px;">שלום דני! איך אני יכול לעזור לך היום?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <div style="display: flex; align-items: start; gap: 10px; flex-direction: row-reverse;">
+                            <div style="width: 32px; height: 32px; background: #4CAF50; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 14px;">ד</div>
+                            <div style="background: #4CAF50; color: white; padding: 15px; border-radius: 10px; max-width: 70%;">
+                                איך אני יכול לראות את כל העסקאות שלי ביומן?
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <div style="display: flex; align-items: start; gap: 10px;">
+                            <div style="width: 32px; height: 32px; background: #4169E1; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 14px;">🤖</div>
+                            <div style="background: white; padding: 15px; border-radius: 10px; flex: 1;">
+                                <strong>עוזר AI</strong>
+                                <p style="margin-top: 5px;">כדי לראות את כל העסקאות ביומן המסחר:</p>
+                                <ol style="margin: 10px 0; padding-right: 20px;">
+                                    <li>עבור לעמוד "יומן מסחר" בתפריט העליון</li>
+                                    <li>השתמש בפילטרים כדי לראות עסקאות לפי תאריך או סטטוס</li>
+                                    <li>לחץ על "ייצא לאקסל" להורדת הנתונים</li>
+                                </ol>
+                                <p>האם זה עוזר? יש לך שאלות נוספות?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chat Input -->
+                <div style="display: flex; gap: 10px; align-items: center;">
+                    <input type="text" placeholder="כתוב את השאלה שלך כאן..." style="flex: 1; padding: 15px; border: 1px solid #ccc; border-radius: 25px;">
+                    <button class="btn btn-primary" style="border-radius: 50%; width: 50px; height: 50px;">📤</button>
+                </div>
+
+                <!-- Quick Questions -->
+                <div style="margin-top: 15px;">
+                    <p style="font-size: 14px; color: #666;">שאלות נפוצות:</p>
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px;">
+                        <button class="btn" style="font-size: 14px; border-radius: 20px;">איך לייבא עסקאות?</button>
+                        <button class="btn" style="font-size: 14px; border-radius: 20px;">שחזור סיסמה</button>
+                        <button class="btn" style="font-size: 14px; border-radius: 20px;">בעיות טכניות</button>
+                        <button class="btn" style="font-size: 14px; border-radius: 20px;">ביטול מנוי</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-3" style="grid-template-columns: 2fr 1fr;">
+            <!-- Main Support Options -->
+            <div style="grid-column: span 2;">
+                <!-- Support Channels -->
+                <div class="card" style="margin-bottom: 30px;">
+                    <div class="card-header">📞 ערוצי תמיכה</div>
+                    <div class="card-body">
+                        <div class="grid grid-2">
+                            <!-- Live Chat -->
+                            <div style="border: 1px solid #4CAF50; padding: 20px; text-align: center; background: #f8fff8;">
+                                <div style="font-size: 48px; margin-bottom: 15px; color: #4CAF50;">💬</div>
+                                <h4>צ'אט חי</h4>
+                                <p style="color: #666; margin: 10px 0;">מענה מיידי מצוות התמיכה</p>
+                                <p style="font-size: 14px; color: #4CAF50; margin-bottom: 15px;"><strong>זמין: 09:00-18:00</strong></p>
+                                <button class="btn btn-primary" style="width: 100%;">💬 התחל צ'אט</button>
+                            </div>
+
+                            <!-- Support Ticket -->
+                            <div style="border: 1px solid #ff6b35; padding: 20px; text-align: center; background: #fff9f5;">
+                                <div style="font-size: 48px; margin-bottom: 15px; color: #ff6b35;">🎫</div>
+                                <h4>פתח טיקט</h4>
+                                <p style="color: #666; margin: 10px 0;">לשאלות מורכבות ומעקב</p>
+                                <p style="font-size: 14px; color: #ff6b35; margin-bottom: 15px;"><strong>מענה תוך 24 שעות</strong></p>
+                                <button class="btn" style="width: 100%; background: #ff6b35; color: white;">🎫 פתח טיקט</button>
+                            </div>
+
+                            <!-- Phone Support -->
+                            <div style="border: 1px solid #9b59b6; padding: 20px; text-align: center; background: #faf5ff;">
+                                <div style="font-size: 48px; margin-bottom: 15px; color: #9b59b6;">📞</div>
+                                <h4>תמיכה טלפונית</h4>
+                                <p style="color: #666; margin: 10px 0;">שיחה אישית עם נציג תמיכה</p>
+                                <p style="font-size: 14px; color: #9b59b6; margin-bottom: 15px;"><strong>תיאום מראש נדרש</strong></p>
+                                <button class="btn" style="width: 100%; background: #9b59b6; color: white;">📞 תיאום שיחה</button>
+                            </div>
+
+                            <!-- Video Support -->
+                            <div style="border: 1px solid #1976D2; padding: 20px; text-align: center; background: #f3f7ff;">
+                                <div style="font-size: 48px; margin-bottom: 15px; color: #1976D2;">🎥</div>
+                                <h4>תמיכה וידאו</h4>
+                                <p style="color: #666; margin: 10px 0;">פגישת וידאו לפתרון בעיות מורכבות</p>
+                                <p style="font-size: 14px; color: #1976D2; margin-bottom: 15px;"><strong>לחברי Premium</strong></p>
+                                <button class="btn" style="width: 100%; background: #1976D2; color: white;">🎥 קבע פגישה</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ -->
+                <div class="card" style="margin-bottom: 30px;">
+                    <div class="card-header">❓ שאלות נפוצות</div>
+                    <div class="card-body">
+                        <!-- FAQ Categories -->
+                        <div style="margin-bottom: 20px;">
+                            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                                <button class="btn active">כללי</button>
+                                <button class="btn">יומן מסחר</button>
+                                <button class="btn">קורסים</button>
+                                <button class="btn">תשלומים</button>
+                                <button class="btn">טכני</button>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Items -->
+                        <div>
+                            <!-- FAQ 1 -->
+                            <div style="border: 1px solid #eee; margin-bottom: 10px;">
+                                <div style="padding: 15px; background: #f9f9f9; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                                    <strong>איך אני מתחיל להשתמש בפלטפורמה?</strong>
+                                    <span>▼</span>
+                                </div>
+                                <div style="padding: 15px; display: none;">
+                                    <p>לאחר ההרשמה, מומלץ להתחיל עם הקורס "יסודות המסחר במניות". בנוסף, כדאי לצפות בסרטון הסברה בעמוד הראשי ולהגדיר את היומן האישי שלך.</p>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 2 -->
+                            <div style="border: 1px solid #eee; margin-bottom: 10px;">
+                                <div style="padding: 15px; background: #f9f9f9; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                                    <strong>איך אני מייבא עסקאות ליומן מסחר?</strong>
+                                    <span>▼</span>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 3 -->
+                            <div style="border: 1px solid #eee; margin-bottom: 10px;">
+                                <div style="padding: 15px; background: #f9f9f9; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                                    <strong>מה ההבדל בין Premium ל-VIP?</strong>
+                                    <span>▼</span>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 4 -->
+                            <div style="border: 1px solid #eee; margin-bottom: 10px;">
+                                <div style="padding: 15px; background: #f9f9f9; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                                    <strong>איך אני מבטל את המנוי?</strong>
+                                    <span>▼</span>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 5 -->
+                            <div style="border: 1px solid #eee; margin-bottom: 10px;">
+                                <div style="padding: 15px; background: #f9f9f9; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                                    <strong>מה לעשות אם יש בעיה טכנית?</strong>
+                                    <span>▼</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="text-align: center; margin-top: 20px;">
+                            <button class="btn">ראה את כל השאלות הנפוצות</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Help Guides -->
+                <div class="card">
+                    <div class="card-header">📚 מדריכי עזרה</div>
+                    <div class="card-body">
+                        <div class="grid grid-2">
+                            <!-- Guide 1 -->
+                            <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px;">
+                                <div style="display: flex; gap: 15px;">
+                                    <div class="placeholder-img" style="width: 60px; height: 60px;">
+                                        🎥 וידאו
+                                    </div>
+                                    <div>
+                                        <h5>התחלת עבודה</h5>
+                                        <p style="color: #666; font-size: 14px;">מדריך וידאו של 5 דקות</p>
+                                        <button class="btn" style="font-size: 14px;">▶ צפה</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Guide 2 -->
+                            <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px;">
+                                <div style="display: flex; gap: 15px;">
+                                    <div class="placeholder-img" style="width: 60px; height: 60px;">
+                                        📖 מדריך
+                                    </div>
+                                    <div>
+                                        <h5>שימוש ביומן</h5>
+                                        <p style="color: #666; font-size: 14px;">מדריך מפורט לכל התכונות</p>
+                                        <button class="btn" style="font-size: 14px;">📖 קרא</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Guide 3 -->
+                            <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px;">
+                                <div style="display: flex; gap: 15px;">
+                                    <div class="placeholder-img" style="width: 60px; height: 60px;">
+                                        🛠️ כלים
+                                    </div>
+                                    <div>
+                                        <h5>פתרון בעיות טכניות</h5>
+                                        <p style="color: #666; font-size: 14px;">Troubleshooting נפוץ</p>
+                                        <button class="btn" style="font-size: 14px;">🛠️ פתור</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Guide 4 -->
+                            <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px;">
+                                <div style="display: flex; gap: 15px;">
+                                    <div class="placeholder-img" style="width: 60px; height: 60px;">
+                                        📚 מילון
+                                    </div>
+                                    <div>
+                                        <h5>מילון מונחים</h5>
+                                        <p style="color: #666; font-size: 14px;">הסברים על מונחי מסחר</p>
+                                        <button class="btn" style="font-size: 14px;">📚 עיין</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Sidebar -->
+            <div>
+                <!-- Contact Info -->
+                <div class="card" style="margin-bottom: 20px;">
+                    <div class="card-header">📞 פרטי יצירת קשר</div>
+                    <div class="card-body">
+                        <div style="font-size: 14px;">
+                            <div style="margin-bottom: 15px; padding: 10px; background: #f9f9f9; border-radius: 5px;">
+                                <strong>💬 צ'אט חי</strong>
+                                <p style="margin: 5px 0; color: #666;">ימים א'-ו': 09:00-18:00</p>
+                                <span style="background: #4CAF50; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">🟢 פעיל עכשיו</span>
+                            </div>
+
+                            <div style="margin-bottom: 15px; padding: 10px; background: #f9f9f9; border-radius: 5px;">
+                                <strong>📧 אימייל</strong>
+                                <p style="margin: 5px 0; color: #666;">support@tradingacademy.co.il</p>
+                                <small style="color: #666;">מענה תוך 24 שעות</small>
+                            </div>
+
+                            <div style="margin-bottom: 15px; padding: 10px; background: #f9f9f9; border-radius: 5px;">
+                                <strong>📞 טלפון</strong>
+                                <p style="margin: 5px 0; color: #666;">03-1234567</p>
+                                <small style="color: #666;">ימים א'-ה': 10:00-16:00</small>
+                            </div>
+
+                            <div style="padding: 10px; background: #f9f9f9; border-radius: 5px;">
+                                <strong>📍 כתובת</strong>
+                                <p style="margin: 5px 0; color: #666;">רח' הרצל 123, תל אביב</p>
+                                <small style="color: #666;">פגישות בתיאום מראש</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- My Tickets -->
+                <div class="card" style="margin-bottom: 20px;">
+                    <div class="card-header">🎫 הטיקטים שלי</div>
+                    <div class="card-body">
+                        <div style="font-size: 14px;">
+                            <div style="border-bottom: 1px solid #eee; padding: 10px 0;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                                    <strong>#12345</strong>
+                                    <span style="background: #4CAF50; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">פתור</span>
+                                </div>
+                                <p style="color: #666; margin: 5px 0;">בעיה בייבוא עסקאות</p>
+                                <small style="color: #666;">נפתח: 28/08/2024</small>
+                            </div>
+
+                            <div style="border-bottom: 1px solid #eee; padding: 10px 0;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                                    <strong>#12346</strong>
+                                    <span style="background: orange; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">בטיפול</span>
+                                </div>
+                                <p style="color: #666; margin: 5px 0;">בקשה לשחזור נתונים</p>
+                                <small style="color: #666;">נפתח: 1/09/2024</small>
+                            </div>
+                        </div>
+
+                        <button class="btn" style="width: 100%; margin-top: 15px;">🎫 פתח טיקט חדש</button>
+                    </div>
+                </div>
+
+                <!-- Support Hours -->
+                <div class="card" style="margin-bottom: 20px;">
+                    <div class="card-header">🕐 שעות תמיכה</div>
+                    <div class="card-body">
+                        <div style="font-size: 14px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>ימים א'-ה':</span>
+                                <strong>09:00-18:00</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>יום ו':</span>
+                                <strong>09:00-14:00</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>שבת:</span>
+                                <span style="color: #666;">סגור</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>חגים:</span>
+                                <span style="color: #666;">סגור</span>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 15px; padding: 10px; background: #e8f5e8; border-radius: 5px; text-align: center;">
+                            <strong style="color: #4CAF50;">עכשיו: 🟢 פתוח</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Emergency Contact -->
+                <div class="card">
+                    <div class="card-header" style="background: #ff6b35; color: white;">🚨 חירום טכני</div>
+                    <div class="card-body">
+                        <p style="font-size: 14px; margin-bottom: 15px;">לבעיות חירום שמונעות גישה לחשבון או לתוכן רשוש</p>
+                        <button class="btn" style="width: 100%; background: #ff6b35; color: white; margin-bottom: 10px;">🚨 חירום טכני</button>
+                        <p style="font-size: 12px; color: #666; text-align: center;">מענה תוך שעתיים בימי עבודה</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

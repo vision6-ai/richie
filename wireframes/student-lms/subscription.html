@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ניהול מנוי - פורטל תלמידים</title>
+    <link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container-fluid" style="max-width: 100%; padding: 0 20px;">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h3>פורטל הלמידה שלי</h3>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="dashboard.html">דשבורד</a></li>
+                    <li><a href="my-courses.html">הקורסים שלי</a></li>
+                    <li><a href="trading-journal.html">יומן מסחר</a></li>
+                    <li><a href="forum.html">קהילה</a></li>
+                    <li><a href="content-library.html">ספריית תוכן</a></li>
+                    <li><a href="support.html">תמיכה</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <span>🔔</span>
+                    <span>שלום, דני!</span>
+                    <button class="btn" style="font-weight: bold;">פרופיל</button>
+                    <a href="../marketing/home.html" class="btn">יציאה</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="max-width: 1400px;">
+        <!-- Header -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+            <div>
+                <h1>💳 ניהול מנוי ותשלומים</h1>
+                <p style="color: #666;">ניהול המנוי, אמצעי תשלום והיסטוריית חיובים</p>
+            </div>
+            <div>
+                <button class="btn">📊 השווה תוכניות</button>
+                <button class="btn btn-primary">⬆️ שדרג מנוי</button>
+            </div>
+        </div>
+
+        <div class="grid grid-3" style="grid-template-columns: 2fr 1fr;">
+            <!-- Main Content -->
+            <div style="grid-column: span 2;">
+                <!-- Current Subscription -->
+                <div class="card" style="margin-bottom: 30px; border: 2px solid #4CAF50;">
+                    <div class="card-header" style="background: #4CAF50; color: white;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span>📦 המנוי הנוכחי שלך</span>
+                            <span style="background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 3px;">✅ פעיל</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                            <div>
+                                <h3 style="margin-bottom: 10px;">💎 Premium Plan</h3>
+                                <p style="color: #666; margin-bottom: 15px;">גישה מלאה לכל הקורסים, חדרי מסחר חיים, ומנטורים</p>
+                                <div style="display: flex; gap: 20px; font-size: 14px;">
+                                    <span><strong>תאריך חידוש:</strong> 15/10/2024</span>
+                                    <span><strong>מחיר:</strong> ₪497/חודש</span>
+                                    <span><strong>שיטת תשלום:</strong> **** 1234</span>
+                                </div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 36px; color: #4CAF50; margin-bottom: 10px;">₪497</div>
+                                <div style="font-size: 14px; color: #666;">לחודש</div>
+                            </div>
+                        </div>
+
+                        <div style="background: #f8fff8; padding: 20px; border-radius: 5px; margin-bottom: 20px;">
+                            <h5 style="margin-bottom: 15px;">✨ מה כלול במנוי שלך:</h5>
+                            <div class="grid grid-2">
+                                <ul style="margin: 0; padding-right: 20px; font-size: 14px;">
+                                    <li>✅ גישה לכל הקורסים (12 קורסים)</li>
+                                    <li>✅ חדרי מסחר חיים יומיים</li>
+                                    <li>✅ הדרכה אישית מהמנטורים</li>
+                                    <li>✅ יומן מסחר מתקדם</li>
+                                    <li>✅ קהילת פורום פרימיום</li>
+                                </ul>
+                                <ul style="margin: 0; padding-right: 20px; font-size: 14px;">
+                                    <li>✅ אפליקציה לנייד</li>
+                                    <li>✅ הקלטות של כל השיעורים</li>
+                                    <li>✅ צפייה אופליין</li>
+                                    <li>✅ עדכוני שוק בזמן אמת</li>
+                                    <li>✅ תמיכה עדיפות</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 10px;">
+                            <button class="btn">📝 עדכן תוכנית</button>
+                            <button class="btn">⏸️ השהה מנוי</button>
+                            <button class="btn" style="color: red;">❌ בטל מנוי</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment Methods -->
+                <div class="card" style="margin-bottom: 30px;">
+                    <div class="card-header">💳 אמצעי תשלום</div>
+                    <div class="card-body">
+                        <!-- Active Card -->
+                        <div style="border: 2px solid #4CAF50; padding: 20px; border-radius: 5px; margin-bottom: 20px; background: #f8fff8;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                                <div style="display: flex; align-items: center; gap: 15px;">
+                                    <div style="width: 50px; height: 30px; background: #1976D2; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 12px; border-radius: 3px;">
+                                        VISA
+                                    </div>
+                                    <div>
+                                        <strong>**** **** **** 1234</strong>
+                                        <p style="color: #666; font-size: 14px; margin: 5px 0;">פג תוקף: 08/27</p>
+                                    </div>
+                                </div>
+                                <div style="display: flex; gap: 10px;">
+                                    <span style="background: #4CAF50; color: white; padding: 3px 8px; font-size: 12px; border-radius: 3px;">כרטיס ברירת מחדל</span>
+                                    <button class="btn" style="font-size: 14px;">✏️ עדכן</button>
+                                </div>
+                            </div>
+                            <p style="font-size: 14px; color: #666;">חיוב אוטומטי פעיל - החיוב הבא: 15/10/2024</p>
+                        </div>
+
+                        <!-- Secondary Cards -->
+                        <div style="border: 1px solid #ccc; padding: 20px; border-radius: 5px; margin-bottom: 20px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div style="display: flex; align-items: center; gap: 15px;">
+                                    <div style="width: 50px; height: 30px; background: #FF5722; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 12px; border-radius: 3px;">
+                                        MC
+                                    </div>
+                                    <div>
+                                        <strong>**** **** **** 5678</strong>
+                                        <p style="color: #666; font-size: 14px; margin: 5px 0;">פג תוקף: 12/26</p>
+                                    </div>
+                                </div>
+                                <div style="display: flex; gap: 10px;">
+                                    <button class="btn" style="font-size: 14px;">🏆 הגדר כברירת מחדל</button>
+                                    <button class="btn" style="font-size: 14px; color: red;">🗑️ הסר</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary">➕ הוסף כרטיס חדש</button>
+                    </div>
+                </div>
+
+                <!-- Billing History -->
+                <div class="card">
+                    <div class="card-header">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span>🧾 היסטוריית חיובים</span>
+                            <div>
+                                <input type="month" style="padding: 5px; margin-left: 10px;" value="2024-09">
+                                <button class="btn">📅 סנן לפי תאריך</button>
+                                <button class="btn">📤 ייצא PDF</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div style="overflow-x: auto;">
+                            <table class="table">
+                                <thead>
+                                    <tr style="background: #f5f5f5;">
+                                        <th>תאריך</th>
+                                        <th>תיאור</th>
+                                        <th>אמצעי תשלום</th>
+                                        <th>סכום</th>
+                                        <th>סטטוס</th>
+                                        <th>פעולות</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>15/09/2024</td>
+                                        <td>Premium Plan - ספטמבר 2024</td>
+                                        <td>Visa **** 1234</td>
+                                        <td>₪497.00</td>
+                                        <td><span style="background: #4CAF50; color: white; padding: 2px 8px; font-size: 12px; border-radius: 3px;">✅ שולם</span></td>
+                                        <td>
+                                            <button class="btn" style="font-size: 12px;">📄 קבלה</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>15/08/2024</td>
+                                        <td>Premium Plan - אוגוסט 2024</td>
+                                        <td>Visa **** 1234</td>
+                                        <td>₪497.00</td>
+                                        <td><span style="background: #4CAF50; color: white; padding: 2px 8px; font-size: 12px; border-radius: 3px;">✅ שולם</span></td>
+                                        <td>
+                                            <button class="btn" style="font-size: 12px;">📄 קבלה</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>15/07/2024</td>
+                                        <td>Premium Plan - יולי 2024 (הרשמה)</td>
+                                        <td>Visa **** 1234</td>
+                                        <td>₪497.00</td>
+                                        <td><span style="background: #4CAF50; color: white; padding: 2px 8px; font-size: 12px; border-radius: 3px;">✅ שולם</span></td>
+                                        <td>
+                                            <button class="btn" style="font-size: 12px;">📄 קבלה</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>10/07/2024</td>
+                                        <td>הנחת הרשמה חדש</td>
+                                        <td>-</td>
+                                        <td style="color: green;">-₪100.00</td>
+                                        <td><span style="background: #4CAF50; color: white; padding: 2px 8px; font-size: 12px; border-radius: 3px;">✅ זוכה</span></td>
+                                        <td>
+                                            <button class="btn" style="font-size: 12px;">📄 קבלה</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Billing Summary -->
+                        <div style="background: #f9f9f9; padding: 20px; border-radius: 5px; margin-top: 20px;">
+                            <div class="grid grid-3">
+                                <div style="text-align: center;">
+                                    <div style="font-size: 24px; font-weight: bold; color: #4CAF50;">₪1,391</div>
+                                    <div style="font-size: 14px; color: #666;">סך הכל שולם</div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <div style="font-size: 24px; font-weight: bold;">3</div>
+                                    <div style="font-size: 14px; color: #666;">חודשי מנוי</div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <div style="font-size: 24px; font-weight: bold; color: green;">₪100</div>
+                                    <div style="font-size: 14px; color: #666;">חסכון כולל</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Sidebar -->
+            <div>
+                <!-- Subscription Status -->
+                <div class="card" style="margin-bottom: 20px;">
+                    <div class="card-header">📊 סטטוס מנוי</div>
+                    <div class="card-body">
+                        <div style="text-align: center; margin-bottom: 20px;">
+                            <div style="width: 80px; height: 80px; border: 3px solid #4CAF50; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-size: 32px;">
+                                ✅
+                            </div>
+                            <strong style="color: #4CAF50;">מנוי פעיל</strong>
+                        </div>
+
+                        <div style="font-size: 14px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>תאריך הצטרפות:</span>
+                                <strong>15/07/2024</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>ימים כחבר:</span>
+                                <strong>62 ימים</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>חידוש בעוד:</span>
+                                <strong>30 ימים</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>סטטוס חיוב:</span>
+                                <strong style="color: #4CAF50;">מעודכן</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upgrade Offer -->
+                <div class="card" style="margin-bottom: 20px; border: 2px solid #ffd700;">
+                    <div class="card-header" style="background: #ffd700; color: #000;">
+                        <div style="text-align: center;">
+                            <strong>👑 שדרג ל-VIP</strong>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div style="text-align: center; margin-bottom: 15px;">
+                            <div style="font-size: 32px; margin-bottom: 10px;">💎</div>
+                            <strong>VIP Premium</strong>
+                            <div style="margin: 10px 0;">
+                                <span style="font-size: 24px; font-weight: bold;">₪897</span>
+                                <span style="font-size: 14px; color: #666;">/חודש</span>
+                            </div>
+                        </div>
+
+                        <div style="font-size: 14px; margin-bottom: 15px;">
+                            <strong>תוספות VIP:</strong>
+                            <ul style="margin: 10px 0; padding-right: 15px;">
+                                <li>חדרי מסחר VIP בלעדיים</li>
+                                <li>חונכות אישית שבועית</li>
+                                <li>סיגנלי מסחר בזמן אמת</li>
+                                <li>גישה לכלי מחקר מתקדמים</li>
+                                <li>תמיכה 24/7</li>
+                            </ul>
+                        </div>
+
+                        <button class="btn btn-primary" style="width: 100%;">👑 שדרג עכשיו</button>
+                        <p style="font-size: 12px; color: #666; text-align: center; margin-top: 10px;">
+                            ניתן לבטל בכל עת
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Subscription Benefits -->
+                <div class="card" style="margin-bottom: 20px;">
+                    <div class="card-header">✨ היתרונות שלך</div>
+                    <div class="card-body">
+                        <div style="font-size: 14px;">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                <span style="color: #4CAF50;">✅</span>
+                                <span>גישה ללא הגבלה</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                <span style="color: #4CAF50;">✅</span>
+                                <span>צפייה אופליין</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                <span style="color: #4CAF50;">✅</span>
+                                <span>תמיכה מועדפת</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                <span style="color: #4CAF50;">✅</span>
+                                <span>קהילת פרימיום</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                <span style="color: #4CAF50;">✅</span>
+                                <span>עדכונים בעדיפות</span>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 15px; padding: 10px; background: #f0f8ff; border-radius: 5px; text-align: center;">
+                            <strong style="font-size: 16px; color: #4169E1;">97%</strong>
+                            <p style="font-size: 12px; color: #666; margin-top: 5px;">
+                                מהמנויים מרוצים מהשירות
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="card">
+                    <div class="card-header">⚡ פעולות מהירות</div>
+                    <div class="card-body">
+                        <div style="display: flex; flex-direction: column; gap: 10px;">
+                            <button class="btn">📧 עדכן כתובת אימייל</button>
+                            <button class="btn">🔄 הסק חיוב ידני</button>
+                            <button class="btn">📱 הורד אפליקציה</button>
+                            <button class="btn">🎁 הזמן חבר - קבל הנחה</button>
+                            <button class="btn">💬 צור קשר לתמיכה</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

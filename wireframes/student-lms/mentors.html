@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מנטורים זמינים - פורטל תלמידים</title>
+    <link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container-fluid" style="max-width: 100%; padding: 0 20px;">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h3>פורטל הלמידה שלי</h3>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="dashboard.html">דשבורד</a></li>
+                    <li><a href="my-courses.html">הקורסים שלי</a></li>
+                    <li><a href="trading-journal.html">יומן מסחר</a></li>
+                    <li><a href="forum.html" style="font-weight: bold;">קהילה</a></li>
+                    <li><a href="content-library.html">ספריית תוכן</a></li>
+                    <li><a href="support.html">תמיכה</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <span>🔔</span>
+                    <span>שלום, דני!</span>
+                    <button class="btn">פרופיל</button>
+                    <a href="../marketing/home.html" class="btn">יציאה</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="max-width: 1400px;">
+        <!-- Header -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+            <div>
+                <h1>👨‍🏫 המנטורים שלנו</h1>
+                <p style="color: #666;">מקבל הדרכה אישית ומענה מקצועי ממנטורים מנוסים</p>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button class="btn">📅 הזמן פגישה</button>
+                <button class="btn">💬 צ'אט מהיר</button>
+                <button class="btn btn-primary">⭐ המנטור שלי</button>
+            </div>
+        </div>
+
+        <!-- Filter and Search -->
+        <div class="card" style="margin-bottom: 30px;">
+            <div class="card-body">
+                <div style="display: flex; gap: 15px; align-items: center;">
+                    <input type="text" placeholder="חפש מנטור..." style="flex: 1; padding: 10px; border: 1px solid #ccc;">
+                    <select style="padding: 10px;">
+                        <option>כל ההתמחויות</option>
+                        <option>ניתוח טכני</option>
+                        <option>Swing Trading</option>
+                        <option>Day Trading</option>
+                        <option>ניהול סיכונים</option>
+                        <option>פסיכולוגיה</option>
+                    </select>
+                    <select style="padding: 10px;">
+                        <option>כל הזמינות</option>
+                        <option>זמין עכשיו</option>
+                        <option>זמין היום</option>
+                        <option>זמין השבוע</option>
+                    </select>
+                    <button class="btn">🔍 חפש</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-4" style="grid-template-columns: 2fr 1fr;">
+            <!-- Main Mentors List -->
+            <div style="grid-column: span 3;">
+                <!-- Available Now -->
+                <div class="card" style="margin-bottom: 30px; border: 2px solid #4CAF50;">
+                    <div class="card-header" style="background: #4CAF50; color: white;">🟢 זמינים עכשיו לצ'אט</div>
+                    <div class="card-body">
+                        <div class="grid grid-2">
+                            <!-- Available Mentor 1 -->
+                            <div style="border: 1px solid #4CAF50; padding: 20px; background: #f8fff8;">
+                                <div style="display: flex; gap: 15px; margin-bottom: 15px;">
+                                    <div class="placeholder-img" style="width: 80px; height: 80px; border-radius: 50%;">
+                                        תמונת מנטור
+                                    </div>
+                                    <div style="flex: 1;">
+                                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
+                                            <h4>רון כהן</h4>
+                                            <div style="width: 8px; height: 8px; background: #4CAF50; border-radius: 50%;"></div>
+                                            <span style="color: #4CAF50; font-size: 14px;">זמין עכשיו</span>
+                                        </div>
+                                        <div style="margin-bottom: 10px;">
+                                            <span style="color: #ffd700;">⭐⭐⭐⭐⭐</span>
+                                            <span style="font-size: 14px; color: #666;">(4.9) • 247 ביקורות</span>
+                                        </div>
+                                        <p style="color: #666; font-size: 14px;">מנטור בכיר, 8 שנות נסיון במסחר</p>
+                                    </div>
+                                </div>
+                                
+                                <div style="margin-bottom: 15px;">
+                                    <strong style="font-size: 14px;">התמחויות:</strong>
+                                    <div style="margin-top: 5px; display: flex; flex-wrap: wrap; gap: 5px;">
+                                        <span style="background: #e3f2fd; padding: 3px 8px; font-size: 12px; border-radius: 3px;">Swing Trading</span>
+                                        <span style="background: #e3f2fd; padding: 3px 8px; font-size: 12px; border-radius: 3px;">ניתוח טכני</span>
+                                        <span style="background: #e3f2fd; padding: 3px 8px; font-size: 12px; border-radius: 3px;">ניהול סיכונים</span>
+                                    </div>
+                                </div>
+                                
+                                <div style="display: flex; gap: 10px;">
+                                    <button class="btn btn-primary" style="flex: 1;">💬 התחל צ'אט</button>
+                                    <button class="btn">📅 קבע פגישה</button>
+                                </div>
+                            </div>
+
+                            <!-- Available Mentor 2 -->
+                            <div style="border: 1px solid #4CAF50; padding: 20px; background: #f8fff8;">
+                                <div style="display: flex; gap: 15px; margin-bottom: 15px;">
+                                    <div class="placeholder-img" style="width: 80px; height: 80px; border-radius: 50%;">
+                                        תמונת מנטור
+                                    </div>
+                                    <div style="flex: 1;">
+                                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
+                                            <h4>מיכל לוי</h4>
+                                            <div style="width: 8px; height: 8px; background: #4CAF50; border-radius: 50%;"></div>
+                                            <span style="color: #4CAF50; font-size: 14px;">זמינה עכשיו</span>
+                                        </div>
+                                        <div style="margin-bottom: 10px;">
+                                            <span style="color: #ffd700;">⭐⭐⭐⭐⭐</span>
+                                            <span style="font-size: 14px; color: #666;">(4.8) • 189 ביקורות</span>
+                                        </div>
+                                        <p style="color: #666; font-size: 14px;">מנטורית מומחת לפינת המתחילים</p>
+                                    </div>
+                                </div>
+                                
+                                <div style="margin-bottom: 15px;">
+                                    <strong style="font-size: 14px;">התמחויות:</strong>
+                                    <div style="margin-top: 5px; display: flex; flex-wrap: wrap; gap: 5px;">
+                                        <span style="background: #e8f5e8; padding: 3px 8px; font-size: 12px; border-radius: 3px;">מתחילים</span>
+                                        <span style="background: #e8f5e8; padding: 3px 8px; font-size: 12px; border-radius: 3px;">יסודות</span>
+                                        <span style="background: #e8f5e8; padding: 3px 8px; font-size: 12px; border-radius: 3px;">פסיכולוגיה</span>
+                                    </div>
+                                </div>
+                                
+                                <div style="display: flex; gap: 10px;">
+                                    <button class="btn btn-primary" style="flex: 1;">💬 התחל צ'אט</button>
+                                    <button class="btn">📅 קבע פגישה</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- All Mentors -->
+                <div class="card">
+                    <div class="card-header">👨‍🏫 כל המנטורים</div>
+                    <div class="card-body">
+                        <!-- Mentor 1 -->
+                        <div style="border-bottom: 1px solid #eee; padding: 25px 0;">
+                            <div style="display: flex; gap: 20px;">
+                                <div class="placeholder-img" style="width: 100px; height: 100px; border-radius: 50%;">
+                                    תמונת מנטור
+                                </div>
+                                <div style="flex: 1;">
+                                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                                        <div>
+                                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
+                                                <h3>יוסי דהן</h3>
+                                                <span style="background: #ffd700; color: #000; padding: 3px 8px; font-size: 12px; border-radius: 3px;">👑 VIP</span>
+                                            </div>
+                                            <div style="margin-bottom: 8px;">
+                                                <span style="color: #ffd700;">⭐⭐⭐⭐⭐</span>
+                                                <span style="font-size: 14px; color: #666;">(4.9) • 312 ביקורות</span>
+                                            </div>
+                                        </div>
+                                        <div style="display: flex; gap: 10px;">
+                                            <button class="btn">📧 שלח הודעה</button>
+                                            <button class="btn btn-primary">📅 קבע פגישה</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <p style="color: #666; margin-bottom: 15px;">מנטור VIP ומומחה בטכניקות מסחר מתקדמות. 12 שנות נסיון בשווקים הפיננסיים.</p>
+                                    
+                                    <div style="display: flex; gap: 30px; margin-bottom: 15px;">
+                                        <div>
+                                            <strong style="font-size: 14px;">התמחויות:</strong>
+                                            <div style="margin-top: 5px; display: flex; flex-wrap: wrap; gap: 5px;">
+                                                <span style="background: #fff3e0; padding: 3px 8px; font-size: 12px; border-radius: 3px;">Day Trading</span>
+                                                <span style="background: #fff3e0; padding: 3px 8px; font-size: 12px; border-radius: 3px;">אסטרטגיות מתקדמות</span>
+                                                <span style="background: #fff3e0; padding: 3px 8px; font-size: 12px; border-radius: 3px;">Options</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <strong style="font-size: 14px;">זמינות:</strong>
+                                            <p style="color: #666; font-size: 14px; margin-top: 5px;">ימ'-חמ' 15:00-20:00</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div style="background: #f9f9f9; padding: 15px; border-radius: 5px;">
+                                        <strong style="font-size: 14px;">💬 ביקורת אחרונה:</strong>
+                                        <p style="font-size: 14px; color: #666; margin-top: 5px;">"מנטור מדהים! עזר לי להשיג תשואה של 35% השנה" - שרה א.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mentor 2 -->
+                        <div style="border-bottom: 1px solid #eee; padding: 25px 0;">
+                            <div style="display: flex; gap: 20px;">
+                                <div class="placeholder-img" style="width: 100px; height: 100px; border-radius: 50%;">
+                                    תמונת מנטור
+                                </div>
+                                <div style="flex: 1;">
+                                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                                        <div>
+                                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
+                                                <h3>אלון כהן</h3>
+                                                <div style="width: 8px; height: 8px; background: orange; border-radius: 50%;"></div>
+                                                <span style="color: orange; font-size: 14px;">עסוק</span>
+                                            </div>
+                                            <div style="margin-bottom: 8px;">
+                                                <span style="color: #ffd700;">⭐⭐⭐⭐⭐</span>
+                                                <span style="font-size: 14px; color: #666;">(4.7) • 198 ביקורות</span>
+                                            </div>
+                                        </div>
+                                        <div style="display: flex; gap: 10px;">
+                                            <button class="btn">📧 שלח הודעה</button>
+                                            <button class="btn">📅 קבע פגישה</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <p style="color: #666; margin-bottom: 15px;">מומחה בניתוח מאקרו וכלכלי. מתמחה בשילוב ניתוח טכני עם ניתוח יסוד.</p>
+                                    
+                                    <div style="display: flex; gap: 30px; margin-bottom: 15px;">
+                                        <div>
+                                            <strong style="font-size: 14px;">התמחויות:</strong>
+                                            <div style="margin-top: 5px; display: flex; flex-wrap: wrap; gap: 5px;">
+                                                <span style="background: #e3f2fd; padding: 3px 8px; font-size: 12px; border-radius: 3px;">ניתוח מאקרו</span>
+                                                <span style="background: #e3f2fd; padding: 3px 8px; font-size: 12px; border-radius: 3px;">אינדיקטורים</span>
+                                                <span style="background: #e3f2fd; padding: 3px 8px; font-size: 12px; border-radius: 3px;">סקירות שוק</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <strong style="font-size: 14px;">זמינות:</strong>
+                                            <p style="color: #666; font-size: 14px; margin-top: 5px;">א'-חמ' 09:00-17:00</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div style="background: #f9f9f9; padding: 15px; border-radius: 5px;">
+                                        <strong style="font-size: 14px;">💬 ביקורת אחרונה:</strong>
+                                        <p style="font-size: 14px; color: #666; margin-top: 5px;">"הסבר מעולה על המצב הכלכלי הגלובלי" - דוד מ.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mentor 3 -->
+                        <div style="border-bottom: 1px solid #eee; padding: 25px 0;">
+                            <div style="display: flex; gap: 20px;">
+                                <div class="placeholder-img" style="width: 100px; height: 100px; border-radius: 50%;">
+                                    תמונת מנטור
+                                </div>
+                                <div style="flex: 1;">
+                                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                                        <div>
+                                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
+                                                <h3>ד"ר שרה לוי</h3>
+                                                <div style="width: 8px; height: 8px; background: red; border-radius: 50%;"></div>
+                                                <span style="color: red; font-size: 14px;">לא זמינה</span>
+                                            </div>
+                                            <div style="margin-bottom: 8px;">
+                                                <span style="color: #ffd700;">⭐⭐⭐⭐⭐</span>
+                                                <span style="font-size: 14px; color: #666;">(4.9) • 267 ביקורות</span>
+                                            </div>
+                                        </div>
+                                        <div style="display: flex; gap: 10px;">
+                                            <button class="btn">📧 שלח הודעה</button>
+                                            <button class="btn">📅 קבע פגישה</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <p style="color: #666; margin-bottom: 15px;">פסיכולוגית מקצועית המתמחה בפסיכולוגיה של המסחר. דוקטורט בפסיכולוגיה.</p>
+                                    
+                                    <div style="display: flex; gap: 30px; margin-bottom: 15px;">
+                                        <div>
+                                            <strong style="font-size: 14px;">התמחויות:</strong>
+                                            <div style="margin-top: 5px; display: flex; flex-wrap: wrap; gap: 5px;">
+                                                <span style="background: #f3e5f5; padding: 3px 8px; font-size: 12px; border-radius: 3px;">פסיכולוגיה</span>
+                                                <span style="background: #f3e5f5; padding: 3px 8px; font-size: 12px; border-radius: 3px;">ניהול רגשות</span>
+                                                <span style="background: #f3e5f5; padding: 3px 8px; font-size: 12px; border-radius: 3px;">משמעת נפשית</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <strong style="font-size: 14px;">זמינות:</strong>
+                                            <p style="color: #666; font-size: 14px; margin-top: 5px;">ב'+ד' 18:00-21:00</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div style="background: #f9f9f9; padding: 15px; border-radius: 5px;">
+                                        <strong style="font-size: 14px;">💬 ביקורת אחרונה:</strong>
+                                        <p style="font-size: 14px; color: #666; margin-top: 5px;">"עזרה לי להתגבר על FOMO ולשפר את ההחלטות" - מיכל ר.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Sidebar -->
+            <div>
+                <!-- My Mentor -->
+                <div class="card" style="margin-bottom: 20px; border: 2px solid #4CAF50;">
+                    <div class="card-header" style="background: #4CAF50; color: white;">⭐ המנטור שלי</div>
+                    <div class="card-body">
+                        <div style="text-align: center; margin-bottom: 15px;">
+                            <div class="placeholder-img" style="width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 10px;">
+                                תמונת מנטור
+                            </div>
+                            <h4>רון כהן</h4>
+                            <span style="color: #ffd700;">⭐⭐⭐⭐⭐</span>
+                            <p style="color: #666; font-size: 14px; margin-top: 5px;">המנטור שלך מאז 15/07/2024</p>
+                        </div>
+                        
+                        <div style="margin-bottom: 15px;">
+                            <div style="display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 5px;">
+                                <span>סשנים השבוע:</span>
+                                <strong>3</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 5px;">
+                                <span>שעות הדרכה:</span>
+                                <strong>12.5</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 5px;">
+                                <span>התקדמות:</span>
+                                <strong style="color: #4CAF50;">מצוינת</strong>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; flex-direction: column; gap: 10px;">
+                            <button class="btn btn-primary">💬 צ'אט</button>
+                            <button class="btn">📅 קבע פגישה</button>
+                            <button class="btn">📊 דוח התקדמות</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Chat -->
+                <div class="card" style="margin-bottom: 20px;">
+                    <div class="card-header">💬 צ'אט מהיר</div>
+                    <div class="card-body">
+                        <p style="font-size: 14px; color: #666; margin-bottom: 15px;">שאל שאלה קצרה ומקבל מענה מהיר</p>
+                        <textarea style="width: 100%; height: 80px; margin-bottom: 10px; padding: 10px;" placeholder="איך אני יכול לשפר את..."></textarea>
+                        <button class="btn btn-primary" style="width: 100%;">📤 שלח שאלה</button>
+                        <p style="font-size: 12px; color: #666; margin-top: 10px; text-align: center;">זמן מענה ממוצע: 15 דקות</p>
+                    </div>
+                </div>
+
+                <!-- Schedule -->
+                <div class="card" style="margin-bottom: 20px;">
+                    <div class="card-header">📅 הפגישות שלי</div>
+                    <div class="card-body">
+                        <div style="font-size: 14px;">
+                            <div style="border-bottom: 1px solid #eee; padding: 10px 0;">
+                                <strong>היום 16:00</strong>
+                                <p style="color: #666; margin: 5px 0;">רון כהן - סקירה שבועית</p>
+                                <button class="btn" style="font-size: 12px;">🎥 הצטרף</button>
+                            </div>
+                            
+                            <div style="border-bottom: 1px solid #eee; padding: 10px 0;">
+                                <strong>מחר 10:00</strong>
+                                <p style="color: #666; margin: 5px 0;">מיכל לוי - הדרכה אישית</p>
+                                <button class="btn" style="font-size: 12px;">📅 פרטים</button>
+                            </div>
+                            
+                            <div style="padding: 10px 0;">
+                                <strong>רביעי 20:00</strong>
+                                <p style="color: #666; margin: 5px 0;">ד"ר שרה - פסיכולוגיה</p>
+                                <button class="btn" style="font-size: 12px;">📅 פרטים</button>
+                            </div>
+                        </div>
+                        
+                        <button class="btn" style="width: 100%; margin-top: 10px;">📅 הזמן פגישה נוספת</button>
+                    </div>
+                </div>
+
+                <!-- Mentoring Stats -->
+                <div class="card">
+                    <div class="card-header">📊 סטטיסטיקות הדרכה</div>
+                    <div class="card-body">
+                        <div style="font-size: 14px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>פגישות החודש:</span>
+                                <strong>12</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>שעות הדרכה:</span>
+                                <strong>18.5</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>שאלות נענו:</span>
+                                <strong>47</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>רמת שביעות רצון:</span>
+                                <strong style="color: #4CAF50;">מעולה</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

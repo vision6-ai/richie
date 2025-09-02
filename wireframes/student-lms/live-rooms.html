@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>חדרי מסחר חיים - פורטל תלמידים</title>
+    <link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container-fluid" style="max-width: 100%; padding: 0 20px;">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h3>פורטל הלמידה שלי</h3>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="dashboard.html">דשבורד</a></li>
+                    <li><a href="my-courses.html">הקורסים שלי</a></li>
+                    <li><a href="trading-journal.html">יומן מסחר</a></li>
+                    <li><a href="forum.html" style="font-weight: bold;">קהילה</a></li>
+                    <li><a href="content-library.html">ספריית תוכן</a></li>
+                    <li><a href="support.html">תמיכה</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <span>🔔</span>
+                    <span>שלום, דני!</span>
+                    <button class="btn">פרופיל</button>
+                    <a href="../marketing/home.html" class="btn">יציאה</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="max-width: 1600px;">
+        <!-- Header -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+            <div>
+                <h1>🔴 חדרי מסחר חיים</h1>
+                <p style="color: #666;">למד מסחר בזמן אמת עם המנטורים המובילים שלנו</p>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button class="btn">📊 סטטיסטיקות שוק</button>
+                <button class="btn">📅 לוח זמנים</button>
+                <button class="btn btn-primary">🔔 הגדר תזכורות</button>
+            </div>
+        </div>
+
+        <!-- Live Status Bar -->
+        <div class="card" style="margin-bottom: 30px; border: 2px solid #ff0000;">
+            <div class="card-body" style="background: linear-gradient(90deg, #ff0000, #ff6b35); color: white;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <div style="width: 10px; height: 10px; background: white; border-radius: 50%; animation: blink 1s infinite;"></div>
+                        <strong style="font-size: 18px;">🔴 חדר מתקדמים פעיל עכשיו!</strong>
+                        <span>👥 47 משתתפים</span>
+                    </div>
+                    <div style="display: flex; gap: 10px;">
+                        <button class="btn" style="background: white; color: #ff0000;">🎥 הצטרף עכשיו</button>
+                        <button class="btn" style="background: rgba(255,255,255,0.2); color: white;">📱 צפה על הטלפון</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-3" style="grid-template-columns: 2fr 1fr;">
+            <!-- Main Content -->
+            <div style="grid-column: span 2;">
+                <!-- Active Rooms -->
+                <div class="card" style="margin-bottom: 30px;">
+                    <div class="card-header">🟢 חדרים פעילים כעת</div>
+                    <div class="card-body">
+                        <!-- Room 1 - Advanced -->
+                        <div style="border: 2px solid #ff0000; padding: 20px; margin-bottom: 20px; background: #fff5f5;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                                <div style="display: flex; align-items: center; gap: 15px;">
+                                    <div style="width: 10px; height: 10px; background: #ff0000; border-radius: 50%; animation: blink 1s infinite;"></div>
+                                    <h3>🔴 חדר מתקדמים - ניתוח יומי</h3>
+                                    <span style="background: #ff0000; color: white; padding: 3px 8px; font-size: 12px; border-radius: 3px;">LIVE</span>
+                                </div>
+                                <div style="display: flex; gap: 10px;">
+                                    <button class="btn btn-primary">🎥 הצטרף</button>
+                                    <button class="btn">📱 אפליקציה</button>
+                                </div>
+                            </div>
+                            
+                            <div style="display: flex; gap: 20px; margin-bottom: 15px;">
+                                <div class="placeholder-img" style="width: 120px; height: 80px;">
+                                    תמונת המנטור
+                                </div>
+                                <div style="flex: 1;">
+                                    <h4>👨‍🏫 רון כהן - מנטור בכיר</h4>
+                                    <p style="color: #666; margin: 5px 0;">ניתוח הזדמנויות מסחר לשבוע + Q&A</p>
+                                    <div style="display: flex; gap: 15px; font-size: 14px; color: #666;">
+                                        <span>👥 47 משתתפים</span>
+                                        <span>⏰ החל: 09:30</span>
+                                        <span>🕐 משך: 1.5 שעות</span>
+                                        <span>📊 רמה: מתקדמים</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div style="background: white; padding: 15px; border-radius: 5px; margin-bottom: 15px;">
+                                <strong>📋 נושאים מרכזיים הזמנה:</strong>
+                                <ul style="margin: 10px 0; padding-right: 20px;">
+                                    <li>ניתוח NASDAQ ו-S&P500</li>
+                                    <li>הזדמנויות במגזר הטכנולוגיה</li>
+                                    <li>ניהול סיכונים בתקופת תנודתיות</li>
+                                    <li>שאלות ותשובות פתוחות</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Recent Chat Messages -->
+                            <div style="background: #f9f9f9; padding: 15px; border-radius: 5px; max-height: 150px; overflow-y: auto;">
+                                <strong style="font-size: 14px;">💬 צ'אט אחרון:</strong>
+                                <div style="font-size: 14px; margin-top: 10px;">
+                                    <div style="margin-bottom: 8px;"><strong>שרה:</strong> מה דעתך על AAPL?</div>
+                                    <div style="margin-bottom: 8px;"><strong>רון כהן:</strong> אראה את הגרף עכשיו</div>
+                                    <div style="margin-bottom: 8px;"><strong>דוד:</strong> תודה על הניתוח המעולה!</div>
+                                    <div style="margin-bottom: 8px;"><strong>מיכל:</strong> איך מחשבים stop loss?</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Room 2 - VIP -->
+                        <div style="border: 2px solid #ffd700; padding: 20px; margin-bottom: 20px; background: #fffbf0;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                                <div style="display: flex; align-items: center; gap: 15px;">
+                                    <div style="width: 10px; height: 10px; background: #ffd700; border-radius: 50%; animation: blink 1s infinite;"></div>
+                                    <h3>👑 חדר VIP - חונכות אישית</h3>
+                                    <span style="background: #ffd700; color: #000; padding: 3px 8px; font-size: 12px; border-radius: 3px;">VIP LIVE</span>
+                                </div>
+                                <div style="display: flex; gap: 10px;">
+                                    <button class="btn" style="background: #ffd700; color: #000;">👑 הצטרף (VIP)</button>
+                                    <button class="btn">🔒 שדרג לVIP</button>
+                                </div>
+                            </div>
+                            
+                            <div style="display: flex; gap: 20px; margin-bottom: 15px;">
+                                <div class="placeholder-img" style="width: 120px; height: 80px;">
+                                    תמונת המנטור VIP
+                                </div>
+                                <div style="flex: 1;">
+                                    <h4>👨‍🏫 יוסי דהן - מנטור VIP</h4>
+                                    <p style="color: #666; margin: 5px 0;">ייעוץ אישי וניתוח מתקדם - קבוצה קטנה</p>
+                                    <div style="display: flex; gap: 15px; font-size: 14px; color: #666;">
+                                        <span>👥 12 משתתפים בלבד</span>
+                                        <span>⏰ החל: 10:00</span>
+                                        <span>🕐 משך: 2 שעות</span>
+                                        <span>💎 רמה: VIP בלבד</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upcoming Sessions -->
+                <div class="card" style="margin-bottom: 30px;">
+                    <div class="card-header">📅 הזמנות קרובות היום</div>
+                    <div class="card-body">
+                        <div class="grid grid-2">
+                            <!-- Upcoming Session 1 -->
+                            <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px;">
+                                <div style="display: flex; justify-content: between; align-items: center; margin-bottom: 10px;">
+                                    <h4>🎓 חדר מתחילים</h4>
+                                    <span style="background: #4ecdc4; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">15:00</span>
+                                </div>
+                                <p style="color: #666; font-size: 14px;">יסודות ניתוח טכני למתחילים</p>
+                                <div style="display: flex; gap: 10px; font-size: 12px; color: #666; margin-bottom: 10px;">
+                                    <span>👨‍🏫 מיכל לוי</span>
+                                    <span>🕐 1 שעה</span>
+                                    <span>👥 עד 30 איש</span>
+                                </div>
+                                <button class="btn" style="width: 100%;">🔔 הגדר תזכורת</button>
+                            </div>
+
+                            <!-- Upcoming Session 2 -->
+                            <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                                    <h4>📊 סקירת שוק</h4>
+                                    <span style="background: #ff6b35; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">17:30</span>
+                                </div>
+                                <p style="color: #666; font-size: 14px;">סקירה שבועית של השווקים</p>
+                                <div style="display: flex; gap: 10px; font-size: 12px; color: #666; margin-bottom: 10px;">
+                                    <span>👨‍🏫 אלון כהן</span>
+                                    <span>🕐 45 דקות</span>
+                                    <span>👥 כל הרמות</span>
+                                </div>
+                                <button class="btn" style="width: 100%;">🔔 הגדר תזכורת</button>
+                            </div>
+
+                            <!-- Upcoming Session 3 -->
+                            <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                                    <h4>🧠 פסיכולוגיה</h4>
+                                    <span style="background: #9b59b6; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">20:00</span>
+                                </div>
+                                <p style="color: #666; font-size: 14px;">ניהול רגשות במסחר</p>
+                                <div style="display: flex; gap: 10px; font-size: 12px; color: #666; margin-bottom: 10px;">
+                                    <span>👩‍⚕️ ד"ר שרה לוי</span>
+                                    <span>🕐 1.5 שעות</span>
+                                    <span>👥 עד 25 איש</span>
+                                </div>
+                                <button class="btn" style="width: 100%;">🔔 הגדר תזכורת</button>
+                            </div>
+
+                            <!-- Upcoming Session 4 -->
+                            <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                                    <h4>💎 מאסטרקלאס VIP</h4>
+                                    <span style="background: #ffd700; color: #000; padding: 2px 6px; font-size: 12px; border-radius: 3px;">21:30</span>
+                                </div>
+                                <p style="color: #666; font-size: 14px;">אסטרטגיות מתקדמות</p>
+                                <div style="display: flex; gap: 10px; font-size: 12px; color: #666; margin-bottom: 10px;">
+                                    <span>👨‍🏫 רון כהן</span>
+                                    <span>🕐 2 שעות</span>
+                                    <span>👑 VIP בלבד</span>
+                                </div>
+                                <button class="btn" style="width: 100%;">👑 דרוש VIP</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recordings Archive -->
+                <div class="card">
+                    <div class="card-header">🎥 הקלטות חדשות מהזמנים</div>
+                    <div class="card-body">
+                        <div style="max-height: 300px; overflow-y: auto;">
+                            <div style="display: flex; gap: 15px; padding: 15px 0; border-bottom: 1px solid #eee;">
+                                <div class="placeholder-img" style="width: 80px; height: 60px;">
+                                    📹 הקלטה
+                                </div>
+                                <div style="flex: 1;">
+                                    <h5>ניתוח שוק יומי - 1/09/2024</h5>
+                                    <p style="color: #666; font-size: 14px;">רון כהן | משך: 1:32:45 | 89 צפיות</p>
+                                    <div style="margin-top: 10px;">
+                                        <button class="btn" style="font-size: 14px;">▶ צפה</button>
+                                        <button class="btn" style="font-size: 14px;">📱 הורד</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="display: flex; gap: 15px; padding: 15px 0; border-bottom: 1px solid #eee;">
+                                <div class="placeholder-img" style="width: 80px; height: 60px;">
+                                    📹 הקלטה
+                                </div>
+                                <div style="flex: 1;">
+                                    <h5>פסיכולוגיה של המסחר - 30/08/2024</h5>
+                                    <p style="color: #666; font-size: 14px;">ד"ר שרה לוי | משך: 1:45:12 | 156 צפיות</p>
+                                    <div style="margin-top: 10px;">
+                                        <button class="btn" style="font-size: 14px;">▶ צפה</button>
+                                        <button class="btn" style="font-size: 14px;">📱 הורד</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="display: flex; gap: 15px; padding: 15px 0;">
+                                <div class="placeholder-img" style="width: 80px; height: 60px;">
+                                    📹 הקלטה
+                                </div>
+                                <div style="flex: 1;">
+                                    <h5>מאסטרקלאס VIP - אסטרטגיות</h5>
+                                    <p style="color: #666; font-size: 14px;">יוסי דהן | משך: 2:15:30 | 23 צפיות</p>
+                                    <div style="margin-top: 10px;">
+                                        <button class="btn" style="font-size: 14px;">👑 VIP בלבד</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Sidebar -->
+            <div>
+                <!-- Schedule Today -->
+                <div class="card" style="margin-bottom: 20px;">
+                    <div class="card-header">📅 לוח זמנים היום</div>
+                    <div class="card-body">
+                        <div style="font-size: 14px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px; padding: 8px; background: #ffebee;">
+                                <span>🔴 חדר מתקדמים</span>
+                                <strong>09:30</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px; padding: 8px; background: #e8f5e8;">
+                                <span>🎓 חדר מתחילים</span>
+                                <strong>15:00</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px; padding: 8px; background: #fff3e0;">
+                                <span>📊 סקירת שוק</span>
+                                <strong>17:30</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px; padding: 8px; background: #f3e5f5;">
+                                <span>🧠 פסיכולוגיה</span>
+                                <strong>20:00</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 8px; background: #fffbf0;">
+                                <span>👑 מאסטרקלאס VIP</span>
+                                <strong>21:30</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- My Attendance -->
+                <div class="card" style="margin-bottom: 20px;">
+                    <div class="card-header">📊 הנוכחות שלי</div>
+                    <div class="card-body">
+                        <div style="text-align: center; margin-bottom: 15px;">
+                            <div style="font-size: 32px; color: #4ecdc4;">87%</div>
+                            <div style="font-size: 14px; color: #666;">אחוז נוכחות החודש</div>
+                        </div>
+                        
+                        <div style="font-size: 14px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>סשנים השבוע:</span>
+                                <strong>4/5</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>שעות צפייה:</span>
+                                <strong>6.5</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>הקלטות נצפו:</span>
+                                <strong>12</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>שאלות בצ'אט:</span>
+                                <strong>8</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room Rules -->
+                <div class="card" style="margin-bottom: 20px;">
+                    <div class="card-header">📋 כללי החדרים</div>
+                    <div class="card-body">
+                        <ul style="font-size: 14px; margin: 0; padding-right: 15px;">
+                            <li>הגע בזמן לסשן</li>
+                            <li>השתק מיקרופון</li>
+                            <li>שאל שאלות בצ'אט</li>
+                            <li>כבד את המנטורים</li>
+                            <li>אל תשתף מידע אישי</li>
+                            <li>בצ'אט - רק שאלות רלוונטיות</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Technical Requirements -->
+                <div class="card">
+                    <div class="card-header">💻 דרישות טכניות</div>
+                    <div class="card-body">
+                        <div style="font-size: 14px;">
+                            <div style="margin-bottom: 10px;">
+                                <strong>נדרש:</strong>
+                                <ul style="margin: 5px 0; padding-right: 15px;">
+                                    <li>חיבור אינטרנט יציב</li>
+                                    <li>דפדפן מעודכן</li>
+                                    <li>אוזניות (מומלץ)</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <strong>אפליקציות:</strong>
+                                <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 5px;">
+                                    <button class="btn" style="font-size: 12px;">📱 הורד לאייפון</button>
+                                    <button class="btn" style="font-size: 12px;">📱 הורד לאנדרואיד</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.3; }
+        }
+    </style>
+</body>
+</html>

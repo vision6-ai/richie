@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ספריית תוכן - פורטל תלמידים</title>
+    <link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container-fluid" style="max-width: 100%; padding: 0 20px;">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h3>פורטל הלמידה שלי</h3>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="dashboard.html">דשבורד</a></li>
+                    <li><a href="my-courses.html">הקורסים שלי</a></li>
+                    <li><a href="trading-journal.html">יומן מסחר</a></li>
+                    <li><a href="forum.html">קהילה</a></li>
+                    <li><a href="content-library.html" style="font-weight: bold;">ספריית תוכן</a></li>
+                    <li><a href="support.html">תמיכה</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <span>🔔</span>
+                    <span>שלום, דני!</span>
+                    <button class="btn">פרופיל</button>
+                    <a href="../marketing/home.html" class="btn">יציאה</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="max-width: 1400px;">
+        <!-- Header -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+            <div>
+                <h1>📚 ספריית התוכן</h1>
+                <p style="color: #666;">כל החומרים, הכלים והמשאבים שלך במקום אחד</p>
+            </div>
+            <div>
+                <button class="btn">📱 הורד לאופליין</button>
+                <button class="btn">🔍 חיפוש מתקדם</button>
+                <button class="btn btn-primary">⭐ המועדפים שלי</button>
+            </div>
+        </div>
+
+        <!-- Search and Filter -->
+        <div class="card" style="margin-bottom: 30px;">
+            <div class="card-body">
+                <div style="display: flex; gap: 15px; align-items: center; margin-bottom: 15px;">
+                    <input type="text" placeholder="חפש בספריית התוכן..." style="flex: 1; padding: 10px; border: 1px solid #ccc;">
+                    <select style="padding: 10px;">
+                        <option>כל סוגי התוכן</option>
+                        <option>שיעורי וידאו</option>
+                        <option>חומרי קריאה</option>
+                        <option>כלים ומחשבונים</option>
+                        <option>הקלטות וובינרים</option>
+                    </select>
+                    <select style="padding: 10px;">
+                        <option>כל הרמות</option>
+                        <option>מתחילים</option>
+                        <option>ביניים</option>
+                        <option>מתקדמים</option>
+                    </select>
+                    <button class="btn">🔍 חפש</button>
+                </div>
+
+                <!-- Quick Categories -->
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <button class="btn" style="font-size: 14px;">📊 ניתוח טכני</button>
+                    <button class="btn" style="font-size: 14px;">📈 אסטרטגיות מסחר</button>
+                    <button class="btn" style="font-size: 14px;">💰 ניהול הון</button>
+                    <button class="btn" style="font-size: 14px;">🧠 פסיכולוגיה</button>
+                    <button class="btn" style="font-size: 14px;">📰 עדכוני שוק</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-4" style="grid-template-columns: 2fr 1fr;">
+            <!-- Main Content -->
+            <div style="grid-column: span 3;">
+                <!-- Video Lessons -->
+                <div class="card" style="margin-bottom: 30px;">
+                    <div class="card-header">🎥 שיעורי וידאו</div>
+                    <div class="card-body">
+                        <div class="grid grid-3">
+                            <!-- Video 1 -->
+                            <div style="border: 1px solid #ccc; padding: 15px;">
+                                <div class="placeholder-img" style="height: 120px; margin-bottom: 10px; position: relative;">
+                                    שיעור וידאו
+                                    <div style="position: absolute; bottom: 5px; right: 5px; background: rgba(0,0,0,0.8); color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">18:35</div>
+                                </div>
+                                <h5>דפוסי נרות יפניים</h5>
+                                <p style="color: #666; font-size: 14px;">למידת זיהוי דפוסים בסיסיים</p>
+                                <div style="margin: 10px 0; font-size: 12px; color: #666;">
+                                    <span>👤 רון כהן</span> • <span>🎓 מתחילים</span> • <span>👀 245 צפיות</span>
+                                </div>
+                                <div style="display: flex; gap: 5px;">
+                                    <button class="btn btn-primary" style="flex: 1; font-size: 14px;">▶ צפה</button>
+                                    <button class="btn" style="font-size: 14px;">⭐</button>
+                                </div>
+                            </div>
+
+                            <!-- Video 2 -->
+                            <div style="border: 1px solid #ccc; padding: 15px;">
+                                <div class="placeholder-img" style="height: 120px; margin-bottom: 10px; position: relative;">
+                                    שיעור וידאו
+                                    <div style="position: absolute; bottom: 5px; right: 5px; background: rgba(0,0,0,0.8); color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">25:12</div>
+                                </div>
+                                <h5>RSI ואינדיקטורים</h5>
+                                <p style="color: #666; font-size: 14px;">שימוש באינדיקטורים טכניים</p>
+                                <div style="margin: 10px 0; font-size: 12px; color: #666;">
+                                    <span>👤 מיכל לוי</span> • <span>🎓 ביניים</span> • <span>👀 312 צפיות</span>
+                                </div>
+                                <div style="display: flex; gap: 5px;">
+                                    <button class="btn btn-primary" style="flex: 1; font-size: 14px;">▶ צפה</button>
+                                    <button class="btn" style="font-size: 14px;">⭐</button>
+                                </div>
+                            </div>
+
+                            <!-- Video 3 -->
+                            <div style="border: 1px solid #ccc; padding: 15px;">
+                                <div class="placeholder-img" style="height: 120px; margin-bottom: 10px; position: relative;">
+                                    שיעור וידאו
+                                    <div style="position: absolute; bottom: 5px; right: 5px; background: rgba(0,0,0,0.8); color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">42:08</div>
+                                </div>
+                                <h5>ניהול סיכונים מתקדם</h5>
+                                <p style="color: #666; font-size: 14px;">טכניקות למניעת הפסדים</p>
+                                <div style="margin: 10px 0; font-size: 12px; color: #666;">
+                                    <span>👤 יוסי דהן</span> • <span>🎓 מתקדמים</span> • <span>👀 156 צפיות</span>
+                                </div>
+                                <div style="display: flex; gap: 5px;">
+                                    <button class="btn" style="flex: 1; font-size: 14px;">👑 VIP</button>
+                                    <button class="btn" style="font-size: 14px;">⭐</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="text-align: center; margin-top: 20px;">
+                            <button class="btn">ראה עוד שיעורי וידאו →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reading Materials -->
+                <div class="card" style="margin-bottom: 30px;">
+                    <div class="card-header">📖 חומרי קריאה</div>
+                    <div class="card-body">
+                        <div style="max-height: 400px; overflow-y: auto;">
+                            <!-- Article 1 -->
+                            <div style="display: flex; gap: 15px; padding: 15px 0; border-bottom: 1px solid #eee;">
+                                <div class="placeholder-img" style="width: 80px; height: 60px;">
+                                    📄 מאמר
+                                </div>
+                                <div style="flex: 1;">
+                                    <h5>המדריך השלם לניתוח נפח</h5>
+                                    <p style="color: #666; font-size: 14px;">איך להשתמש בנתוני נפח המסחר לקבלת החלטות</p>
+                                    <div style="margin: 10px 0; font-size: 12px; color: #666;">
+                                        <span>📅 פורסם: 25/08/2024</span> • <span>⏱ 12 דקות קריאה</span> • <span>👀 89 קוראים</span>
+                                    </div>
+                                    <div style="display: flex; gap: 10px;">
+                                        <button class="btn" style="font-size: 14px;">📖 קרא</button>
+                                        <button class="btn" style="font-size: 14px;">📱 הורד PDF</button>
+                                        <button class="btn" style="font-size: 14px;">⭐ שמור</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Article 2 -->
+                            <div style="display: flex; gap: 15px; padding: 15px 0; border-bottom: 1px solid #eee;">
+                                <div class="placeholder-img" style="width: 80px; height: 60px;">
+                                    📄 מאמר
+                                </div>
+                                <div style="flex: 1;">
+                                    <h5>פסיכולוגיה של המסחר: איך להיות חסר רגש</h5>
+                                    <p style="color: #666; font-size: 14px;">טכניקות לשיפור המשמעת הנפשית במסחר</p>
+                                    <div style="margin: 10px 0; font-size: 12px; color: #666;">
+                                        <span>📅 פורסם: 20/08/2024</span> • <span>⏱ 8 דקות קריאה</span> • <span>👀 156 קוראים</span>
+                                    </div>
+                                    <div style="display: flex; gap: 10px;">
+                                        <button class="btn" style="font-size: 14px;">📖 קרא</button>
+                                        <button class="btn" style="font-size: 14px;">📱 הורד PDF</button>
+                                        <button class="btn" style="font-size: 14px;">⭐ שמור</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Article 3 -->
+                            <div style="display: flex; gap: 15px; padding: 15px 0;">
+                                <div class="placeholder-img" style="width: 80px; height: 60px;">
+                                    📄 מאמר
+                                </div>
+                                <div style="flex: 1;">
+                                    <h5>10 טעויות נפוצות של סוחרים חדשים</h5>
+                                    <p style="color: #666; font-size: 14px;">מדריך למניעת טעויות יקרות בתחילת הדרך</p>
+                                    <div style="margin: 10px 0; font-size: 12px; color: #666;">
+                                        <span>📅 פורסם: 18/08/2024</span> • <span>⏱ 15 דקות קריאה</span> • <span>👀 234 קוראים</span>
+                                    </div>
+                                    <div style="display: flex; gap: 10px;">
+                                        <button class="btn" style="font-size: 14px;">📖 קרא</button>
+                                        <button class="btn" style="font-size: 14px;">📱 הורד PDF</button>
+                                        <button class="btn" style="font-size: 14px;">⭐ שמור</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools and Calculators -->
+                <div class="card" style="margin-bottom: 30px;">
+                    <div class="card-header">🧮 כלים ומחשבונים</div>
+                    <div class="card-body">
+                        <div class="grid grid-2">
+                            <!-- Tool 1 -->
+                            <div style="border: 1px solid #ccc; padding: 20px; text-align: center;">
+                                <div style="font-size: 48px; margin-bottom: 15px;">📊</div>
+                                <h5>מחשבון סיכון</h5>
+                                <p style="color: #666; font-size: 14px; margin: 10px 0;">חישוב גודל פוזיציה בהתאם לסיכון</p>
+                                <button class="btn btn-primary" style="width: 100%;">🧮 השתמש</button>
+                            </div>
+
+                            <!-- Tool 2 -->
+                            <div style="border: 1px solid #ccc; padding: 20px; text-align: center;">
+                                <div style="font-size: 48px; margin-bottom: 15px;">💹</div>
+                                <h5>מחשבון P&L</h5>
+                                <p style="color: #666; font-size: 14px; margin: 10px 0;">חישוב רווח והפסד פוטנציאלי</p>
+                                <button class="btn btn-primary" style="width: 100%;">🧮 השתמש</button>
+                            </div>
+
+                            <!-- Tool 3 -->
+                            <div style="border: 1px solid #ccc; padding: 20px; text-align: center;">
+                                <div style="font-size: 48px; margin-bottom: 15px;">📈</div>
+                                <h5>מחשבון פיבונאצ'י</h5>
+                                <p style="color: #666; font-size: 14px; margin: 10px 0;">חישוב רמות תיקון פיבונאצ'י</p>
+                                <button class="btn btn-primary" style="width: 100%;">🧮 השתמש</button>
+                            </div>
+
+                            <!-- Tool 4 -->
+                            <div style="border: 1px solid #ccc; padding: 20px; text-align: center;">
+                                <div style="font-size: 48px; margin-bottom: 15px;">🌍</div>
+                                <h5>ממיר מטבעות</h5>
+                                <p style="color: #666; font-size: 14px; margin: 10px 0;">המרה בין שקלים ודולרים</p>
+                                <button class="btn btn-primary" style="width: 100%;">🧮 השתמש</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Webinar Recordings -->
+                <div class="card">
+                    <div class="card-header">🎥 הקלטות וובינרים</div>
+                    <div class="card-body">
+                        <div style="max-height: 400px; overflow-y: auto;">
+                            <!-- Webinar 1 -->
+                            <div style="display: flex; gap: 15px; padding: 15px 0; border-bottom: 1px solid #eee;">
+                                <div class="placeholder-img" style="width: 120px; height: 80px; position: relative;">
+                                    🎥 וובינר
+                                    <div style="position: absolute; bottom: 5px; right: 5px; background: rgba(0,0,0,0.8); color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">1:32:45</div>
+                                </div>
+                                <div style="flex: 1;">
+                                    <h5>ניתוח שוק שבועי - 1/09/2024</h5>
+                                    <p style="color: #666; font-size: 14px;">סקירת השווקים והזדמנויות השבוע</p>
+                                    <div style="margin: 10px 0; font-size: 12px; color: #666;">
+                                        <span>👤 רון כהן</span> • <span>📅 1 בספטמבר</span> • <span>👀 89 צפיות</span>
+                                    </div>
+                                    <div style="display: flex; gap: 10px;">
+                                        <button class="btn btn-primary" style="font-size: 14px;">▶ צפה</button>
+                                        <button class="btn" style="font-size: 14px;">📱 הורד</button>
+                                        <button class="btn" style="font-size: 14px;">⭐ שמור</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Webinar 2 -->
+                            <div style="display: flex; gap: 15px; padding: 15px 0; border-bottom: 1px solid #eee;">
+                                <div class="placeholder-img" style="width: 120px; height: 80px; position: relative;">
+                                    🎥 וובינר
+                                    <div style="position: absolute; bottom: 5px; right: 5px; background: rgba(0,0,0,0.8); color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">58:30</div>
+                                </div>
+                                <div style="flex: 1;">
+                                    <h5>מוכנים לקיץ: אסטרטגיות לחופשה</h5>
+                                    <p style="color: #666; font-size: 14px;">איך לנהל פורטפוליו בתקופת חופשות</p>
+                                    <div style="margin: 10px 0; font-size: 12px; color: #666;">
+                                        <span>👤 מיכל לוי</span> • <span>📅 25 באוגוסט</span> • <span>👀 156 צפיות</span>
+                                    </div>
+                                    <div style="display: flex; gap: 10px;">
+                                        <button class="btn btn-primary" style="font-size: 14px;">▶ צפה</button>
+                                        <button class="btn" style="font-size: 14px;">📱 הורד</button>
+                                        <button class="btn" style="font-size: 14px;">⭐ שמור</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Webinar 3 -->
+                            <div style="display: flex; gap: 15px; padding: 15px 0;">
+                                <div class="placeholder-img" style="width: 120px; height: 80px; position: relative;">
+                                    🎥 וובינר
+                                    <div style="position: absolute; bottom: 5px; right: 5px; background: rgba(0,0,0,0.8); color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">2:15:12</div>
+                                </div>
+                                <div style="flex: 1;">
+                                    <h5>מאסטרקלאס: אסטרטגיות למסחר בתנודתיות</h5>
+                                    <p style="color: #666; font-size: 14px;">הדרכה מתקדמת לחברי VIP</p>
+                                    <div style="margin: 10px 0; font-size: 12px; color: #666;">
+                                        <span>👤 יוסי דהן</span> • <span>📅 20 באוגוסט</span> • <span>👀 23 צפיות</span>
+                                    </div>
+                                    <div style="display: flex; gap: 10px;">
+                                        <button class="btn" style="font-size: 14px;">👑 VIP בלבד</button>
+                                        <button class="btn" style="font-size: 14px;">⬆️ שדרג</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Sidebar -->
+            <div>
+                <!-- My Favorites -->
+                <div class="card" style="margin-bottom: 20px;">
+                    <div class="card-header">⭐ המועדפים שלי</div>
+                    <div class="card-body">
+                        <div style="font-size: 14px;">
+                            <div style="margin-bottom: 10px; padding: 8px; background: #f9f9f9;">
+                                <strong>דפוסי נרות יפניים</strong>
+                                <p style="color: #666; margin: 5px 0;">🎥 18:35</p>
+                            </div>
+                            <div style="margin-bottom: 10px; padding: 8px; background: #f9f9f9;">
+                                <strong>מחשבון סיכון</strong>
+                                <p style="color: #666; margin: 5px 0;">🧮 כלי</p>
+                            </div>
+                            <div style="margin-bottom: 10px; padding: 8px; background: #f9f9f9;">
+                                <strong>פסיכולוגיה של המסחר</strong>
+                                <p style="color: #666; margin: 5px 0;">📖 מאמר</p>
+                            </div>
+                        </div>
+                        <button class="btn" style="width: 100%; margin-top: 10px;">ראה את כל המועדפים</button>
+                    </div>
+                </div>
+
+                <!-- Recent Downloads -->
+                <div class="card" style="margin-bottom: 20px;">
+                    <div class="card-header">📱 הורדות אחרונות</div>
+                    <div class="card-body">
+                        <div style="font-size: 14px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>RSI ואינדיקטורים</span>
+                                <span style="color: #4CAF50;">✅</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>וובינר שבועי</span>
+                                <span style="color: orange;">⏳</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>מדריך P&L</span>
+                                <span style="color: #4CAF50;">✅</span>
+                            </div>
+                        </div>
+                        <button class="btn" style="width: 100%; margin-top: 10px;">נהל הורדות</button>
+                    </div>
+                </div>
+
+                <!-- Usage Stats -->
+                <div class="card" style="margin-bottom: 20px;">
+                    <div class="card-header">📊 סטטיסטיקות שימוש</div>
+                    <div class="card-body">
+                        <div style="font-size: 14px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>וידאו נצפו:</span>
+                                <strong>47</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>מאמרים נקראו:</span>
+                                <strong>23</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>כלים נוצלו:</span>
+                                <strong>12</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>הקלטות נצפו:</span>
+                                <strong>8</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Access -->
+                <div class="card">
+                    <div class="card-header">⚡ גישה מהירה</div>
+                    <div class="card-body">
+                        <div style="display: flex; flex-direction: column; gap: 10px;">
+                            <button class="btn">🧮 מחשבון סיכון</button>
+                            <button class="btn">📈 TradingView</button>
+                            <button class="btn">📰 עדכוני שוק</button>
+                            <button class="btn">🗓️ לוח כלכלי</button>
+                            <button class="btn">📱 הורד אפליקציה</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

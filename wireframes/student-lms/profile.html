@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הפרופיל שלי - פורטל תלמידים</title>
+    <link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container-fluid" style="max-width: 100%; padding: 0 20px;">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h3>פורטל הלמידה שלי</h3>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="dashboard.html">דשבורד</a></li>
+                    <li><a href="my-courses.html">הקורסים שלי</a></li>
+                    <li><a href="trading-journal.html">יומן מסחר</a></li>
+                    <li><a href="forum.html">קהילה</a></li>
+                    <li><a href="content-library.html">ספריית תוכן</a></li>
+                    <li><a href="support.html">תמיכה</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <span>🔔</span>
+                    <span>שלום, דני!</span>
+                    <button class="btn" style="font-weight: bold;">פרופיל</button>
+                    <a href="../marketing/home.html" class="btn">יציאה</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="max-width: 1400px;">
+        <!-- Header -->
+        <div style="margin-bottom: 30px;">
+            <h1>👤 הפרופיל שלי</h1>
+            <p style="color: #666;">ניהול פרטים אישיים והגדרות חשבון</p>
+        </div>
+
+        <!-- Profile Tabs -->
+        <div class="tabs" style="margin-bottom: 30px;">
+            <button class="tab-item active">👤 פרטים אישיים</button>
+            <button class="tab-item">⚙️ הגדרות</button>
+            <button class="tab-item">💳 ניהול מנוי</button>
+            <button class="tab-item">🔒 אבטחה</button>
+            <button class="tab-item">📊 סטטיסטיקות</button>
+        </div>
+
+        <div class="grid grid-3" style="grid-template-columns: 1fr 2fr;">
+            <!-- Left Column - Profile Summary -->
+            <div>
+                <!-- Profile Card -->
+                <div class="card" style="margin-bottom: 20px; text-align: center;">
+                    <div class="card-body">
+                        <div class="placeholder-img" style="width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 20px; border: 3px solid #4169E1;">
+                            תמונת פרופיל
+                        </div>
+                        <h3>דני כהן</h3>
+                        <p style="color: #666; margin: 10px 0;">danny.cohen@email.com</p>
+                        <p style="color: #666;">חבר מאז 15 ביולי 2024</p>
+                        
+                        <div style="margin: 20px 0;">
+                            <span style="background: #4ecdc4; color: white; padding: 5px 12px; font-size: 14px; border-radius: 20px;">⭐ Level 7 - סוחר מתקדם</span>
+                        </div>
+                        
+                        <button class="btn btn-primary" style="width: 100%; margin-bottom: 10px;">📷 עדכן תמונה</button>
+                        <button class="btn" style="width: 100%;">✏️ ערוך פרופיל</button>
+                    </div>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="card" style="margin-bottom: 20px;">
+                    <div class="card-header">📊 סטטיסטיקות מהירות</div>
+                    <div class="card-body">
+                        <div style="font-size: 14px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <span>קורסים הושלמו:</span>
+                                <strong>8/12</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <span>שעות למידה:</span>
+                                <strong>89.5</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <span>נקודות XP:</span>
+                                <strong>1,350</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <span>דירוג קהילה:</span>
+                                <strong>#23</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <span>תשואה כוללת:</span>
+                                <strong style="color: green;">+15%</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievements -->
+                <div class="card">
+                    <div class="card-header">🏆 הישגים אחרונים</div>
+                    <div class="card-body">
+                        <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                            <div style="text-align: center; padding: 10px;">
+                                <div style="font-size: 32px;">🌟</div>
+                                <small>סוחר מתחיל</small>
+                            </div>
+                            <div style="text-align: center; padding: 10px;">
+                                <div style="font-size: 32px;">📚</div>
+                                <small>תלמיד מצטיין</small>
+                            </div>
+                            <div style="text-align: center; padding: 10px;">
+                                <div style="font-size: 32px;">🔥</div>
+                                <small>רצף 15 ימים</small>
+                            </div>
+                            <div style="text-align: center; padding: 10px;">
+                                <div style="font-size: 32px;">🎯</div>
+                                <small>צלף מדויק</small>
+                            </div>
+                        </div>
+                        <button class="btn" style="width: 100%; margin-top: 15px;">🏅 ראה את כל ההישגים</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column - Profile Forms -->
+            <div style="grid-column: span 2;">
+                <!-- Personal Information -->
+                <div class="tab-content">
+                    <div class="card" style="margin-bottom: 30px;">
+                        <div class="card-header">👤 פרטים אישיים</div>
+                        <div class="card-body">
+                            <form>
+                                <div class="grid grid-2" style="gap: 20px; margin-bottom: 20px;">
+                                    <div>
+                                        <label style="display: block; margin-bottom: 5px; font-weight: bold;">שם פרטי:</label>
+                                        <input type="text" value="דני" style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+                                    </div>
+                                    <div>
+                                        <label style="display: block; margin-bottom: 5px; font-weight: bold;">שם משפחה:</label>
+                                        <input type="text" value="כהן" style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+                                    </div>
+                                </div>
+
+                                <div style="margin-bottom: 20px;">
+                                    <label style="display: block; margin-bottom: 5px; font-weight: bold;">כתובת אימייל:</label>
+                                    <input type="email" value="danny.cohen@email.com" style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+                                </div>
+
+                                <div class="grid grid-2" style="gap: 20px; margin-bottom: 20px;">
+                                    <div>
+                                        <label style="display: block; margin-bottom: 5px; font-weight: bold;">טלפון:</label>
+                                        <input type="tel" value="050-1234567" style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+                                    </div>
+                                    <div>
+                                        <label style="display: block; margin-bottom: 5px; font-weight: bold;">תאריך לידה:</label>
+                                        <input type="date" value="1990-05-15" style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-2" style="gap: 20px; margin-bottom: 20px;">
+                                    <div>
+                                        <label style="display: block; margin-bottom: 5px; font-weight: bold;">עיר:</label>
+                                        <input type="text" value="תל אביב" style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+                                    </div>
+                                    <div>
+                                        <label style="display: block; margin-bottom: 5px; font-weight: bold;">מקצוע:</label>
+                                        <select style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+                                            <option selected>הייטק</option>
+                                            <option>כלכלה ופיננסים</option>
+                                            <option>עצמאי</option>
+                                            <option>אחר</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div style="margin-bottom: 20px;">
+                                    <label style="display: block; margin-bottom: 5px; font-weight: bold;">ביוגרפיה קצרה:</label>
+                                    <textarea style="width: 100%; height: 100px; padding: 10px; border: 1px solid #ccc;" placeholder="ספר קצת על עצמך...">מפתח תוכנה בן 34, מתחיל בעולם המסחר. מעוניין להשיג עצמאות פיננסית.</textarea>
+                                </div>
+
+                                <button class="btn btn-primary" style="margin-left: 10px;">💾 שמור שינויים</button>
+                                <button class="btn">↶ ביטול</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Learning Preferences -->
+                    <div class="card" style="margin-bottom: 30px;">
+                        <div class="card-header">🎯 העדפות למידה</div>
+                        <div class="card-body">
+                            <div class="grid grid-2" style="gap: 20px;">
+                                <div>
+                                    <label style="display: block; margin-bottom: 5px; font-weight: bold;">שפת ממשק:</label>
+                                    <select style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+                                        <option selected>עברית</option>
+                                        <option>English</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label style="display: block; margin-bottom: 5px; font-weight: bold;">מהירות וידאו ברירת מחדל:</label>
+                                    <select style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+                                        <option>0.75x</option>
+                                        <option selected>1x</option>
+                                        <option>1.25x</option>
+                                        <option>1.5x</option>
+                                        <option>2x</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div style="margin-top: 20px;">
+                                <h5>יעדים אישיים:</h5>
+                                <div class="grid grid-2" style="gap: 20px; margin-top: 10px;">
+                                    <div>
+                                        <label style="display: block; margin-bottom: 5px;">יעד למידה שבועי (שעות):</label>
+                                        <input type="number" value="10" style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+                                    </div>
+                                    <div>
+                                        <label style="display: block; margin-bottom: 5px;">יעד תשואה חודשי (%):</label>
+                                        <input type="number" value="5" style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="margin-top: 20px;">
+                                <h5>הגדרות תצוגה:</h5>
+                                <div style="margin-top: 10px;">
+                                    <label style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                        <input type="checkbox" checked>
+                                        <span>הפעל מצב לילה אוטומטי</span>
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                        <input type="checkbox" checked>
+                                        <span>הצג תמלול אוטומטי בווידאו</span>
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                        <input type="checkbox">
+                                        <span>שמור מיקום צפייה באופן אוטומטי</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary" style="margin-top: 20px;">💾 שמור העדפות</button>
+                        </div>
+                    </div>
+
+                    <!-- Notifications Settings -->
+                    <div class="card" style="margin-bottom: 30px;">
+                        <div class="card-header">🔔 הגדרות התראות</div>
+                        <div class="card-body">
+                            <div style="margin-bottom: 20px;">
+                                <h5>התראות אימייל:</h5>
+                                <div style="margin-top: 10px;">
+                                    <label style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                        <input type="checkbox" checked>
+                                        <span>קורסים חדשים ועדכונים</span>
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                        <input type="checkbox" checked>
+                                        <span>וובינרים וחדרי מסחר חיים</span>
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                        <input type="checkbox">
+                                        <span>פעילות קהילתית (פורום)</span>
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                        <input type="checkbox" checked>
+                                        <span>תזכורות למידה</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div style="margin-bottom: 20px;">
+                                <h5>התראות Push (אפליקציה):</h5>
+                                <div style="margin-top: 10px;">
+                                    <label style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                        <input type="checkbox" checked>
+                                        <span>עדכוני שוק חשובים</span>
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                        <input type="checkbox">
+                                        <span>התראות מסחר (מהיומן)</span>
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                        <input type="checkbox" checked>
+                                        <span>הודעות מהמנטור</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div style="margin-bottom: 20px;">
+                                <h5>תדירות התראות:</h5>
+                                <div style="margin-top: 10px;">
+                                    <label style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                        <input type="radio" name="frequency" checked>
+                                        <span>מיידי</span>
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                        <input type="radio" name="frequency">
+                                        <span>סיכום יומי</span>
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                        <input type="radio" name="frequency">
+                                        <span>סיכום שבועי</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary">💾 שמור הגדרות התראות</button>
+                        </div>
+                    </div>
+
+                    <!-- Privacy Settings -->
+                    <div class="card">
+                        <div class="card-header">🔒 פרטיות וביטחון</div>
+                        <div class="card-body">
+                            <div style="margin-bottom: 20px;">
+                                <h5>ניראות בפורום:</h5>
+                                <div style="margin-top: 10px;">
+                                    <label style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                        <input type="radio" name="forum_privacy" checked>
+                                        <span>הצג שם מלא</span>
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                        <input type="radio" name="forum_privacy">
+                                        <span>הצג שם פרטי בלבד</span>
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                        <input type="radio" name="forum_privacy">
+                                        <span>אנונימי (כינוי)</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div style="margin-bottom: 20px;">
+                                <h5>שיתוף נתונים:</h5>
+                                <div style="margin-top: 10px;">
+                                    <label style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                        <input type="checkbox">
+                                        <span>אפשר שיתוף הישגים עם הקהילה</span>
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                        <input type="checkbox" checked>
+                                        <span>הצג בלוח המובילים</span>
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                        <input type="checkbox">
+                                        <span>שתף סטטיסטיקות למחקר (אנונימי)</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div style="margin-bottom: 20px;">
+                                <h5>ניהול נתונים:</h5>
+                                <div style="margin-top: 10px; display: flex; gap: 10px;">
+                                    <button class="btn">📥 הורד את הנתונים שלי</button>
+                                    <button class="btn" style="color: red;">🗑️ מחק חשבון</button>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary">💾 שמור הגדרות פרטיות</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

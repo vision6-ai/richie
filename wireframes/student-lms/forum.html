@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>פורום דיונים - פורטל תלמידים</title>
+    <link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container-fluid" style="max-width: 100%; padding: 0 20px;">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h3>פורטל הלמידה שלי</h3>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="dashboard.html">דשבורד</a></li>
+                    <li><a href="my-courses.html">הקורסים שלי</a></li>
+                    <li><a href="trading-journal.html">יומן מסחר</a></li>
+                    <li><a href="forum.html" style="font-weight: bold;">קהילה</a></li>
+                    <li><a href="content-library.html">ספריית תוכן</a></li>
+                    <li><a href="support.html">תמיכה</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <span>🔔</span>
+                    <span>שלום, דני!</span>
+                    <button class="btn">פרופיל</button>
+                    <a href="../marketing/home.html" class="btn">יציאה</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="max-width: 1400px;">
+        <!-- Header -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+            <div>
+                <h1>👥 קהילת המסחר</h1>
+                <p style="color: #666;">שתף, למד והתפתח יחד עם קהילת הסוחרים שלנו</p>
+            </div>
+            <div>
+                <button class="btn">🔴 חדרי מסחר חי</button>
+                <button class="btn">👨‍🏫 מנטורים זמינים</button>
+                <button class="btn btn-primary">📝 פוסט חדש</button>
+            </div>
+        </div>
+
+        <div class="grid grid-4" style="grid-template-columns: 1fr 250px;">
+            <!-- Main Forum Area -->
+            <div style="grid-column: span 3;">
+                <!-- Forum Categories -->
+                <div class="card" style="margin-bottom: 20px;">
+                    <div class="card-header">📂 קטגוריות הפורום</div>
+                    <div class="card-body">
+                        <div class="grid grid-6" style="gap: 10px;">
+                            <button class="tab-item active">🏠 כל הנושאים</button>
+                            <button class="tab-item">❓ שאלות כלליות</button>
+                            <button class="tab-item">📊 ניתוחים טכניים</button>
+                            <button class="tab-item">📰 חדשות ועדכונים</button>
+                            <button class="tab-item">🎓 פינת המתחילים</button>
+                            <button class="tab-item">🎯 אסטרטגיות מסחר</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Search and Filters -->
+                <div class="card" style="margin-bottom: 20px;">
+                    <div class="card-body">
+                        <div style="display: flex; gap: 10px; align-items: center;">
+                            <input type="text" placeholder="חפש בפורום..." style="flex: 1; padding: 10px; border: 1px solid #ccc;">
+                            <select style="padding: 10px;">
+                                <option>הכי חדש</option>
+                                <option>הכי פופולארי</option>
+                                <option>הכי רלוונטי</option>
+                                <option>ללא מענה</option>
+                            </select>
+                            <select style="padding: 10px;">
+                                <option>כל הרמות</option>
+                                <option>מתחילים</option>
+                                <option>מתקדמים</option>
+                                <option>מומחים</option>
+                            </select>
+                            <button class="btn">🔍 חפש</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hot/Pinned Posts -->
+                <div class="card" style="margin-bottom: 20px; border: 2px solid #ff6b35;">
+                    <div class="card-header" style="background: #ff6b35; color: white;">🔥 פוסטים חמים וצמודים</div>
+                    <div class="card-body">
+                        <div class="list-item" style="border-bottom: 1px solid #eee; padding: 15px 0;">
+                            <div style="display: flex; gap: 15px;">
+                                <div style="width: 40px; height: 40px; background: #4169E1; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                                    ר
+                                </div>
+                                <div style="flex: 1;">
+                                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
+                                        <span style="background: red; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">📌 נעוץ</span>
+                                        <h4 style="margin: 0;">כללי הפורום - חובה לקרוא!</h4>
+                                        <span style="background: #ff6b35; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">🔥 HOT</span>
+                                    </div>
+                                    <p style="color: #666; margin: 5px 0;">הנחיות חשובות לשימוש נכון ובטוח בפורום הקהילתי</p>
+                                    <div style="display: flex; gap: 15px; font-size: 14px; color: #666;">
+                                        <span>👤 רון כהן - מנטור</span>
+                                        <span>💬 23 תגובות</span>
+                                        <span>👀 847 צפיות</span>
+                                        <span>🕐 לפני 3 ימים</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Forum Posts -->
+                <div class="card">
+                    <div class="card-header">💬 דיונים אחרונים</div>
+                    <div class="card-body">
+                        <!-- Post 1 -->
+                        <div class="list-item" style="border-bottom: 1px solid #eee; padding: 20px 0;">
+                            <div style="display: flex; gap: 15px;">
+                                <div style="width: 50px; height: 50px; background: #45b7d1; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                                    מ
+                                </div>
+                                <div style="flex: 1;">
+                                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                                        <h4 style="margin: 0;">מישהו יכול להסביר על RSI?</h4>
+                                        <span style="background: #4ecdc4; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">🎓 מתחילים</span>
+                                    </div>
+                                    <p style="color: #666; margin: 8px 0;">אני חדש בניתוח טכני ולא מבין איך להשתמש באינדיקטור RSI. יש לכם הסברים פשוטים?</p>
+                                    <div style="display: flex; gap: 15px; font-size: 14px; color: #666;">
+                                        <span>👤 מיכל לוי</span>
+                                        <span style="color: #4ecdc4;">⭐ רמת קארמה: 15</span>
+                                        <span>💬 12 תגובות</span>
+                                        <span>👀 89 צפיות</span>
+                                        <span>🕐 לפני 5 דקות</span>
+                                    </div>
+                                    <div style="margin-top: 10px;">
+                                        <button class="btn" style="font-size: 14px; padding: 5px 10px;">💬 הגב</button>
+                                        <button class="btn" style="font-size: 14px; padding: 5px 10px;">👍 אוהב</button>
+                                        <button class="btn" style="font-size: 14px; padding: 5px 10px;">🔗 שתף</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Post 2 -->
+                        <div class="list-item" style="border-bottom: 1px solid #eee; padding: 20px 0;">
+                            <div style="display: flex; gap: 15px;">
+                                <div style="width: 50px; height: 50px; background: #ff6b35; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                                    ד
+                                </div>
+                                <div style="flex: 1;">
+                                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                                        <h4 style="margin: 0;">ניתוח AAPL - מה דעתכם?</h4>
+                                        <span style="background: #ff6b35; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">📊 ניתוחים</span>
+                                    </div>
+                                    <p style="color: #666; margin: 8px 0;">ראיתי שהמניה שוברת את הרמה של $150. לדעתי יש כאן הזדמנות לLong. מה אתם חושבים?</p>
+                                    <div style="placeholder-img" style="height: 200px; margin: 10px 0; background: #f5f5f5; display: flex; align-items: center; justify-content: center;">
+                                        📊 תמונת גרף AAPL
+                                    </div>
+                                    <div style="display: flex; gap: 15px; font-size: 14px; color: #666;">
+                                        <span>👤 דוד מזרחי</span>
+                                        <span style="color: #ff6b35;">⭐⭐ רמת קארמה: 156</span>
+                                        <span>💬 8 תגובות</span>
+                                        <span>👀 45 צפיות</span>
+                                        <span>🕐 לפני 15 דקות</span>
+                                    </div>
+                                    <div style="margin-top: 10px;">
+                                        <button class="btn" style="font-size: 14px; padding: 5px 10px;">💬 הגב</button>
+                                        <button class="btn" style="font-size: 14px; padding: 5px 10px;">👍 אוהב</button>
+                                        <button class="btn" style="font-size: 14px; padding: 5px 10px;">🔗 שתף</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Post 3 -->
+                        <div class="list-item" style="border-bottom: 1px solid #eee; padding: 20px 0;">
+                            <div style="display: flex; gap: 15px;">
+                                <div style="width: 50px; height: 50px; background: #4ecdc4; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                                    ש
+                                </div>
+                                <div style="flex: 1;">
+                                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                                        <h4 style="margin: 0;">🎉 השגתי 20% תשואה החודש!</h4>
+                                        <span style="background: #4ecdc4; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">🎉 הצלחות</span>
+                                    </div>
+                                    <p style="color: #666; margin: 8px 0;">רציתי לשתף איתכם את ההצלחה! השתמשתי באסטרטגיה שלמדתי בקורס. תודה לכל הקהילה על התמיכה!</p>
+                                    <div style="display: flex; gap: 15px; font-size: 14px; color: #666;">
+                                        <span>👤 שרה אברהם</span>
+                                        <span style="color: #4ecdc4;">⭐⭐⭐ רמת קארמה: 234</span>
+                                        <span>💬 25 תגובות</span>
+                                        <span>👀 156 צפיות</span>
+                                        <span>🕐 לפני 45 דקות</span>
+                                    </div>
+                                    <div style="margin-top: 10px;">
+                                        <button class="btn" style="font-size: 14px; padding: 5px 10px;">💬 הגב</button>
+                                        <button class="btn" style="font-size: 14px; padding: 5px 10px;">🎉 מזל טוב</button>
+                                        <button class="btn" style="font-size: 14px; padding: 5px 10px;">🔗 שתף</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Post 4 -->
+                        <div class="list-item" style="border-bottom: 1px solid #eee; padding: 20px 0;">
+                            <div style="display: flex; gap: 15px;">
+                                <div style="width: 50px; height: 50px; background: #9b59b6; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                                    א
+                                </div>
+                                <div style="flex: 1;">
+                                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                                        <h4 style="margin: 0;">איך להתמודד עם FOMO במסחר?</h4>
+                                        <span style="background: #9b59b6; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">🧠 פסיכולוגיה</span>
+                                    </div>
+                                    <p style="color: #666; margin: 8px 0;">לאחרונה אני חווה הרבה FOMO וזה משפיע על ההחלטות שלי. איך אתם מתמודדים עם זה?</p>
+                                    <div style="display: flex; gap: 15px; font-size: 14px; color: #666;">
+                                        <span>👤 אלון כהן</span>
+                                        <span style="color: #9b59b6;">⭐ רמת קארמה: 67</span>
+                                        <span>💬 18 תגובות</span>
+                                        <span>👀 123 צפיות</span>
+                                        <span>🕐 לפני שעה</span>
+                                    </div>
+                                    <div style="margin-top: 10px;">
+                                        <button class="btn" style="font-size: 14px; padding: 5px 10px;">💬 הגב</button>
+                                        <button class="btn" style="font-size: 14px; padding: 5px 10px;">👍 אוהב</button>
+                                        <button class="btn" style="font-size: 14px; padding: 5px 10px;">🔗 שתף</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div style="text-align: center; margin-top: 20px;">
+                    <button class="btn">← עמוד קודם</button>
+                    <span style="margin: 0 20px; color: #666;">עמוד 1 מתוך 15</span>
+                    <button class="btn">עמוד הבא →</button>
+                </div>
+            </div>
+
+            <!-- Right Sidebar -->
+            <div>
+                <!-- My Forum Stats -->
+                <div class="card" style="margin-bottom: 20px;">
+                    <div class="card-header">📊 הסטטיסטיקות שלי</div>
+                    <div class="card-body">
+                        <div style="text-align: center; margin-bottom: 15px;">
+                            <div style="width: 60px; height: 60px; background: #4169E1; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 24px; margin: 0 auto 10px;">
+                                ד
+                            </div>
+                            <strong>דני (אתה)</strong>
+                            <div style="margin-top: 5px;">
+                                <span style="background: #4ecdc4; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">⭐⭐ רמת קארמה: 89</span>
+                            </div>
+                        </div>
+                        
+                        <div style="font-size: 14px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>💬 פוסטים:</span>
+                                <strong>7</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>🔄 תגובות:</span>
+                                <strong>23</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>👍 לייקים:</span>
+                                <strong>156</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>🏆 תגית:</span>
+                                <strong>תלמיד פעיל</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Online Users -->
+                <div class="card" style="margin-bottom: 20px;">
+                    <div class="card-header">🟢 מחוברים כעת (147)</div>
+                    <div class="card-body">
+                        <div style="font-size: 14px;">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                                <div style="width: 8px; height: 8px; background: green; border-radius: 50%;"></div>
+                                <span>👨‍🏫 רון כהן - מנטור</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                                <div style="width: 8px; height: 8px; background: green; border-radius: 50%;"></div>
+                                <span>שרה אברהם</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                                <div style="width: 8px; height: 8px; background: green; border-radius: 50%;"></div>
+                                <span>מיכל לוי</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                                <div style="width: 8px; height: 8px; background: orange; border-radius: 50%;"></div>
+                                <span>דוד מזרחי - עסוק</span>
+                            </div>
+                            <div style="text-align: center; margin-top: 10px;">
+                                <button class="btn" style="font-size: 12px;">ראה את כל המחוברים</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Forum Guidelines -->
+                <div class="card" style="margin-bottom: 20px;">
+                    <div class="card-header">📋 כללי הפורום</div>
+                    <div class="card-body">
+                        <ul style="font-size: 14px; margin: 0; padding-right: 15px;">
+                            <li>שמור על כבוד הדדי</li>
+                            <li>אסור לתת עצות מסחר</li>
+                            <li>שתף ידע ולא דעות</li>
+                            <li>השתמש בקטגוריות נכונות</li>
+                            <li>אל תפרסם SPAM</li>
+                        </ul>
+                        <button class="btn" style="width: 100%; margin-top: 10px; font-size: 12px;">קרא את הכללים המלאים</button>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="card">
+                    <div class="card-header">⚡ פעולות מהירות</div>
+                    <div class="card-body">
+                        <div style="display: flex; flex-direction: column; gap: 10px;">
+                            <button class="btn btn-primary">📝 פוסט חדש</button>
+                            <button class="btn">🔴 חדר מסחר חי</button>
+                            <button class="btn">👨‍🏫 צ'אט עם מנטור</button>
+                            <button class="btn">📊 שתף ניתוח</button>
+                            <button class="btn">❓ שאל שאלה</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
