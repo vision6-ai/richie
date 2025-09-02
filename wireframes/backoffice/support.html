@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מרכז תמיכה - Backoffice</title>
+    <link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="navbar">
+        <div class="container-fluid" style="max-width: 100%; padding: 0 20px;">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h3>Backoffice - מערכת ניהול</h3>
+                </div>
+                <div class="nav-actions">
+                    <span>שלום, אדמין</span>
+                    <a href="#" class="btn">הגדרות</a>
+                    <a href="../marketing/home.html" class="btn">יציאה</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="layout" style="max-width: 100%; margin: 0; padding: 0 20px;">
+        <!-- Sidebar -->
+        <aside class="layout-sidebar sidebar">
+            <ul class="sidebar-menu">
+                <li>📊 <a href="dashboard.html">לוח בקרה</a></li>
+                <li>👥 <a href="crm-sales.html">CRM ומכירות</a></li>
+                <li>📚 <a href="courses.html">ניהול קורסים</a></li>
+                <li>💰 <a href="financial.html">ניהול פיננסי</a></li>
+                <li style="background: #000; color: #fff;">🎧 תמיכה</li>
+                <li>👨‍🏫 <a href="team.html">ניהול צוות</a></li>
+                <li>📢 <a href="marketing.html">מרכז שיווק</a></li>
+                <li>🤖 <a href="automation.html">אוטומציה ו-AI</a></li>
+                <li>📈 <a href="analytics.html">אנליטיקס</a></li>
+                <li>⚙️ <a href="settings.html">הגדרות מערכת</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="layout-main">
+            <h1>מרכז תמיכה וחווית לקוח</h1>
+            
+            <!-- Support Metrics -->
+            <div class="grid grid-4">
+                <div class="widget">
+                    <div class="widget-title">פניות פתוחות</div>
+                    <div class="widget-value">23</div>
+                    <div class="widget-label">7 דחופות, 16 רגילות</div>
+                </div>
+                <div class="widget">
+                    <div class="widget-title">זמן תגובה ממוצע</div>
+                    <div class="widget-value">2:34</div>
+                    <div class="widget-label">דקות</div>
+                </div>
+                <div class="widget">
+                    <div class="widget-title">שביעות רצון</div>
+                    <div class="widget-value">94%</div>
+                    <div class="widget-label">⭐ 4.7/5</div>
+                </div>
+                <div class="widget">
+                    <div class="widget-title">נפתרו היום</div>
+                    <div class="widget-value">47</div>
+                    <div class="widget-label">מתוך 54 פניות</div>
+                </div>
+            </div>
+
+            <!-- Ticket System -->
+            <div class="card">
+                <div class="card-header">
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>מערכת טיקטים</span>
+                        <div>
+                            <select style="padding: 5px 10px;">
+                                <option>כל הטיקטים</option>
+                                <option>פתוחים</option>
+                                <option>דחופים</option>
+                                <option>ממתינים</option>
+                            </select>
+                            <button class="btn">מיון חכם</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>מספר</th>
+                                <th>נושא</th>
+                                <th>לקוח</th>
+                                <th>עדיפות</th>
+                                <th>נציג</th>
+                                <th>זמן המתנה</th>
+                                <th>סטטוס</th>
+                                <th>פעולות</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background: #ffe6e6;">
+                                <td>#1247</td>
+                                <td>לא יכול להתחבר לחשבון</td>
+                                <td>דני כהן</td>
+                                <td><span style="color: red;">🔴 דחוף</span></td>
+                                <td>יוסי</td>
+                                <td>15 דקות</td>
+                                <td>בטיפול</td>
+                                <td>
+                                    <button class="btn" style="padding: 5px 10px;">פתח</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#1246</td>
+                                <td>בעיה בצפייה בוידאו</td>
+                                <td>מיכל לוי</td>
+                                <td>🟡 בינוני</td>
+                                <td>שרה</td>
+                                <td>32 דקות</td>
+                                <td>פתוח</td>
+                                <td>
+                                    <button class="btn" style="padding: 5px 10px;">פתח</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#1245</td>
+                                <td>שאלה על תשלום</td>
+                                <td>רון אברהם</td>
+                                <td>🟢 נמוך</td>
+                                <td>-</td>
+                                <td>1 שעה</td>
+                                <td>חדש</td>
+                                <td>
+                                    <button class="btn" style="padding: 5px 10px;">הקצה</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="grid grid-2">
+                <!-- Live Chat -->
+                <div class="card">
+                    <div class="card-header">צ'אט חי - שיחה עם דני כהן</div>
+                    <div class="card-body">
+                        <div style="border: 1px solid #ccc; padding: 20px; height: 300px; overflow-y: auto; background: #f9f9f9;">
+                            <div style="margin-bottom: 15px;">
+                                <strong>דני כהן (14:32):</strong>
+                                <p style="background: #fff; padding: 10px; border-radius: 5px; margin-top: 5px;">
+                                    שלום, אני לא מצליח להתחבר לחשבון שלי
+                                </p>
+                            </div>
+                            <div style="margin-bottom: 15px;">
+                                <strong>נציג תמיכה (14:33):</strong>
+                                <p style="background: #e6f3ff; padding: 10px; border-radius: 5px; margin-top: 5px;">
+                                    שלום דני, אני כאן לעזור. מה הודעת השגיאה שאתה מקבל?
+                                </p>
+                            </div>
+                            <div style="margin-bottom: 15px;">
+                                <strong>דני כהן (14:34):</strong>
+                                <p style="background: #fff; padding: 10px; border-radius: 5px; margin-top: 5px;">
+                                    כתוב "סיסמה שגויה" אבל אני בטוח שהיא נכונה
+                                </p>
+                            </div>
+                        </div>
+                        <div style="margin-top: 15px;">
+                            <div style="display: flex; gap: 10px;">
+                                <input type="text" class="form-input" placeholder="הקלד הודעה..." style="flex: 1;">
+                                <button class="btn btn-primary">שלח</button>
+                            </div>
+                            <div style="margin-top: 10px;">
+                                <button class="btn">תשובה מוכנה</button>
+                                <button class="btn">העבר לנציג</button>
+                                <button class="btn">סגור שיחה</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Customer Health Score -->
+                <div class="card">
+                    <div class="card-header">Customer Health Score - דני כהן</div>
+                    <div class="card-body">
+                        <div style="text-align: center; margin-bottom: 30px;">
+                            <div style="font-size: 48px; margin-bottom: 10px;">
+                                <span style="color: orange;">⚠️ 65/100</span>
+                            </div>
+                            <p>דורש תשומת לב</p>
+                        </div>
+                        
+                        <h4>פרמטרים:</h4>
+                        <div style="margin-top: 15px;">
+                            <label>שימוש בפלטפורמה (30%)</label>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 70%;">70%</div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 15px;">
+                            <label>התקדמות בקורסים (30%)</label>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 45%;">45%</div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 15px;">
+                            <label>אינטראקציה (20%)</label>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 60%;">60%</div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 15px;">
+                            <label>תשלומים (20%)</label>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 100%;">100%</div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 30px; padding: 15px; background: #fff3cd;">
+                            <strong>המלצות AI:</strong>
+                            <ul style="padding-right: 20px; margin-top: 10px;">
+                                <li>שלח אימייל עידוד אישי</li>
+                                <li>הצע שיחת ליווי עם מנטור</li>
+                                <li>בדוק אם יש בעיות טכניות</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Knowledge Base -->
+            <div class="card">
+                <div class="card-header">
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>מאגר ידע - מאמרים פופולריים</span>
+                        <button class="btn">+ מאמר חדש</button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="grid grid-3">
+                        <div class="list-item">
+                            <h4>איך לאפס סיסמה</h4>
+                            <p style="font-size: 14px;">נצפה 1,234 פעמים</p>
+                            <small>עודכן לפני 3 ימים</small>
+                        </div>
+                        <div class="list-item">
+                            <h4>בעיות נפוצות בצפייה</h4>
+                            <p style="font-size: 14px;">נצפה 987 פעמים</p>
+                            <small>עודכן לפני שבוע</small>
+                        </div>
+                        <div class="list-item">
+                            <h4>שאלות על תשלומים</h4>
+                            <p style="font-size: 14px;">נצפה 756 פעמים</p>
+                            <small>עודכן לפני שבועיים</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proactive Support -->
+            <div class="card">
+                <div class="card-header">תמיכה פרואקטיבית - התראות אוטומטיות</div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>טריגר</th>
+                                <th>תלמידים</th>
+                                <th>פעולה מומלצת</th>
+                                <th>סטטוס</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>לא התחברו 7+ ימים</td>
+                                <td>34</td>
+                                <td>שלח אימייל תזכורת</td>
+                                <td><button class="btn btn-primary" style="padding: 5px 10px;">בצע</button></td>
+                            </tr>
+                            <tr>
+                                <td>נתקעו באותו שיעור</td>
+                                <td>12</td>
+                                <td>הצע עזרה מנטור</td>
+                                <td><button class="btn btn-primary" style="padding: 5px 10px;">בצע</button></td>
+                            </tr>
+                            <tr>
+                                <td>השלימו קורס</td>
+                                <td>8</td>
+                                <td>שלח ברכות + המלצה</td>
+                                <td><button class="btn btn-primary" style="padding: 5px 10px;">בצע</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

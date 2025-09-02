@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ניהול קורסים - Backoffice</title>
+    <link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="navbar">
+        <div class="container-fluid" style="max-width: 100%; padding: 0 20px;">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h3>Backoffice - מערכת ניהול</h3>
+                </div>
+                <div class="nav-actions">
+                    <span>שלום, אדמין</span>
+                    <a href="#" class="btn">הגדרות</a>
+                    <a href="../marketing/home.html" class="btn">יציאה</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="layout" style="max-width: 100%; margin: 0; padding: 0 20px;">
+        <!-- Sidebar -->
+        <aside class="layout-sidebar sidebar">
+            <ul class="sidebar-menu">
+                <li>📊 <a href="dashboard.html">לוח בקרה</a></li>
+                <li>👥 <a href="crm-sales.html">CRM ומכירות</a></li>
+                <li style="background: #000; color: #fff;">📚 ניהול קורסים</li>
+                <li>💰 <a href="financial.html">ניהול פיננסי</a></li>
+                <li>🎧 <a href="support.html">תמיכה</a></li>
+                <li>👨‍🏫 <a href="team.html">ניהול צוות</a></li>
+                <li>📢 <a href="marketing.html">מרכז שיווק</a></li>
+                <li>🤖 <a href="automation.html">אוטומציה ו-AI</a></li>
+                <li>📈 <a href="analytics.html">אנליטיקס</a></li>
+                <li>⚙️ <a href="settings.html">הגדרות מערכת</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="layout-main">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+                <h1>ניהול קורסים ותכנים</h1>
+                <div>
+                    <button class="btn btn-primary">+ קורס חדש</button>
+                    <button class="btn">ייבוא תוכן</button>
+                    <button class="btn">תבניות</button>
+                </div>
+            </div>
+
+            <!-- Course Overview -->
+            <div class="grid grid-4">
+                <div class="widget">
+                    <div class="widget-title">סה"כ קורסים</div>
+                    <div class="widget-value">24</div>
+                    <div class="widget-label">12 פעילים, 8 טיוטה, 4 ארכיון</div>
+                </div>
+                <div class="widget">
+                    <div class="widget-title">סה"כ שיעורים</div>
+                    <div class="widget-value">487</div>
+                    <div class="widget-label">312 וידאו, 175 טקסט</div>
+                </div>
+                <div class="widget">
+                    <div class="widget-title">תלמידים פעילים</div>
+                    <div class="widget-value">1,847</div>
+                    <div class="widget-label">בכל הקורסים</div>
+                </div>
+                <div class="widget">
+                    <div class="widget-title">השלמה ממוצעת</div>
+                    <div class="widget-value">67%</div>
+                    <div class="widget-label">↑ 5% מחודש שעבר</div>
+                </div>
+            </div>
+
+            <!-- Course List -->
+            <div class="card">
+                <div class="card-header">
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>רשימת קורסים</span>
+                        <div>
+                            <input type="search" placeholder="חיפוש..." style="padding: 5px 10px; margin-left: 10px;">
+                            <select style="padding: 5px 10px;">
+                                <option>כל הקורסים</option>
+                                <option>פעילים</option>
+                                <option>טיוטה</option>
+                                <option>ארכיון</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>שם הקורס</th>
+                                <th>מחבר</th>
+                                <th>תלמידים</th>
+                                <th>השלמה</th>
+                                <th>דירוג</th>
+                                <th>סטטוס</th>
+                                <th>פעולות</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>מסחר למתחילים - מאפס להצלחה</strong><br>
+                                    <small>12 מודולים | 45 שיעורים | 8.5 שעות</small>
+                                </td>
+                                <td>דניאל כהן</td>
+                                <td>523</td>
+                                <td>
+                                    <div class="progress" style="width: 100px; height: 20px;">
+                                        <div class="progress-bar" style="width: 72%;">72%</div>
+                                    </div>
+                                </td>
+                                <td>⭐ 4.8</td>
+                                <td><span style="color: green;">✓ פעיל</span></td>
+                                <td>
+                                    <button class="btn" style="padding: 5px 10px;">ערוך</button>
+                                    <button class="btn" style="padding: 5px 10px;">צפה</button>
+                                    <button class="btn" style="padding: 5px 10px;">⋮</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>ניתוח טכני מתקדם</strong><br>
+                                    <small>16 מודולים | 80 שיעורים | 15 שעות</small>
+                                </td>
+                                <td>מיכאל רוזנברג</td>
+                                <td>342</td>
+                                <td>
+                                    <div class="progress" style="width: 100px; height: 20px;">
+                                        <div class="progress-bar" style="width: 65%;">65%</div>
+                                    </div>
+                                </td>
+                                <td>⭐ 4.9</td>
+                                <td><span style="color: green;">✓ פעיל</span></td>
+                                <td>
+                                    <button class="btn" style="padding: 5px 10px;">ערוך</button>
+                                    <button class="btn" style="padding: 5px 10px;">צפה</button>
+                                    <button class="btn" style="padding: 5px 10px;">⋮</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>אופציות ונגזרים (בבנייה)</strong><br>
+                                    <small>8 מודולים | 32 שיעורים | 6 שעות</small>
+                                </td>
+                                <td>יוסי כהן</td>
+                                <td>0</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><span style="color: orange;">⚠ טיוטה</span></td>
+                                <td>
+                                    <button class="btn" style="padding: 5px 10px;">ערוך</button>
+                                    <button class="btn" style="padding: 5px 10px;">תצוגה</button>
+                                    <button class="btn" style="padding: 5px 10px;">⋮</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Course Builder -->
+            <div class="card">
+                <div class="card-header">בונה קורסים - ניתוח טכני מתקדם</div>
+                <div class="card-body">
+                    <div class="grid grid-2">
+                        <!-- Course Structure -->
+                        <div style="border: 2px solid #ccc; padding: 20px;">
+                            <h3>מבנה הקורס</h3>
+                            <div style="margin-top: 20px;">
+                                <!-- Module 1 -->
+                                <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px;">
+                                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                                        <h4>📁 מודול 1: יסודות הניתוח הטכני</h4>
+                                        <button class="btn" style="padding: 5px 10px;">+ שיעור</button>
+                                    </div>
+                                    <div style="margin-top: 15px; padding-right: 20px;">
+                                        <div class="list-item">
+                                            <div style="display: flex; justify-content: space-between;">
+                                                <span>📹 שיעור 1.1: מבוא לניתוח טכני (15:34)</span>
+                                                <button style="background: none; border: none;">⋮</button>
+                                            </div>
+                                        </div>
+                                        <div class="list-item">
+                                            <div style="display: flex; justify-content: space-between;">
+                                                <span>📹 שיעור 1.2: קריאת גרפים (22:10)</span>
+                                                <button style="background: none; border: none;">⋮</button>
+                                            </div>
+                                        </div>
+                                        <div class="list-item">
+                                            <div style="display: flex; justify-content: space-between;">
+                                                <span>📝 מבחן: בדיקת הבנה</span>
+                                                <button style="background: none; border: none;">⋮</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Module 2 -->
+                                <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px;">
+                                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                                        <h4>📁 מודול 2: נרות יפניים</h4>
+                                        <button class="btn" style="padding: 5px 10px;">+ שיעור</button>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-primary" style="width: 100%;">+ הוסף מודול חדש</button>
+                            </div>
+                        </div>
+
+                        <!-- Lesson Editor -->
+                        <div style="border: 2px solid #ccc; padding: 20px;">
+                            <h3>עריכת שיעור 1.1</h3>
+                            <form style="margin-top: 20px;">
+                                <div class="form-group">
+                                    <label class="form-label">כותרת השיעור</label>
+                                    <input type="text" class="form-input" value="מבוא לניתוח טכני">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">סוג תוכן</label>
+                                    <select class="form-select">
+                                        <option selected>וידאו</option>
+                                        <option>טקסט</option>
+                                        <option>מצגת</option>
+                                        <option>מבחן</option>
+                                        <option>תרגיל</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">קובץ וידאו</label>
+                                    <div style="border: 2px dashed #ccc; padding: 30px; text-align: center;">
+                                        <p>גרור קובץ לכאן או <button class="btn">בחר קובץ</button></p>
+                                        <small>MP4, MOV עד 2GB</small>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">תיאור</label>
+                                    <textarea class="form-textarea" rows="3">בשיעור זה נלמד את היסודות של ניתוח טכני...</textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">חומרים נלווים</label>
+                                    <button class="btn">+ PDF</button>
+                                    <button class="btn">+ תרגיל</button>
+                                    <button class="btn">+ קישור</button>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">מטלות תלמידים</label>
+                                    <div style="border: 1px solid #ccc; padding: 15px; margin-top: 10px;">
+                                        <div style="margin-bottom: 15px;">
+                                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                                                <span>📝 מטלה 1: תרגול ניתוח גרף</span>
+                                                <button style="background: none; border: none;">⋮</button>
+                                            </div>
+                                            <small style="color: #666;">סוג: תרגיל מעשי | משך: 30 דקות | נדרש: כן</small>
+                                        </div>
+                                        <div style="margin-bottom: 15px;">
+                                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                                                <span>📊 מטלה 2: ניתוח מניה של בחירתך</span>
+                                                <button style="background: none; border: none;">⋮</button>
+                                            </div>
+                                            <small style="color: #666;">סוג: פרויקט אישי | משך: 2 שעות | נדרש: לא</small>
+                                        </div>
+                                        <button class="btn" style="width: 100%; margin-top: 10px;">+ הוסף מטלה חדשה</button>
+                                    </div>
+                                </div>
+                                
+                                <div style="display: flex; gap: 10px; margin-top: 30px;">
+                                    <button class="btn btn-primary">שמור שיעור</button>
+                                    <button class="btn">תצוגה מקדימה</button>
+                                    <button class="btn">ביטול</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Student Progress -->
+            <div class="card">
+                <div class="card-header">התקדמות תלמידים - ניתוח טכני מתקדם</div>
+                <div class="card-body">
+                    <div class="grid grid-2">
+                        <div>
+                            <h4>התפלגות התקדמות</h4>
+                            <div class="placeholder-img" style="height: 200px;">
+                                גרף עמודות - התפלגות השלמה
+                            </div>
+                        </div>
+                        <div>
+                            <h4>נקודות נטישה</h4>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>שיעור</th>
+                                        <th>% נטישה</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>מודול 3, שיעור 2</td>
+                                        <td style="color: red;">18%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>מודול 5, שיעור 4</td>
+                                        <td style="color: orange;">12%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>מודול 7, שיעור 1</td>
+                                        <td style="color: orange;">9%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Library -->
+            <div class="card">
+                <div class="card-header">
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>ספריית מדיה</span>
+                        <button class="btn">+ העלה קבצים</button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="grid grid-4">
+                        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+                            <div class="placeholder-img" style="height: 100px;">
+                                <span>📹</span>
+                            </div>
+                            <p style="font-size: 14px; margin-top: 10px;">intro_lesson.mp4</p>
+                            <small>234 MB | 15:34</small>
+                        </div>
+                        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+                            <div class="placeholder-img" style="height: 100px;">
+                                <span>📄</span>
+                            </div>
+                            <p style="font-size: 14px; margin-top: 10px;">workbook.pdf</p>
+                            <small>12 MB</small>
+                        </div>
+                        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+                            <div class="placeholder-img" style="height: 100px;">
+                                <span>🖼️</span>
+                            </div>
+                            <p style="font-size: 14px; margin-top: 10px;">chart_patterns.jpg</p>
+                            <small>2.3 MB</small>
+                        </div>
+                        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+                            <div class="placeholder-img" style="height: 100px;">
+                                <span>📊</span>
+                            </div>
+                            <p style="font-size: 14px; margin-top: 10px;">excel_template.xlsx</p>
+                            <small>450 KB</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

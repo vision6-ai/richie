@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אוטומציה ו-AI - Backoffice</title>
+    <link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="navbar">
+        <div class="container-fluid" style="max-width: 100%; padding: 0 20px;">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h3>Backoffice - מערכת ניהול</h3>
+                </div>
+                <div class="nav-actions">
+                    <span>שלום, אדמין</span>
+                    <a href="#" class="btn">הגדרות</a>
+                    <a href="../marketing/home.html" class="btn">יציאה</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="layout" style="max-width: 100%; margin: 0; padding: 0 20px;">
+        <!-- Sidebar -->
+        <aside class="layout-sidebar sidebar">
+            <ul class="sidebar-menu">
+                <li>📊 <a href="dashboard.html">לוח בקרה</a></li>
+                <li>👥 <a href="crm-sales.html">CRM ומכירות</a></li>
+                <li>📚 <a href="courses.html">ניהול קורסים</a></li>
+                <li>💰 <a href="financial.html">ניהול פיננסי</a></li>
+                <li>🎧 <a href="support.html">תמיכה</a></li>
+                <li>👨‍🏫 <a href="team.html">ניהול צוות</a></li>
+                <li>📢 <a href="marketing.html">מרכז שיווק</a></li>
+                <li style="background: #000; color: #fff;">🤖 אוטומציה ו-AI</li>
+                <li>📈 <a href="analytics.html">אנליטיקס</a></li>
+                <li>⚙️ <a href="settings.html">הגדרות מערכת</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="layout-main">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+                <h1>מרכז אוטומציה ובינה מלאכותית</h1>
+                <div>
+                    <button class="btn">הגדרות AI</button>
+                    <button class="btn btn-primary">+ אוטומציה חדשה</button>
+                </div>
+            </div>
+
+            <!-- Automation Overview -->
+            <div class="grid grid-4">
+                <div class="widget">
+                    <div class="widget-title">אוטומציות פעילות</div>
+                    <div class="widget-value">12</div>
+                    <div class="widget-label">מתוך 15 אוטומציות</div>
+                </div>
+                <div class="widget">
+                    <div class="widget-title">הפעלות החודש</div>
+                    <div class="widget-value">2,847</div>
+                    <div class="widget-label">↗ +23% מחודש שעבר</div>
+                </div>
+                <div class="widget">
+                    <div class="widget-title">שיעור הצלחה</div>
+                    <div class="widget-value">94.2%</div>
+                    <div class="widget-label">מ-2,847 הפעלות</div>
+                </div>
+                <div class="widget">
+                    <div class="widget-title">זמן חסכון</div>
+                    <div class="widget-value">156 שע'</div>
+                    <div class="widget-label">החודש הזה</div>
+                </div>
+            </div>
+
+            <!-- Main Workflows -->
+            <div class="card">
+                <div class="card-header">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span>זרמי עבודה פעילים (Workflows)</span>
+                        <div>
+                            <select style="padding: 5px 10px; margin-left: 10px;">
+                                <option>כל האוטומציות</option>
+                                <option>פעילות</option>
+                                <option>לא פעילות</option>
+                                <option>טעונות תיקון</option>
+                            </select>
+                            <button class="btn">רענן סטטוס</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <!-- Workflow 1: Student Onboarding -->
+                    <div style="border: 2px solid #28a745; margin-bottom: 20px; padding: 20px; border-radius: 8px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                            <div>
+                                <h3 style="margin: 0; color: #28a745;">🎓 Onboarding Student</h3>
+                                <small style="color: #666;">זרם קליטת תלמידים חדשים</small>
+                            </div>
+                            <div style="text-align: left;">
+                                <span style="background: #28a745; color: white; padding: 5px 10px; border-radius: 15px; font-size: 12px;">פעיל</span>
+                                <div style="margin-top: 5px; font-size: 12px; color: #666;">הופעל 847 פעמים החודש</div>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                            <div style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 8px 12px; border-radius: 5px;">
+                                1️⃣ רישום
+                            </div>
+                            <span style="font-size: 18px;">→</span>
+                            <div style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 8px 12px; border-radius: 5px;">
+                                2️⃣ הפעלת גישה
+                            </div>
+                            <span style="font-size: 18px;">→</span>
+                            <div style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 8px 12px; border-radius: 5px;">
+                                3️⃣ מייל ברוכים הבאים
+                            </div>
+                            <span style="font-size: 18px;">→</span>
+                            <div style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 8px 12px; border-radius: 5px;">
+                                4️⃣ הקצאת משימה ראשונה
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; justify-content: space-between; margin-top: 15px; font-size: 14px;">
+                            <span>⏱ זמן ממוצע: 2.3 דקות</span>
+                            <span>✅ שיעור הצלחה: 98.2%</span>
+                            <span>📊 הופעל לאחרונה: לפני 5 דקות</span>
+                        </div>
+                    </div>
+
+                    <!-- Workflow 2: Failed Payment -->
+                    <div style="border: 2px solid #dc3545; margin-bottom: 20px; padding: 20px; border-radius: 8px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                            <div>
+                                <h3 style="margin: 0; color: #dc3545;">💳 Failed Payment</h3>
+                                <small style="color: #666;">זרם טיפול בתשלומים כושלים</small>
+                            </div>
+                            <div style="text-align: left;">
+                                <span style="background: #dc3545; color: white; padding: 5px 10px; border-radius: 15px; font-size: 12px;">פעיל</span>
+                                <div style="margin-top: 5px; font-size: 12px; color: #666;">הופעל 34 פעמים החודש</div>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                            <div style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 8px 12px; border-radius: 5px;">
+                                1️⃣ השהיית גישה
+                            </div>
+                            <span style="font-size: 18px;">→</span>
+                            <div style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 8px 12px; border-radius: 5px;">
+                                2️⃣ SMS התראה
+                            </div>
+                            <span style="font-size: 18px;">→</span>
+                            <div style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 8px 12px; border-radius: 5px;">
+                                3️⃣ ניסיון חיוב חוזר
+                            </div>
+                            <span style="font-size: 18px;">→</span>
+                            <div style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 8px 12px; border-radius: 5px;">
+                                4️⃣ מייל כשל תשלום
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; justify-content: space-between; margin-top: 15px; font-size: 14px;">
+                            <span>⏱ זמן ממוצע: 24 שעות</span>
+                            <span>✅ שיעור הצלחה: 67.8%</span>
+                            <span>📊 הופעל לאחרונה: לפני שעתיים</span>
+                        </div>
+                    </div>
+
+                    <!-- Workflow 3: Course Completion -->
+                    <div style="border: 2px solid #ffc107; margin-bottom: 20px; padding: 20px; border-radius: 8px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                            <div>
+                                <h3 style="margin: 0; color: #ffc107;">🏆 Completion Course</h3>
+                                <small style="color: #666;">זרם סיום קורס והמלצות</small>
+                            </div>
+                            <div style="text-align: left;">
+                                <span style="background: #ffc107; color: black; padding: 5px 10px; border-radius: 15px; font-size: 12px;">פעיל</span>
+                                <div style="margin-top: 5px; font-size: 12px; color: #666;">הופעל 123 פעמים החודש</div>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                            <div style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 8px 12px; border-radius: 5px;">
+                                1️⃣ זיהוי סיום קורס
+                            </div>
+                            <span style="font-size: 18px;">→</span>
+                            <div style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 8px 12px; border-radius: 5px;">
+                                2️⃣ הנפקת תעודה
+                            </div>
+                            <span style="font-size: 18px;">→</span>
+                            <div style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 8px 12px; border-radius: 5px;">
+                                3️⃣ המלצה לקורס הבא
+                            </div>
+                            <span style="font-size: 18px;">→</span>
+                            <div style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 8px 12px; border-radius: 5px;">
+                                4️⃣ בקשת ביקורת
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; justify-content: space-between; margin-top: 15px; font-size: 14px;">
+                            <span>⏱ זמן ממוצע: 5.1 דקות</span>
+                            <span>✅ שיעור הצלחה: 92.7%</span>
+                            <span>📊 הופעל לאחרונה: לפני 45 דקות</span>
+                        </div>
+                    </div>
+
+                    <!-- Workflow 4: Churn Prevention -->
+                    <div style="border: 2px solid #6f42c1; margin-bottom: 20px; padding: 20px; border-radius: 8px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                            <div>
+                                <h3 style="margin: 0; color: #6f42c1;">🚨 Prevention Churn</h3>
+                                <small style="color: #666;">זרם מניעת נטישת תלמידים</small>
+                            </div>
+                            <div style="text-align: left;">
+                                <span style="background: #6f42c1; color: white; padding: 5px 10px; border-radius: 15px; font-size: 12px;">פעיל</span>
+                                <div style="margin-top: 5px; font-size: 12px; color: #666;">הופעל 67 פעמים החודש</div>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                            <div style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 8px 12px; border-radius: 5px;">
+                                1️⃣ זיהוי סיכון נטישה
+                            </div>
+                            <span style="font-size: 18px;">→</span>
+                            <div style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 8px 12px; border-radius: 5px;">
+                                2️⃣ התערבות מותאמת
+                            </div>
+                            <span style="font-size: 18px;">→</span>
+                            <div style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 8px 12px; border-radius: 5px;">
+                                3️⃣ הצעה מיוחדת
+                            </div>
+                            <span style="font-size: 18px;">→</span>
+                            <div style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 8px 12px; border-radius: 5px;">
+                                4️⃣ מעקב והערכה
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; justify-content: space-between; margin-top: 15px; font-size: 14px;">
+                            <span>⏱ זמן ממוצע: 3.7 ימים</span>
+                            <span>✅ שיעור הצלחה: 78.4%</span>
+                            <span>📊 הופעל לאחרונה: אתמול</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Automations -->
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="card-header">אוטומציות שיווק ומכירות</div>
+                    <div class="card-body">
+                        <div class="list-item">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div>
+                                    <strong>📧 Email Marketing Campaigns</strong>
+                                    <div style="font-size: 12px; color: #666; margin-top: 5px;">שליחת דיוור ממוקד לפי סגמנטים</div>
+                                </div>
+                                <span style="background: #28a745; color: white; padding: 3px 8px; border-radius: 10px; font-size: 11px;">פעיל</span>
+                            </div>
+                        </div>
+                        
+                        <div class="list-item">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div>
+                                    <strong>📱 SMS Reminders</strong>
+                                    <div style="font-size: 12px; color: #666; margin-top: 5px;">תזכורות SMS לשיעורים חיים</div>
+                                </div>
+                                <span style="background: #28a745; color: white; padding: 3px 8px; border-radius: 10px; font-size: 11px;">פעיל</span>
+                            </div>
+                        </div>
+                        
+                        <div class="list-item">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div>
+                                    <strong>🎯 Lead Nurturing</strong>
+                                    <div style="font-size: 12px; color: #666; margin-top: 5px;">טיפוח פוטנציאלים בשלבים</div>
+                                </div>
+                                <span style="background: #28a745; color: white; padding: 3px 8px; border-radius: 10px; font-size: 11px;">פעיל</span>
+                            </div>
+                        </div>
+                        
+                        <div class="list-item">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div>
+                                    <strong>💰 Upsell Sequences</strong>
+                                    <div style="font-size: 12px; color: #666; margin-top: 5px;">מכירה מעלה לקורסים מתקדמים</div>
+                                </div>
+                                <span style="background: #ffc107; color: black; padding: 3px 8px; border-radius: 10px; font-size: 11px;">ממתין</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">אוטומציות תמיכה וחוויית משתמש</div>
+                    <div class="card-body">
+                        <div class="list-item">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div>
+                                    <strong>🤖 AI Chatbot Support</strong>
+                                    <div style="font-size: 12px; color: #666; margin-top: 5px;">בוט תמיכה חכם 24/7</div>
+                                </div>
+                                <span style="background: #28a745; color: white; padding: 3px 8px; border-radius: 10px; font-size: 11px;">פעיל</span>
+                            </div>
+                        </div>
+                        
+                        <div class="list-item">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div>
+                                    <strong>📋 Auto Ticket Assignment</strong>
+                                    <div style="font-size: 12px; color: #666; margin-top: 5px;">חלוקה אוטומטית של פניות תמיכה</div>
+                                </div>
+                                <span style="background: #28a745; color: white; padding: 3px 8px; border-radius: 10px; font-size: 11px;">פעיל</span>
+                            </div>
+                        </div>
+                        
+                        <div class="list-item">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div>
+                                    <strong>⭐ Feedback Collection</strong>
+                                    <div style="font-size: 12px; color: #666; margin-top: 5px;">איסוף פידבק אוטומטי מתלמידים</div>
+                                </div>
+                                <span style="background: #28a745; color: white; padding: 3px 8px; border-radius: 10px; font-size: 11px;">פעיל</span>
+                            </div>
+                        </div>
+                        
+                        <div class="list-item">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div>
+                                    <strong>📊 Progress Tracking</strong>
+                                    <div style="font-size: 12px; color: #666; margin-top: 5px;">מעקב והתראות התקדמות</div>
+                                </div>
+                                <span style="background: #dc3545; color: white; padding: 3px 8px; border-radius: 10px; font-size: 11px;">לא פעיל</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Insights & Performance -->
+            <div class="card">
+                <div class="card-header">ביצועי אוטומציות ותובנות AI</div>
+                <div class="card-body">
+                    <div class="grid grid-3">
+                        <div>
+                            <h4>אוטומציות בעלות הביצועים הטובים ביותר</h4>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>אוטומציה</th>
+                                        <th>הצלחה</th>
+                                        <th>חסכון זמן</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Student Onboarding</td>
+                                        <td style="color: green;">98.2%</td>
+                                        <td>67 שע'</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Course Completion</td>
+                                        <td style="color: green;">92.7%</td>
+                                        <td>34 שע'</td>
+                                    </tr>
+                                    <tr>
+                                        <td>AI Chatbot</td>
+                                        <td style="color: green;">89.4%</td>
+                                        <td>28 שע'</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Churn Prevention</td>
+                                        <td style="color: orange;">78.4%</td>
+                                        <td>19 שע'</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div>
+                            <h4>מגמות ביצועים</h4>
+                            <div class="placeholder-img" style="height: 200px;">
+                                גרף קו - ביצועי אוטומציות לאורך זמן:<br><br>
+                                📈 שיעור הצלחה כולל: 94.2%<br>
+                                📈 מגמה: עליה של 3.5% החודש<br>
+                                🕒 חסכון זמן ממוצע: 156 שעות<br>
+                                🎯 יעד חודש הבא: 97%
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4>התראות ופעולות נדרשות</h4>
+                            <div style="border: 1px solid #ccc; padding: 15px; height: 200px; overflow-y: auto;">
+                                <div style="margin-bottom: 15px; padding: 10px; border-right: 3px solid #ffc107;">
+                                    <strong>⚠ זקוק לתשומת לב</strong><br>
+                                    <small>Progress Tracking - לא פעיל כבר 3 ימים</small>
+                                </div>
+                                
+                                <div style="margin-bottom: 15px; padding: 10px; border-right: 3px solid #28a745;">
+                                    <strong>✅ בוצע בהצלחה</strong><br>
+                                    <small>Email Campaign - 847 הפעלות החודש</small>
+                                </div>
+                                
+                                <div style="margin-bottom: 15px; padding: 10px; border-right: 3px solid #17a2b8;">
+                                    <strong>ℹ מידע</strong><br>
+                                    <small>AI Chatbot - מענה ל-234 שאלות היום</small>
+                                </div>
+                                
+                                <div style="margin-bottom: 15px; padding: 10px; border-right: 3px solid #dc3545;">
+                                    <strong>❌ שגיאה</strong><br>
+                                    <small>SMS Reminders - 3 שגיאות שליחה</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="card">
+                <div class="card-header">פעולות מהירות</div>
+                <div class="card-body">
+                    <div class="grid grid-4">
+                        <button class="btn btn-primary" style="height: 60px;">
+                            🔧 הגדר אוטומציה חדשה
+                        </button>
+                        <button class="btn" style="height: 60px;">
+                            📊 צפה בדוח מפורט
+                        </button>
+                        <button class="btn" style="height: 60px;">
+                            🧪 הפעל בדיקת A/B
+                        </button>
+                        <button class="btn" style="height: 60px;">
+                            🤖 אמן מודל AI
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

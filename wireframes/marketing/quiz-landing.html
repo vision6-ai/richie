@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>חידון חינמי - גלה איזה סוג סוחר אתה</title>
+    <link rel="stylesheet" href="../shared/styles.css">
+    <style>
+        .quiz-progress { background: #f0f0f0; height: 10px; margin: 30px 0; }
+        .quiz-progress-bar { background: #000; height: 100%; transition: width 0.3s; }
+        .answer-option { cursor: pointer; transition: all 0.3s; }
+        .answer-option:hover { background: #f0f0f0; transform: translateX(-5px); }
+    </style>
+</head>
+<body>
+    <!-- Minimal Header -->
+    <nav style="padding: 20px 0; text-align: center;">
+        <div class="container">
+            <h3>לוגו</h3>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section style="padding: 40px 20px; text-align: center; background: linear-gradient(135deg, #f9f9f9, #fff);">
+        <div class="container" style="max-width: 800px;">
+            <h1 style="font-size: 48px; margin-bottom: 20px;">
+                גלה איזה סוג סוחר אתה
+            </h1>
+            <p style="font-size: 20px; margin-bottom: 30px;">
+                חידון של 7 שאלות שיעזור לך להבין מה סגנון המסחר המתאים לך ביותר
+            </p>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <div style="text-align: center;">
+                    <div style="font-size: 32px;">⏱️</div>
+                    <p>2 דקות</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 32px;">🎯</div>
+                    <p>7 שאלות</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 32px;">📊</div>
+                    <p>תוצאה מותאמת</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Container -->
+    <section style="padding: 60px 20px;">
+        <div class="container" style="max-width: 700px;">
+            <!-- Start Screen -->
+            <div class="card" id="start-screen">
+                <div class="card-body" style="text-align: center; padding: 40px;">
+                    <div style="font-size: 64px; margin-bottom: 30px;">🎯</div>
+                    <h2>מוכן לגלות את סגנון המסחר שלך?</h2>
+                    <p style="margin: 20px 0; font-size: 18px;">
+                        החידון הזה יעזור לך להבין:<br>
+                        ✓ מה רמת הסיכון המתאימה לך<br>
+                        ✓ איזה סגנון מסחר מתאים לאישיות שלך<br>
+                        ✓ מה האסטרטגיה הטובה ביותר עבורך
+                    </p>
+                    <button class="btn btn-primary btn-large">התחל את החידון</button>
+                </div>
+            </div>
+
+            <!-- Question 1 -->
+            <div class="card" style="display: none;">
+                <div class="card-header">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span>שאלה 1 מתוך 7</span>
+                        <span>14%</span>
+                    </div>
+                    <div class="quiz-progress">
+                        <div class="quiz-progress-bar" style="width: 14%;"></div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h2>כמה זמן אתה יכול להקדיש למסחר ביום?</h2>
+                    <div style="margin-top: 30px;">
+                        <div class="list-item answer-option">
+                            <label style="display: flex; align-items: center; gap: 15px; cursor: pointer;">
+                                <input type="radio" name="q1" style="width: 20px; height: 20px;">
+                                <span>פחות משעה</span>
+                            </label>
+                        </div>
+                        <div class="list-item answer-option">
+                            <label style="display: flex; align-items: center; gap: 15px; cursor: pointer;">
+                                <input type="radio" name="q1" style="width: 20px; height: 20px;">
+                                <span>1-3 שעות</span>
+                            </label>
+                        </div>
+                        <div class="list-item answer-option">
+                            <label style="display: flex; align-items: center; gap: 15px; cursor: pointer;">
+                                <input type="radio" name="q1" style="width: 20px; height: 20px;">
+                                <span>3-5 שעות</span>
+                            </label>
+                        </div>
+                        <div class="list-item answer-option">
+                            <label style="display: flex; align-items: center; gap: 15px; cursor: pointer;">
+                                <input type="radio" name="q1" style="width: 20px; height: 20px;">
+                                <span>יותר מ-5 שעות</span>
+                            </label>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-large" style="width: 100%; margin-top: 30px;">המשך</button>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="card" style="display: none;">
+                <div class="card-header">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span>שאלה 2 מתוך 7</span>
+                        <span>28%</span>
+                    </div>
+                    <div class="quiz-progress">
+                        <div class="quiz-progress-bar" style="width: 28%;"></div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h2>מה היעד העיקרי שלך במסחר?</h2>
+                    <div style="margin-top: 30px;">
+                        <div class="list-item answer-option">
+                            <label style="display: flex; align-items: center; gap: 15px; cursor: pointer;">
+                                <input type="radio" name="q2" style="width: 20px; height: 20px;">
+                                <span>הכנסה נוספת לצד העבודה</span>
+                            </label>
+                        </div>
+                        <div class="list-item answer-option">
+                            <label style="display: flex; align-items: center; gap: 15px; cursor: pointer;">
+                                <input type="radio" name="q2" style="width: 20px; height: 20px;">
+                                <span>להחליף את העבודה הנוכחית</span>
+                            </label>
+                        </div>
+                        <div class="list-item answer-option">
+                            <label style="display: flex; align-items: center; gap: 15px; cursor: pointer;">
+                                <input type="radio" name="q2" style="width: 20px; height: 20px;">
+                                <span>לבנות תיק פנסיוני</span>
+                            </label>
+                        </div>
+                        <div class="list-item answer-option">
+                            <label style="display: flex; align-items: center; gap: 15px; cursor: pointer;">
+                                <input type="radio" name="q2" style="width: 20px; height: 20px;">
+                                <span>ללמוד מיומנות חדשה</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 10px; margin-top: 30px;">
+                        <button class="btn btn-large">חזור</button>
+                        <button class="btn btn-primary btn-large" style="flex: 1;">המשך</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More Questions (3-7) - Placeholder -->
+            <div class="card" style="display: none;">
+                <div class="card-body" style="text-align: center; padding: 40px;">
+                    <h3>שאלות 3-7</h3>
+                    <p>כאן יופיעו שאלות נוספות על:</p>
+                    <ul style="text-align: right; display: inline-block; margin: 20px 0;">
+                        <li>רמת הניסיון שלך</li>
+                        <li>סכום ההשקעה הראשונית</li>
+                        <li>סובלנות לסיכון</li>
+                        <li>סגנון קבלת החלטות</li>
+                        <li>מטרות פיננסיות</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Email Capture Before Results -->
+            <div class="card" style="display: none;">
+                <div class="card-body" style="text-align: center; padding: 40px;">
+                    <div style="font-size: 64px; margin-bottom: 30px;">📧</div>
+                    <h2>התוצאות שלך מוכנות!</h2>
+                    <p style="margin: 20px 0; font-size: 18px;">
+                        הכנס את המייל שלך כדי לקבל:<br>
+                        ✓ ניתוח מפורט של סגנון המסחר שלך<br>
+                        ✓ המלצות מותאמות אישית<br>
+                        ✓ מדריך התחלה מהירה בחינם
+                    </p>
+                    <form style="max-width: 400px; margin: 30px auto;">
+                        <input type="email" class="form-input" placeholder="המייל שלך" style="font-size: 18px; padding: 15px; margin-bottom: 15px;">
+                        <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">
+                            קבל את התוצאות שלי
+                        </button>
+                    </form>
+                    <small style="color: #666;">ללא ספאם, ביטול בכל רגע</small>
+                </div>
+            </div>
+
+            <!-- Results Screen -->
+            <div class="card" style="display: none;">
+                <div class="card-body" style="padding: 40px;">
+                    <div style="text-align: center; margin-bottom: 40px;">
+                        <div style="font-size: 64px; margin-bottom: 20px;">🎯</div>
+                        <h1>אתה סוחר מסוג: Swing Trader</h1>
+                        <p style="font-size: 18px; color: #666;">מתאים לאנשים עם סבלנות, חשיבה אנליטית ויכולת להמתין להזדמנות הנכונה</p>
+                    </div>
+
+                    <div style="border-top: 2px solid #000; padding-top: 30px; margin-top: 30px;">
+                        <h3>הפרופיל שלך:</h3>
+                        <div class="grid grid-2" style="margin-top: 20px;">
+                            <div>
+                                <h4>💪 החוזקות שלך:</h4>
+                                <ul style="padding-right: 20px;">
+                                    <li>סבלנות וחשיבה לטווח בינוני</li>
+                                    <li>יכולת ניתוח טובה</li>
+                                    <li>שליטה עצמית גבוהה</li>
+                                    <li>גישה מאוזנת לסיכון</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4>⚠️ נקודות לשיפור:</h4>
+                                <ul style="padding-right: 20px;">
+                                    <li>נטייה להחזיק פוזיציות יותר מדי זמן</li>
+                                    <li>קושי בקבלת החלטות מהירות</li>
+                                    <li>צורך בפיתוח אסטרטגיות יציאה</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="border-top: 2px solid #000; padding-top: 30px; margin-top: 30px;">
+                        <h3>המלצות מותאמות אישית:</h3>
+                        <div class="list-item" style="background: #f9f9f9;">
+                            <h4>1. התחל עם קורס Swing Trading</h4>
+                            <p>למד את היסודות של מסחר לטווח בינוני, ניתוח טכני ופונדמנטלי</p>
+                        </div>
+                        <div class="list-item" style="background: #f9f9f9;">
+                            <h4>2. תרגל בסימולטור למשך 3 חודשים</h4>
+                            <p>בנה ביטחון ותבדוק אסטרטגיות ללא סיכון כספי</p>
+                        </div>
+                        <div class="list-item" style="background: #f9f9f9;">
+                            <h4>3. התחל עם 10,000 ₪</h4>
+                            <p>סכום התחלתי מומלץ לסגנון המסחר שלך</p>
+                        </div>
+                    </div>
+
+                    <div style="background: #000; color: #fff; padding: 30px; margin-top: 40px; text-align: center;">
+                        <h3 style="color: #fff; border: none;">הצעה מיוחדת - רק עכשיו!</h3>
+                        <p style="margin: 20px 0;">
+                            קורס Swing Trading המלא שלנו<br>
+                            <span style="text-decoration: line-through;">₪599</span> <span style="font-size: 32px;">₪399</span> לחודש
+                        </p>
+                        <button class="btn" style="background: #fff; color: #000; padding: 15px 30px; font-size: 18px;">
+                            התחל את הקורס המומלץ
+                        </button>
+                        <p style="margin-top: 15px; font-size: 14px;">ההנחה תקפה ל-24 שעות הבאות</p>
+                    </div>
+
+                    <div style="margin-top: 40px; text-align: center;">
+                        <h4>שתף את התוצאה שלך:</h4>
+                        <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px; font-size: 32px;">
+                            <a href="#">📘</a>
+                            <a href="#">🐦</a>
+                            <a href="#">📱</a>
+                            <a href="#">📧</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section style="background: #f9f9f9; padding: 60px 20px;">
+        <div class="container" style="max-width: 900px;">
+            <h2 style="text-align: center; margin-bottom: 40px;">למה כדאי לעשות את החידון?</h2>
+            
+            <div class="grid grid-3">
+                <div style="text-align: center;">
+                    <div style="font-size: 48px; margin-bottom: 20px;">🎯</div>
+                    <h3>התאמה אישית</h3>
+                    <p>גלה איזה סגנון מסחר מתאים בדיוק לאישיות ולסגנון החיים שלך</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 48px; margin-bottom: 20px;">💡</div>
+                    <h3>חסוך זמן וכסף</h3>
+                    <p>למד ישר את מה שמתאים לך במקום לנסות הכל</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 48px; margin-bottom: 20px;">📈</div>
+                    <h3>תוצאות מהירות</h3>
+                    <p>התחל עם האסטרטגיה הנכונה מהיום הראשון</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section style="padding: 60px 20px;">
+        <div class="container" style="max-width: 800px;">
+            <h2 style="text-align: center; margin-bottom: 40px;">מי שעשו את החידון אומרים:</h2>
+            
+            <div class="card" style="margin-bottom: 20px;">
+                <div class="card-body">
+                    <p style="font-style: italic; font-size: 18px;">
+                        "החידון עזר לי להבין שאני לא צריך לשבת מול המסך כל היום. Swing Trading מושלם בשבילי!"
+                    </p>
+                    <div style="margin-top: 15px;">
+                        <strong>- דני, 34</strong>
+                        <div>⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-body">
+                    <p style="font-style: italic; font-size: 18px;">
+                        "גיליתי שאני Day Trader טבעי. התוצאות היו מדויקות להפליא!"
+                    </p>
+                    <div style="margin-top: 15px;">
+                        <strong>- מיכל, 28</strong>
+                        <div>⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section style="background: linear-gradient(135deg, #000, #333); color: #fff; padding: 60px 20px; text-align: center;">
+        <div class="container" style="max-width: 600px;">
+            <h2 style="color: #fff; border: none; font-size: 36px;">גלה את סגנון המסחר שלך עכשיו</h2>
+            <p style="font-size: 20px; margin: 20px 0;">
+                חידון חינמי של 2 דקות שיחסוך לך חודשים של ניסוי וטעייה
+            </p>
+            <button class="btn" style="background: #fff; color: #000; padding: 20px 40px; font-size: 20px; margin-top: 30px;">
+                התחל את החידון
+            </button>
+            <p style="margin-top: 20px; font-size: 14px;">
+                כבר 1,247 אנשים גילו את סגנון המסחר שלהם השבוע
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="padding: 30px 20px; text-align: center; background: #f9f9f9;">
+        <div class="container">
+            <p>© 2024 פלטפורמת לימוד מסחר | <a href="#">תנאי שימוש</a> | <a href="#">פרטיות</a></p>
+        </div>
+    </footer>
+</body>
+</html>

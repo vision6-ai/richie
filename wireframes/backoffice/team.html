@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ניהול צוות - Backoffice</title>
+    <link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="navbar">
+        <div class="container-fluid" style="max-width: 100%; padding: 0 20px;">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h3>Backoffice - מערכת ניהול</h3>
+                </div>
+                <div class="nav-actions">
+                    <span>שלום, אדמין</span>
+                    <a href="#" class="btn">הגדרות</a>
+                    <a href="../marketing/home.html" class="btn">יציאה</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="layout" style="max-width: 100%; margin: 0; padding: 0 20px;">
+        <!-- Sidebar -->
+        <aside class="layout-sidebar sidebar">
+            <ul class="sidebar-menu">
+                <li>📊 <a href="dashboard.html">לוח בקרה</a></li>
+                <li>👥 <a href="crm-sales.html">CRM ומכירות</a></li>
+                <li>📚 <a href="courses.html">ניהול קורסים</a></li>
+                <li>💰 <a href="financial.html">ניהול פיננסי</a></li>
+                <li>🎧 <a href="support.html">תמיכה</a></li>
+                <li style="background: #000; color: #fff;">👨‍🏫 ניהול צוות</li>
+                <li>📢 <a href="marketing.html">מרכז שיווק</a></li>
+                <li>🤖 <a href="automation.html">אוטומציה ו-AI</a></li>
+                <li>📈 <a href="analytics.html">אנליטיקס</a></li>
+                <li>⚙️ <a href="settings.html">הגדרות מערכת</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="layout-main">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+                <h1>ניהול צוות ומורים</h1>
+                <div>
+                    <button class="btn btn-primary">+ הזמן מורה חדש</button>
+                    <button class="btn">ייבוא רשימה</button>
+                </div>
+            </div>
+
+            <!-- Team Overview -->
+            <div class="grid grid-4">
+                <div class="widget">
+                    <div class="widget-title">סה"כ צוות</div>
+                    <div class="widget-value">18</div>
+                    <div class="widget-label">12 מורים, 6 מנהלים</div>
+                </div>
+                <div class="widget">
+                    <div class="widget-title">מורים פעילים</div>
+                    <div class="widget-value">14</div>
+                    <div class="widget-label">מתוך 18</div>
+                </div>
+                <div class="widget">
+                    <div class="widget-title">תלמידים היום</div>
+                    <div class="widget-value">23</div>
+                    <div class="widget-label">8 קבוצות, 15 אישי</div>
+                </div>
+                <div class="widget">
+                    <div class="widget-title">דירוג ממוצע</div>
+                    <div class="widget-value">⭐ 4.8</div>
+                    <div class="widget-label">מ-1,234 הערכות</div>
+                </div>
+            </div>
+
+            <!-- Team List -->
+            <div class="card">
+                <div class="card-header">
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>רשימת צוות</span>
+                        <div>
+                            <input type="search" placeholder="חיפוש..." style="padding: 5px 10px; margin-left: 10px;">
+                            <select style="padding: 5px 10px;">
+                                <option>כל הצוות</option>
+                                <option>מורים</option>
+                                <option>מנהלים</option>
+                                <option>פעילים</option>
+                                <option>לא פעילים</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>שם</th>
+                                <th>תפקיד</th>
+                                <th>תלמידים</th>
+                                <th>שיעורים השבוע</th>
+                                <th>דירוג</th>
+                                <th>סטטוס</th>
+                                <th>פעולות</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div style="display: flex; align-items: center;">
+                                        <div style="width: 40px; height: 40px; border-radius: 50%; background: #f0f0f0; margin-left: 10px; display: flex; align-items: center; justify-content: center;">👨</div>
+                                        <div>
+                                            <strong>דניאל כהן</strong><br>
+                                            <small>daniel@example.com</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>מורה בכיר</td>
+                                <td>156</td>
+                                <td>12</td>
+                                <td>⭐ 4.9</td>
+                                <td><span style="color: green;">✓ פעיל</span></td>
+                                <td>
+                                    <button class="btn" style="padding: 5px 10px;">פרופיל</button>
+                                    <button class="btn" style="padding: 5px 10px;">ערוך</button>
+                                    <button class="btn" style="padding: 5px 10px;">⋮</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="display: flex; align-items: center;">
+                                        <div style="width: 40px; height: 40px; border-radius: 50%; background: #f0f0f0; margin-left: 10px; display: flex; align-items: center; justify-content: center;">👩</div>
+                                        <div>
+                                            <strong>מיכל רוזנברג</strong><br>
+                                            <small>michal@example.com</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>מורה מתקדמת</td>
+                                <td>89</td>
+                                <td>8</td>
+                                <td>⭐ 4.7</td>
+                                <td><span style="color: green;">✓ פעילה</span></td>
+                                <td>
+                                    <button class="btn" style="padding: 5px 10px;">פרופיל</button>
+                                    <button class="btn" style="padding: 5px 10px;">ערוך</button>
+                                    <button class="btn" style="padding: 5px 10px;">⋮</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="display: flex; align-items: center;">
+                                        <div style="width: 40px; height: 40px; border-radius: 50%; background: #f0f0f0; margin-left: 10px; display: flex; align-items: center; justify-content: center;">👨</div>
+                                        <div>
+                                            <strong>יוסי לוי</strong><br>
+                                            <small>yossi@example.com</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>מנהל תוכן</td>
+                                <td>-</td>
+                                <td>3</td>
+                                <td>⭐ 4.8</td>
+                                <td><span style="color: green;">✓ פעיל</span></td>
+                                <td>
+                                    <button class="btn" style="padding: 5px 10px;">פרופיל</button>
+                                    <button class="btn" style="padding: 5px 10px;">ערוך</button>
+                                    <button class="btn" style="padding: 5px 10px;">⋮</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Performance Analytics -->
+            <div class="card">
+                <div class="card-header">ניתוח ביצועים</div>
+                <div class="card-body">
+                    <div class="grid grid-2">
+                        <div>
+                            <h4>פעילות שבועית</h4>
+                            <div class="placeholder-img" style="height: 250px;">
+                                גרף עמודות - שעות הוראה לפי מורה
+                            </div>
+                        </div>
+                        <div>
+                            <h4>דירוגי תלמידים</h4>
+                            <div class="placeholder-img" style="height: 250px;">
+                                גרף עוגה - התפלגות דירוגים
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schedule Management -->
+            <div class="card">
+                <div class="card-header">ניהול לוחות זמנים</div>
+                <div class="card-body">
+                    <div class="tabs">
+                        <div class="tab-nav">
+                            <button class="tab-button active">השבוע</button>
+                            <button class="tab-button">החודש</button>
+                            <button class="tab-button">תכנון מראש</button>
+                        </div>
+                        <div class="tab-content">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>מורה</th>
+                                        <th>יום א'</th>
+                                        <th>יום ב'</th>
+                                        <th>יום ג'</th>
+                                        <th>יום ד'</th>
+                                        <th>יום ה'</th>
+                                        <th>סה"כ</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>דניאל כהן</strong></td>
+                                        <td>3 שיעורים</td>
+                                        <td>2 שיעורים</td>
+                                        <td>4 שיעורים</td>
+                                        <td>1 שיעור</td>
+                                        <td>2 שיעורים</td>
+                                        <td><strong>12 שיעורים</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>מיכל רוזנברג</strong></td>
+                                        <td>2 שיעורים</td>
+                                        <td>2 שיעורים</td>
+                                        <td>1 שיעור</td>
+                                        <td>2 שיעורים</td>
+                                        <td>1 שיעור</td>
+                                        <td><strong>8 שיעורים</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>יוסי לוי</strong></td>
+                                        <td>1 ישיבה</td>
+                                        <td>-</td>
+                                        <td>1 ישיבה</td>
+                                        <td>1 ישיבה</td>
+                                        <td>-</td>
+                                        <td><strong>3 ישיבות</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Commission & Payments -->
+            <div class="card">
+                <div class="card-header">עמלות ותשלומים</div>
+                <div class="card-body">
+                    <div class="grid grid-2">
+                        <div>
+                            <h4>עמלות החודש</h4>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>מורה</th>
+                                        <th>שיעורים</th>
+                                        <th>עמלה</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>דניאל כהן</td>
+                                        <td>48</td>
+                                        <td>₪12,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>מיכל רוזנברג</td>
+                                        <td>32</td>
+                                        <td>₪8,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>יוסי לוי</td>
+                                        <td>12</td>
+                                        <td>₪15,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>
+                            <h4>פעולות מהירות</h4>
+                            <div style="display: flex; flex-direction: column; gap: 10px;">
+                                <button class="btn">חשב עמלות החודש</button>
+                                <button class="btn">שלח דוחות תשלום</button>
+                                <button class="btn">ייצא נתוני שכר</button>
+                                <button class="btn">הגדר בונוסים</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הרשמה - פלטפורמת לימוד מסחר</title>
+    <link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body>
+    <!-- Simplified Navigation for Registration -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h3>לוגו</h3>
+                </div>
+                <div style="margin-right: auto;">
+                    <span>כבר יש לך חשבון? </span>
+                    <a href="../student-lms/login.html" class="btn">התחברות</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Registration Form -->
+    <section style="padding: 60px 0;">
+        <div class="container">
+            <div class="layout">
+                <!-- Main Form -->
+                <div class="layout-main">
+                    <div class="card">
+                        <div class="card-header" style="text-align: center; font-size: 28px;">
+                            צור חשבון חדש
+                        </div>
+                        <div class="card-body">
+                            <!-- Progress Indicator -->
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 40px;">
+                                <div style="text-align: center; flex: 1;">
+                                    <div style="width: 40px; height: 40px; border: 2px solid #000; background: #000; color: #fff; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;">1</div>
+                                    <p style="margin-top: 10px;">פרטים אישיים</p>
+                                </div>
+                                <div style="text-align: center; flex: 1;">
+                                    <div style="width: 40px; height: 40px; border: 2px solid #ccc; background: #fff; color: #ccc; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;">2</div>
+                                    <p style="margin-top: 10px; color: #ccc;">בחירת קורס</p>
+                                </div>
+                                <div style="text-align: center; flex: 1;">
+                                    <div style="width: 40px; height: 40px; border: 2px solid #ccc; background: #fff; color: #ccc; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;">3</div>
+                                    <p style="margin-top: 10px; color: #ccc;">תשלום</p>
+                                </div>
+                            </div>
+
+                            <!-- Step 1: Personal Details -->
+                            <form>
+                                <h3 style="margin-bottom: 30px;">פרטים אישיים</h3>
+                                
+                                <div class="grid grid-2">
+                                    <div class="form-group">
+                                        <label class="form-label">שם פרטי *</label>
+                                        <input type="text" class="form-input" placeholder="השם הפרטי שלך">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">שם משפחה *</label>
+                                        <input type="text" class="form-input" placeholder="שם המשפחה שלך">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">אימייל *</label>
+                                    <input type="email" class="form-input" placeholder="your@email.com">
+                                    <small style="color: #666;">זה יהיה שם המשתמש שלך להתחברות</small>
+                                </div>
+
+                                <div class="grid grid-2">
+                                    <div class="form-group">
+                                        <label class="form-label">סיסמה *</label>
+                                        <input type="password" class="form-input" placeholder="לפחות 8 תווים">
+                                        <small style="color: #666;">חייבת לכלול אותיות ומספרים</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">אימות סיסמה *</label>
+                                        <input type="password" class="form-input" placeholder="הקלד שוב את הסיסמה">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">טלפון *</label>
+                                    <input type="tel" class="form-input" placeholder="050-1234567">
+                                </div>
+
+                                <h3 style="margin: 40px 0 30px;">מידע נוסף (אופציונלי)</h3>
+
+                                <div class="form-group">
+                                    <label class="form-label">תאריך לידה</label>
+                                    <input type="date" class="form-input">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">רמת ניסיון במסחר</label>
+                                    <select class="form-select">
+                                        <option>בחר...</option>
+                                        <option>אין לי ניסיון כלל</option>
+                                        <option>התנסיתי מעט (פחות משנה)</option>
+                                        <option>יש לי ניסיון (1-3 שנים)</option>
+                                        <option>סוחר מנוסה (3+ שנים)</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">איך שמעת עלינו?</label>
+                                    <select class="form-select">
+                                        <option>בחר...</option>
+                                        <option>גוגל</option>
+                                        <option>פייסבוק</option>
+                                        <option>המלצה של חבר</option>
+                                        <option>יוטיוב</option>
+                                        <option>אחר</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">קוד קופון (אם יש)</label>
+                                    <input type="text" class="form-input" placeholder="WELCOME30">
+                                </div>
+
+                                <div style="border-top: 1px solid #ccc; margin-top: 40px; padding-top: 30px;">
+                                    <h4>תנאים והסכמות</h4>
+                                    
+                                    <div style="margin: 20px 0;">
+                                        <label style="display: flex; align-items: flex-start; gap: 10px;">
+                                            <input type="checkbox" style="margin-top: 5px;">
+                                            <span>אני מסכים/ה ל<a href="#">תנאי השימוש</a> ול<a href="#">מדיניות הפרטיות</a> של הפלטפורמה *</span>
+                                        </label>
+                                    </div>
+
+                                    <div style="margin: 20px 0;">
+                                        <label style="display: flex; align-items: flex-start; gap: 10px;">
+                                            <input type="checkbox" checked>
+                                            <span>אני מעוניין/ת לקבל עדכונים, טיפים ומבצעים במייל</span>
+                                        </label>
+                                    </div>
+
+                                    <div style="margin: 20px 0;">
+                                        <label style="display: flex; align-items: flex-start; gap: 10px;">
+                                            <input type="checkbox" checked>
+                                            <span>אני מעוניין/ת לקבל התראות ועדכונים ב-WhatsApp</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div style="display: flex; justify-content: space-between; margin-top: 40px;">
+                                    <a href="home.html" class="btn btn-large">← חזור</a>
+                                    <button type="submit" class="btn btn-primary btn-large">המשך לבחירת קורס →</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Benefits -->
+                <aside class="layout-sidebar">
+                    <!-- Security Badge -->
+                    <div class="card" style="text-align: center;">
+                        <div class="card-body">
+                            <div style="font-size: 48px;">🔒</div>
+                            <h4>הרשמה מאובטחת</h4>
+                            <p style="font-size: 14px;">כל המידע שלך מוצפן ומאובטח</p>
+                        </div>
+                    </div>
+
+                    <!-- What You Get -->
+                    <div class="card" style="margin-top: 30px;">
+                        <div class="card-header">מה מקבלים בהרשמה?</div>
+                        <div class="card-body">
+                            <ul style="padding-right: 20px;">
+                                <li style="margin-bottom: 15px;">✓ גישה מיידית לקורס שתבחר</li>
+                                <li style="margin-bottom: 15px;">✓ גישה לקהילה הפרטית</li>
+                                <li style="margin-bottom: 15px;">✓ תוכן חינמי בלעדי</li>
+                                <li style="margin-bottom: 15px;">✓ סימולטור מסחר</li>
+                                <li style="margin-bottom: 15px;">✓ תמיכה 24/7</li>
+                                <li style="margin-bottom: 15px;">✓ ערבות החזר כספי ל-30 יום</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial -->
+                    <div class="card" style="margin-top: 30px; background: #f9f9f9;">
+                        <div class="card-body">
+                            <p style="font-style: italic;">
+                                "ההרשמה הייתה פשוטה ומהירה. תוך 5 דקות כבר התחלתי ללמוד!"
+                            </p>
+                            <div style="margin-top: 15px;">
+                                <strong>- דני כהן</strong><br>
+                                <small>תלמיד פעיל</small><br>
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Money Back Guarantee -->
+                    <div class="card" style="margin-top: 30px; border: 2px solid green;">
+                        <div class="card-body" style="text-align: center;">
+                            <div style="font-size: 48px;">💰</div>
+                            <h4>30 ימי החזר כספי</h4>
+                            <p style="font-size: 14px;">לא מרוצה? תקבל את כספך בחזרה, ללא שאלות</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Support -->
+                    <div class="card" style="margin-top: 30px;">
+                        <div class="card-body" style="text-align: center;">
+                            <h4>צריך עזרה?</h4>
+                            <p style="margin: 15px 0;">הצוות שלנו כאן בשבילך</p>
+                            <button class="btn" style="width: 100%;">💬 צ'אט חי</button>
+                            <p style="margin-top: 10px; font-size: 14px;">או התקשר: 03-1234567</p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section style="background: #f9f9f9; padding: 40px 0;">
+        <div class="container">
+            <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 30px;">
+                <div style="text-align: center;">
+                    <div style="font-size: 32px;">🛡️</div>
+                    <p>אבטחת SSL</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 32px;">💳</div>
+                    <p>תשלום מאובטח</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 32px;">🔐</div>
+                    <p>פרטיות מובטחת</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 32px;">✅</div>
+                    <p>2,847 תלמידים רשומים</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 פלטפורמת לימוד מסחר | כל הזכויות שמורות</p>
+            <div style="margin-top: 20px;">
+                <a href="#">תנאי שימוש</a> | 
+                <a href="#">מדיניות פרטיות</a> | 
+                <a href="contact.html">צור קשר</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

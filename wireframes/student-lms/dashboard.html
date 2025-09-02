@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הדשבורד שלי - פורטל תלמידים</title>
+    <link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container-fluid" style="max-width: 100%; padding: 0 20px;">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h3>פורטל הלמידה שלי</h3>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="dashboard.html" style="font-weight: bold;">דשבורד</a></li>
+                    <li><a href="my-courses.html">הקורסים שלי</a></li>
+                    <li><a href="trading-journal.html">יומן מסחר</a></li>
+                    <li><a href="community.html">קהילה</a></li>
+                    <li><a href="content-library.html">ספריית תוכן</a></li>
+                    <li><a href="support.html">תמיכה</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <span>🔔</span>
+                    <span>שלום, דני!</span>
+                    <button class="btn">פרופיל</button>
+                    <a href="../marketing/home.html" class="btn">יציאה</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="max-width: 1400px;">
+        <!-- Welcome Header -->
+        <div style="margin-bottom: 30px;">
+            <h1>שלום דני, ברוך שובך! 👋</h1>
+            <p style="font-size: 18px; color: #666;">יום שני, 1 בינואר 2024</p>
+        </div>
+
+        <!-- Main Stats Row -->
+        <div class="grid grid-4">
+            <div class="widget">
+                <div class="widget-title">📚 התקדמות כללית</div>
+                <div class="widget-value">67%</div>
+                <div class="progress" style="margin-top: 10px;">
+                    <div class="progress-bar" style="width: 67%;">8/12 קורסים</div>
+                </div>
+            </div>
+            <div class="widget">
+                <div class="widget-title">🔥 רצף למידה</div>
+                <div class="widget-value">15</div>
+                <div class="widget-label">ימים ברציפות</div>
+            </div>
+            <div class="widget">
+                <div class="widget-title">⏱️ זמן למידה השבוע</div>
+                <div class="widget-value">8.5</div>
+                <div class="widget-label">שעות (יעד: 10)</div>
+            </div>
+            <div class="widget">
+                <div class="widget-title">🏆 נקודות XP</div>
+                <div class="widget-value">1,250</div>
+                <div class="widget-label">דירוג: #23</div>
+            </div>
+        </div>
+
+        <!-- Two Column Layout -->
+        <div class="grid grid-2" style="grid-template-columns: 2fr 1fr;">
+            <!-- Left Column -->
+            <div>
+                <!-- Continue Learning -->
+                <div class="card">
+                    <div class="card-header">
+                        <div style="display: flex; justify-content: space-between;">
+                            <span>המשך מאיפה שהפסקת</span>
+                            <a href="my-courses.html" style="font-size: 14px;">ראה את כל הקורסים ←</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div style="display: flex; gap: 20px; align-items: center;">
+                            <div class="placeholder-img" style="width: 150px; height: 100px;">
+                                תמונת קורס
+                            </div>
+                            <div style="flex: 1;">
+                                <h3>ניתוח טכני למתקדמים</h3>
+                                <p>מודול 4: דפוסי היפוך מגמה - שיעור 3 מתוך 8</p>
+                                <div class="progress" style="margin-top: 10px;">
+                                    <div class="progress-bar" style="width: 75%;">75% הושלם</div>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-large">▶ המשך צפייה</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trading Performance -->
+                <div class="card">
+                    <div class="card-header">
+                        <div style="display: flex; justify-content: space-between;">
+                            <span>📊 ביצועי מסחר - 30 ימים אחרונים</span>
+                            <a href="trading-journal.html" style="font-size: 14px;">ליומן המסחר המלא ←</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="grid grid-3">
+                            <div class="stat-item" style="border: 1px solid #ccc; padding: 15px;">
+                                <span class="stat-number" style="color: green;">+12.5%</span>
+                                <span class="stat-label">תשואה כוללת</span>
+                            </div>
+                            <div class="stat-item" style="border: 1px solid #ccc; padding: 15px;">
+                                <span class="stat-number">67%</span>
+                                <span class="stat-label">אחוז הצלחה</span>
+                            </div>
+                            <div class="stat-item" style="border: 1px solid #ccc; padding: 15px;">
+                                <span class="stat-number">24</span>
+                                <span class="stat-label">עסקאות</span>
+                            </div>
+                        </div>
+                        <div class="placeholder-img" style="height: 200px; margin-top: 20px;">
+                            גרף עקומת הון
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recommended Content -->
+                <div class="card">
+                    <div class="card-header">💡 המלצות AI - כדאי לך לצפות ב...</div>
+                    <div class="card-body">
+                        <div class="grid grid-2">
+                            <div class="list-item">
+                                <h4>🎥 וובינר: ניהול סיכונים</h4>
+                                <p style="font-size: 14px; color: #666;">מחר ב-20:00</p>
+                                <button class="btn" style="margin-top: 10px;">הרשם</button>
+                            </div>
+                            <div class="list-item">
+                                <h4>📖 מדריך: אינדיקטורים</h4>
+                                <p style="font-size: 14px; color: #666;">15 דקות קריאה</p>
+                                <button class="btn" style="margin-top: 10px;">קרא</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div>
+                <!-- Weekly Goals -->
+                <div class="card">
+                    <div class="card-header">🎯 משימות השבוע</div>
+                    <div class="card-body">
+                        <div style="margin-bottom: 15px;">
+                            <label style="display: flex; align-items: center; gap: 10px;">
+                                <input type="checkbox" checked>
+                                <span>השלם מודול 4</span>
+                            </label>
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <label style="display: flex; align-items: center; gap: 10px;">
+                                <input type="checkbox" checked>
+                                <span>רשום 5 עסקאות ביומן</span>
+                            </label>
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <label style="display: flex; align-items: center; gap: 10px;">
+                                <input type="checkbox">
+                                <span>צפה בוובינר חי</span>
+                            </label>
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <label style="display: flex; align-items: center; gap: 10px;">
+                                <input type="checkbox">
+                                <span>השתתף בפורום</span>
+                            </label>
+                        </div>
+                        <div class="progress" style="margin-top: 20px;">
+                            <div class="progress-bar" style="width: 50%;">2/4 הושלמו</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievements -->
+                <div class="card">
+                    <div class="card-header">🏅 ההישגים שלך</div>
+                    <div class="card-body">
+                        <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                            <div style="text-align: center; padding: 10px;">
+                                <div style="font-size: 32px;">🌟</div>
+                                <small>סוחר מתחיל</small>
+                            </div>
+                            <div style="text-align: center; padding: 10px;">
+                                <div style="font-size: 32px;">📚</div>
+                                <small>לומד שקדן</small>
+                            </div>
+                            <div style="text-align: center; padding: 10px;">
+                                <div style="font-size: 32px;">🔥</div>
+                                <small>רצף 7 ימים</small>
+                            </div>
+                            <div style="text-align: center; padding: 10px; opacity: 0.3;">
+                                <div style="font-size: 32px;">🎯</div>
+                                <small>נעול</small>
+                            </div>
+                        </div>
+                        <button class="btn" style="width: 100%; margin-top: 15px;">ראה את כל ההישגים</button>
+                    </div>
+                </div>
+
+                <!-- Community Activity -->
+                <div class="card">
+                    <div class="card-header">👥 פעילות קהילתית</div>
+                    <div class="card-body">
+                        <div class="list-item">
+                            <strong>מיכל לוי</strong>
+                            <p style="font-size: 14px; margin-top: 5px;">"מישהו יכול להסביר על RSI?"</p>
+                            <small style="color: #666;">לפני 5 דקות בפורום</small>
+                        </div>
+                        <div class="list-item">
+                            <strong>רון כהן</strong>
+                            <p style="font-size: 14px; margin-top: 5px;">שיתף ניתוח על AAPL</p>
+                            <small style="color: #666;">לפני 12 דקות</small>
+                        </div>
+                        <button class="btn btn-primary" style="width: 100%; margin-top: 15px;">כנס לקהילה</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Upcoming Events -->
+        <div class="card">
+            <div class="card-header">📅 אירועים קרובים</div>
+            <div class="card-body">
+                <div class="grid grid-4">
+                    <div class="list-item" style="text-align: center;">
+                        <strong>היום 20:00</strong>
+                        <p>חדר מסחר חי</p>
+                        <button class="btn" style="margin-top: 10px;">הצטרף</button>
+                    </div>
+                    <div class="list-item" style="text-align: center;">
+                        <strong>מחר 19:00</strong>
+                        <p>וובינר: ניהול סיכונים</p>
+                        <button class="btn" style="margin-top: 10px;">הרשם</button>
+                    </div>
+                    <div class="list-item" style="text-align: center;">
+                        <strong>רביעי 18:00</strong>
+                        <p>מפגש מנטורינג</p>
+                        <button class="btn" style="margin-top: 10px;">קבע</button>
+                    </div>
+                    <div class="list-item" style="text-align: center;">
+                        <strong>ראשון 20:00</strong>
+                        <p>סקירת שוק שבועית</p>
+                        <button class="btn" style="margin-top: 10px;">תזכורת</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Actions Bar -->
+        <div class="card" style="background: #f9f9f9;">
+            <div class="card-body">
+                <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 10px;">
+                    <button class="btn btn-primary">📚 המשך ללמוד</button>
+                    <button class="btn">📝 רשום עסקה</button>
+                    <button class="btn">💬 שאל את המנטור</button>
+                    <button class="btn">📊 צפה בניתוחים</button>
+                    <button class="btn">🎥 וובינרים מוקלטים</button>
+                    <button class="btn">📖 מדריכים</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Assistant -->
+        <div style="position: fixed; bottom: 20px; left: 20px; border: 2px solid #000; background: #fff; padding: 15px; border-radius: 5px; width: 300px;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <strong>🤖 עוזר AI</strong>
+                <button style="background: none; border: none; cursor: pointer;">✖</button>
+            </div>
+            <p style="margin-top: 10px; font-size: 14px;">שלום דני! שמתי לב שלא סיימת את השיעור על נרות יפניים. רוצה להמשיך מאיפה שהפסקת?</p>
+            <div style="margin-top: 10px; display: flex; gap: 10px;">
+                <button class="btn btn-primary" style="flex: 1;">כן, בוא נמשיך</button>
+                <button class="btn" style="flex: 1;">מאוחר יותר</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

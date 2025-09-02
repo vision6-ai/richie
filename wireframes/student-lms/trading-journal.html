@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>יומן מסחר - פורטל תלמידים</title>
+    <link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container-fluid" style="max-width: 100%; padding: 0 20px;">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h3>פורטל הלמידה שלי</h3>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="dashboard.html">דשבורד</a></li>
+                    <li><a href="my-courses.html">הקורסים שלי</a></li>
+                    <li><a href="trading-journal.html" style="font-weight: bold;">יומן מסחר</a></li>
+                    <li><a href="community.html">קהילה</a></li>
+                    <li><a href="content-library.html">ספריית תוכן</a></li>
+                    <li><a href="support.html">תמיכה</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <span>🔔</span>
+                    <span>שלום, דני!</span>
+                    <button class="btn">פרופיל</button>
+                    <a href="../marketing/home.html" class="btn">יציאה</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="max-width: 1600px;">
+        <!-- Trading Journal Header -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+            <div>
+                <h1>📊 יומן המסחר שלי</h1>
+                <p style="color: #666; margin-top: 5px;">נהל ועקוב אחר העסקאות שלך</p>
+            </div>
+            <div>
+                <button class="btn">📥 ייבא נתונים</button>
+                <button class="btn">📤 ייצא לאקסל</button>
+                <button class="btn btn-primary">+ עסקה חדשה</button>
+            </div>
+        </div>
+
+        <!-- Summary Stats -->
+        <div class="grid grid-4" style="margin-bottom: 20px;">
+            <div class="widget">
+                <div class="widget-title">💰 סכום התחלתי</div>
+                <div class="widget-value">₪3,000</div>
+                <div class="widget-label">הון בסיס</div>
+            </div>
+            <div class="widget">
+                <div class="widget-title">💵 סכום נוכחי</div>
+                <div class="widget-value">₪3,300</div>
+                <div class="widget-label" style="color: green;">↗ +₪300</div>
+            </div>
+            <div class="widget">
+                <div class="widget-title">📈 תשואה כוללת (נומינאלי)</div>
+                <div class="widget-value" style="color: green;">+15%</div>
+                <div class="widget-label">לפני עמלות</div>
+            </div>
+            <div class="widget">
+                <div class="widget-title">📊 ליום</div>
+                <div class="widget-value" style="color: green;">+2.3%</div>
+                <div class="widget-label">+₪69</div>
+            </div>
+        </div>
+
+        <!-- Trading Stats -->
+        <div class="grid grid-3" style="margin-bottom: 30px;">
+            <div class="widget">
+                <div class="widget-title">✅ עסקאות רווח</div>
+                <div class="widget-value" style="color: green;">10</div>
+                <div class="widget-label">מתוך 23 עסקאות</div>
+            </div>
+            <div class="widget">
+                <div class="widget-title">💱 המרה USD/ILS</div>
+                <div class="widget-value">3.70</div>
+                <div class="widget-label">דולר/שקל נוכחי</div>
+            </div>
+            <div class="widget">
+                <div class="widget-title">❌ עסקאות הפסד</div>
+                <div class="widget-value" style="color: red;">3</div>
+                <div class="widget-label">Win Rate: 76.9%</div>
+            </div>
+        </div>
+
+        <!-- Real Return Calculation -->
+        <div class="card" style="margin-bottom: 30px;">
+            <div class="card-header">💡 חישוב תשואה ריאלית</div>
+            <div class="card-body">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <strong>נוסחה: תשואה ריאלית = סה"כ רווח - עמלות (קניה × 0.25%)</strong>
+                    </div>
+                    <div style="font-size: 24px; color: green;">
+                        <strong>₪299.5</strong>
+                    </div>
+                </div>
+                <div style="margin-top: 10px; font-size: 14px; color: #666;">
+                    עמלות כוללות: ₪7.5 | רווח נטו: 9.98%
+                </div>
+            </div>
+        </div>
+
+        <!-- Filters and Controls -->
+        <div class="card">
+            <div class="card-header">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span>📋 יומן העסקאות</span>
+                    <div>
+                        <input type="date" style="padding: 8px; margin-left: 10px;" placeholder="מתאריך">
+                        <input type="date" style="padding: 8px; margin-left: 10px;" placeholder="עד תאריך">
+                        <select style="padding: 8px; margin-left: 10px;">
+                            <option>כל הסטטוסים</option>
+                            <option>פוזיציות פתוחות</option>
+                            <option>פוזיציות סגורות</option>
+                        </select>
+                        <input type="text" placeholder="חפש מניה..." style="padding: 8px; margin-left: 10px;">
+                        <button class="btn">🔍 סנן</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <!-- Trading Journal Table -->
+                <div style="overflow-x: auto;">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>מניה</th>
+                                <th>תאריך כניסה</th>
+                                <th>מחיר כניסה</th>
+                                <th>מוצר</th>
+                                <th>שיטת מסחר</th>
+                                <th>כמות</th>
+                                <th>גודל פוזיציה</th>
+                                <th>סטופ לוס</th>
+                                <th>סיכון לעסקה</th>
+                                <th>סיכון %</th>
+                                <th>מחיר מכירה</th>
+                                <th>P&L</th>
+                                <th>עמלות</th>
+                                <th>פעולות</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Open Position 1 -->
+                            <tr style="background-color: #fffbf0;">
+                                <td><strong>AAPL</strong></td>
+                                <td>15/12/2023</td>
+                                <td>$189.50</td>
+                                <td>מניה רגילה</td>
+                                <td>Swing Trading</td>
+                                <td>10</td>
+                                <td>₪7,011</td>
+                                <td>$180.00</td>
+                                <td>₪351</td>
+                                <td>5.0%</td>
+                                <td style="color: #999;">-</td>
+                                <td style="color: orange;">פתוח</td>
+                                <td>₪17.5</td>
+                                <td>
+                                    <button class="btn" style="padding: 3px 8px; font-size: 12px;">סגור</button>
+                                    <button class="btn" style="padding: 3px 8px; font-size: 12px;">ערוך</button>
+                                </td>
+                            </tr>
+                            
+                            <!-- Closed Position - Profit -->
+                            <tr>
+                                <td><strong>GOOGL</strong></td>
+                                <td>10/12/2023</td>
+                                <td>$138.20</td>
+                                <td>מניה רגילה</td>
+                                <td>בלוק דובי</td>
+                                <td>5</td>
+                                <td>₪2,555</td>
+                                <td>$130.00</td>
+                                <td>₪152</td>
+                                <td>5.9%</td>
+                                <td>$145.80</td>
+                                <td style="color: green;">+₪140.4</td>
+                                <td>₪12.8</td>
+                                <td>
+                                    <button class="btn" style="padding: 3px 8px; font-size: 12px;">פרטים</button>
+                                    <button class="btn" style="padding: 3px 8px; font-size: 12px;">מחק</button>
+                                </td>
+                            </tr>
+                            
+                            <!-- Closed Position - Loss -->
+                            <tr>
+                                <td><strong>TSLA</strong></td>
+                                <td>08/12/2023</td>
+                                <td>$248.50</td>
+                                <td>מניה רגילה</td>
+                                <td>Day Trading</td>
+                                <td>3</td>
+                                <td>₪2,756</td>
+                                <td>$235.00</td>
+                                <td>₪149</td>
+                                <td>5.4%</td>
+                                <td>$238.90</td>
+                                <td style="color: red;">-₪106.2</td>
+                                <td>₪13.8</td>
+                                <td>
+                                    <button class="btn" style="padding: 3px 8px; font-size: 12px;">פרטים</button>
+                                    <button class="btn" style="padding: 3px 8px; font-size: 12px;">מחק</button>
+                                </td>
+                            </tr>
+                            
+                            <!-- Open Position 2 -->
+                            <tr style="background-color: #fffbf0;">
+                                <td><strong>MSFT</strong></td>
+                                <td>14/12/2023</td>
+                                <td>$374.20</td>
+                                <td>מניה רגילה</td>
+                                <td>Trend Following</td>
+                                <td>2</td>
+                                <td>₪2,766</td>
+                                <td>$355.00</td>
+                                <td>₪142</td>
+                                <td>5.1%</td>
+                                <td style="color: #999;">-</td>
+                                <td style="color: orange;">פתוח</td>
+                                <td>₪6.9</td>
+                                <td>
+                                    <button class="btn" style="padding: 3px 8px; font-size: 12px;">סגור</button>
+                                    <button class="btn" style="padding: 3px 8px; font-size: 12px;">ערוך</button>
+                                </td>
+                            </tr>
+                            
+                            <!-- Closed Position - Profit -->
+                            <tr>
+                                <td><strong>NVDA</strong></td>
+                                <td>05/12/2023</td>
+                                <td>$465.80</td>
+                                <td>מניה רגילה</td>
+                                <td>Momentum</td>
+                                <td>4</td>
+                                <td>₪6,889</td>
+                                <td>$440.00</td>
+                                <td>₪382</td>
+                                <td>5.5%</td>
+                                <td>$489.30</td>
+                                <td style="color: green;">+₪347.2</td>
+                                <td>₪34.4</td>
+                                <td>
+                                    <button class="btn" style="padding: 3px 8px; font-size: 12px;">פרטים</button>
+                                    <button class="btn" style="padding: 3px 8px; font-size: 12px;">מחק</button>
+                                </td>
+                            </tr>
+                            
+                            <!-- Open Position 3 -->
+                            <tr style="background-color: #fffbf0;">
+                                <td><strong>AMZN</strong></td>
+                                <td>16/12/2023</td>
+                                <td>$153.40</td>
+                                <td>מניה רגילה</td>
+                                <td>Value Investing</td>
+                                <td>8</td>
+                                <td>₪4,540</td>
+                                <td>$145.00</td>
+                                <td>₪248</td>
+                                <td>5.5%</td>
+                                <td style="color: #999;">-</td>
+                                <td style="color: orange;">פתוח</td>
+                                <td>₪11.4</td>
+                                <td>
+                                    <button class="btn" style="padding: 3px 8px; font-size: 12px;">סגור</button>
+                                    <button class="btn" style="padding: 3px 8px; font-size: 12px;">ערוך</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add New Trade Modal Placeholder -->
+        <div class="card" style="margin-top: 30px;">
+            <div class="card-header">📝 הוסף עסקה חדשה</div>
+            <div class="card-body">
+                <!-- Trade Type Selection -->
+                <div style="margin-bottom: 20px; display: flex; gap: 20px;">
+                    <label style="display: flex; align-items: center; cursor: pointer;">
+                        <input type="radio" name="tradeType" value="buy" checked style="margin-left: 8px;">
+                        <span style="font-size: 16px; font-weight: bold;">📈 עסקת קנייה (Long)</span>
+                    </label>
+                    <label style="display: flex; align-items: center; cursor: pointer;">
+                        <input type="radio" name="tradeType" value="sell" style="margin-left: 8px;">
+                        <span style="font-size: 16px; font-weight: bold;">📉 עסקת מכירה (Short)</span>
+                    </label>
+                </div>
+                
+                <div class="grid grid-3">
+                    <div class="form-group">
+                        <label class="form-label">סימבול מניה</label>
+                        <input type="text" class="form-input" placeholder="AAPL">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">תאריך כניסה</label>
+                        <input type="date" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">פוזיציה</label>
+                        <select class="form-select">
+                            <option>Long</option>
+                            <option>Short</option>
+                            <option>Swing</option>
+                            <option>Day</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">שיטת מסחר</label>
+                        <select class="form-select">
+                            <option>פרייצ'</option>
+                            <option>התנגדות כניסת קונים</option>
+                            <option>בלוקע דובי</option>
+                            <option>בלוקע שורי</option>
+                            <option>כובד הבוקר</option>
+                            <option>כובד הערב</option>
+                            <option>פסגה כפולה</option>
+                            <option>תחתית כפולה</option>
+                            <option>דגל שורי</option>
+                            <option>דגל דובי</option>
+                            <option>סטייה חיובית</option>
+                            <option>סטייה שלילית</option>
+                            <option>GAP & GO</option>
+                            <option>Reversal Gap</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">כמות מניות</label>
+                        <input type="number" class="form-input" placeholder="10">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">מחיר כניסה</label>
+                        <input type="number" class="form-input" placeholder="189.50">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">גודל פוזיציה (אוטומטי)</label>
+                        <input type="text" class="form-input" placeholder="₪1,895" disabled style="background: #f5f5f5;">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">טרייל סטופ</label>
+                        <input type="number" class="form-input" placeholder="5%">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">סיכון לעסקה (אוטומטי)</label>
+                        <input type="text" class="form-input" placeholder="₪95" disabled style="background: #f5f5f5;">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">מחיר מכירה</label>
+                        <input type="number" class="form-input" placeholder="רק למכירה - אופציונלי">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">עמלות</label>
+                        <input type="number" class="form-input" placeholder="0.25%">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">משתתף מכליה</label>
+                        <select class="form-select">
+                            <option>לא</option>
+                            <option>כן</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 20px;">
+                    <button class="btn btn-primary">💾 שמור עסקה</button>
+                    <button class="btn">🧮 חשב סיכון</button>
+                    <button class="btn">❌ בטל</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Trading Analytics -->
+        <div class="grid grid-2" style="margin-top: 30px;">
+            <div class="card">
+                <div class="card-header">📊 ניתוח ביצועים</div>
+                <div class="card-body">
+                    <div class="placeholder-img" style="height: 250px;">
+                        גרף P&L לאורך זמן:<br><br>
+                        📈 מגמה כללית: עלייה<br>
+                        💰 רווח מקסימלי: +₪347<br>
+                        📉 הפסד מקסימלי: -₪106<br>
+                        🎯 Win Rate: 76.9%<br>
+                        📊 Sharpe Ratio: 1.23
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">🏆 סיכום חודשי</div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>חודש</th>
+                                <th>עסקאות</th>
+                                <th>Win Rate</th>
+                                <th>רווח</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>דצמבר 2023</td>
+                                <td>23</td>
+                                <td>76.9%</td>
+                                <td style="color: green;">+15%</td>
+                            </tr>
+                            <tr>
+                                <td>נובמבר 2023</td>
+                                <td>18</td>
+                                <td>61.1%</td>
+                                <td style="color: green;">+8.4%</td>
+                            </tr>
+                            <tr>
+                                <td>אוקטובר 2023</td>
+                                <td>15</td>
+                                <td>53.3%</td>
+                                <td style="color: red;">-2.1%</td>
+                            </tr>
+                            <tr>
+                                <td>ספטמבר 2023</td>
+                                <td>12</td>
+                                <td>75.0%</td>
+                                <td style="color: green;">+12.3%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

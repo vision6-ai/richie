@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>פלטפורמת לימוד מסחר - Wireframes</title>
+    <link rel="stylesheet" href="shared/styles.css">
+    <style>
+        .section-header {
+            background: #000;
+            color: #fff;
+            padding: 15px;
+            margin: 30px 0 20px 0;
+            text-align: center;
+        }
+        .wireframe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .wireframe-card {
+            border: 2px solid #000;
+            padding: 20px;
+            background: #fff;
+            transition: transform 0.2s;
+        }
+        .wireframe-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .wireframe-card h3 {
+            margin-bottom: 10px;
+            border: none;
+            padding: 0;
+        }
+        .wireframe-card p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .wireframe-card a {
+            display: inline-block;
+            padding: 8px 15px;
+            border: 2px solid #000;
+            text-decoration: none;
+            color: #000;
+        }
+        .wireframe-card a:hover {
+            background: #000;
+            color: #fff;
+        }
+        .status-badge {
+            display: inline-block;
+            padding: 3px 8px;
+            font-size: 12px;
+            margin-right: 10px;
+        }
+        .status-ready {
+            background: #d4edda;
+            border: 1px solid #28a745;
+        }
+        .status-pending {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="max-width: 1200px;">
+        <!-- Header -->
+        <div style="text-align: center; padding: 40px 0;">
+            <h1 style="font-size: 48px; margin-bottom: 20px;">פלטפורמת לימוד מסחר במניות</h1>
+            <p style="font-size: 20px; color: #666;">Wireframes - אב טיפוס להצגה ללקוח</p>
+        </div>
+
+        <!-- Project Overview -->
+        <div class="card">
+            <div class="card-header">
+                <h2 style="border: none; margin: 0;">סקירת פרויקט</h2>
+            </div>
+            <div class="card-body">
+                <div class="grid grid-3">
+                    <div>
+                        <h4>🎯 מטרת הפרויקט</h4>
+                        <p>פלטפורמת למידה מקיפה למסחר במניות עבור השוק הישראלי, הכוללת מערכת ניהול מתקדמת, פורטל תלמידים ואתר שיווקי.</p>
+                    </div>
+                    <div>
+                        <h4>🛠️ טכנולוגיות</h4>
+                        <ul style="padding-right: 20px;">
+                            <li>Frontend: React + HTML</li>
+                            <li>Backend: Next.js</li>
+                            <li>Database: Supabase</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>📊 סטטוס</h4>
+                        <p>שלב Wireframes - המתנה לאישור לקוח</p>
+                        <div class="progress" style="margin-top: 10px;">
+                            <div class="progress-bar" style="width: 20%;">20% - Wireframes</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Marketing Website Section -->
+        <div class="section-header">
+            <h2 style="margin: 0; border: none;">🌐 אתר שיווק והרשמה</h2>
+        </div>
+        <div class="wireframe-grid">
+            <div class="wireframe-card">
+                <span class="status-badge status-ready">✓ מוכן</span>
+                <h3>דף הבית</h3>
+                <p>דף נחיתה ראשי עם הצעת ערך, תכנים, המלצות ומחירים</p>
+                <a href="marketing/home.html">צפה בעמוד ←</a>
+            </div>
+            <div class="wireframe-card">
+                <span class="status-badge status-ready">✓ מוכן</span>
+                <h3>אודות</h3>
+                <p>הסיפור שלנו, השיטה, הצוות</p>
+                <a href="marketing/about.html">צפה בעמוד ←</a>
+            </div>
+            <div class="wireframe-card">
+                <span class="status-badge status-ready">✓ מוכן</span>
+                <h3>קורסים</h3>
+                <p>מידע מפורט על כל הקורסים</p>
+                <a href="marketing/courses.html">צפה בעמוד ←</a>
+            </div>
+            <div class="wireframe-card">
+                <span class="status-badge status-ready">✓ מוכן</span>
+                <h3>תוכן חינמי</h3>
+                <p>מדריכים, וובינרים, כלים</p>
+                <a href="marketing/free-content.html">צפה בעמוד ←</a>
+            </div>
+            <div class="wireframe-card">
+                <span class="status-badge status-ready">✓ מוכן</span>
+                <h3>סיפורי הצלחה</h3>
+                <p>המלצות ותוצאות של תלמידים</p>
+                <a href="marketing/success-stories.html">צפה בעמוד ←</a>
+            </div>
+            <div class="wireframe-card">
+                <span class="status-badge status-ready">✓ מוכן</span>
+                <h3>בלוג</h3>
+                <p>מאמרים וחדשות מהתחום</p>
+                <a href="marketing/blog.html">צפה בעמוד ←</a>
+            </div>
+            <div class="wireframe-card">
+                <span class="status-badge status-ready">✓ מוכן</span>
+                <h3>צור קשר</h3>
+                <p>טופס יצירת קשר ופרטי התקשרות</p>
+                <a href="marketing/contact.html">צפה בעמוד ←</a>
+            </div>
+            <div class="wireframe-card">
+                <span class="status-badge status-ready">✓ מוכן</span>
+                <h3>הרשמה</h3>
+                <p>טופס הרשמה מלא</p>
+                <a href="marketing/register.html">צפה בעמוד ←</a>
+            </div>
+            <div class="wireframe-card">
+                <span class="status-badge status-ready">✓ מוכן</span>
+                <h3>דף נחיתה - וובינר</h3>
+                <p>הרשמה לוובינר חינמי</p>
+                <a href="marketing/webinar-landing.html">צפה בעמוד ←</a>
+            </div>
+            <div class="wireframe-card">
+                <span class="status-badge status-ready">✓ מוכן</span>
+                <h3>דף נחיתה - חידון</h3>
+                <p>חידון התאמה אישית</p>
+                <a href="marketing/quiz-landing.html">צפה בעמוד ←</a>
+            </div>
+        </div>
+
+        <!-- Backoffice Section -->
+        <div class="section-header">
+            <h2 style="margin: 0; border: none;">⚙️ מערכת ניהול - Backoffice</h2>
+        </div>
+        <div class="wireframe-grid">
+            <div class="wireframe-card">
+                <span class="status-badge status-ready">✓ מוכן</span>
+                <h3>לוח בקרה ראשי</h3>
+                <p>תמונת מצב כללית, KPIs, התראות ופעילות בזמן אמת</p>
+                <a href="backoffice/dashboard.html">צפה בעמוד ←</a>
+            </div>
+            <div class="wireframe-card">
+                <span class="status-badge status-ready">✓ מוכן</span>
+                <h3>CRM ומכירות</h3>
+                <p>ניהול לידים, pipeline, אוטומציות</p>
+                <a href="backoffice/crm-sales.html">צפה בעמוד ←</a>
+            </div>
+            <div class="wireframe-card">
+                <span class="status-badge status-ready">✓ מוכן</span>
+                <h3>ניהול קורסים</h3>
+                <p>יצירה ועריכת קורסים, תכנים</p>
+                <a href="backoffice/courses.html">צפה בעמוד ←</a>
+            </div>
+            <div class="wireframe-card">
+                <span class="status-badge status-ready">✓ מוכן</span>
+                <h3>ניהול פיננסי</h3>
+                <p>מנויים, תשלומים, דוחות</p>
+                <a href="backoffice/financial.html">צפה בעמוד ←</a>
+            </div>
+            <div class="wireframe-card">
+                <span class="status-badge status-ready">✓ מוכן</span>
+                <h3>מרכז תמיכה</h3>
+                <p>טיקטים, צ'אט, knowledge base</p>
+                <a href="backoffice/support.html">צפה בעמוד ←</a>
+            </div>
+            <div class="wireframe-card">
+                <span class="status-badge status-ready">✓ מוכן</span>
+                <h3>ניהול צוות</h3>
+                <p>מנטורים, הרשאות, עמלות</p>
+                <a href="backoffice/team.html">צפה בעמוד ←</a>
+            </div>
+            <div class="wireframe-card">
+                <span class="status-badge status-ready">✓ מוכן</span>
+                <h3>מרכז שיווק</h3>
+                <p>קמפיינים, לידים, דפי נחיתה</p>
+                <a href="backoffice/marketing.html">צפה בעמוד ←</a>
+            </div>
+            <div class="wireframe-card">
+                <span class="status-badge status-ready">✓ מוכן</span>
+                <h3>אוטומציה ו-AI</h3>
+                <p>ווירקפלו, בוט תמיכה, אילוף מערכת</p>
+                <a href="backoffice/automation.html">צפה בעמוד ←</a>
+            </div>
+            <div class="wireframe-card">
+                <span class="status-badge status-ready">✓ מוכן</span>
+                <h3>דוחות ואנליטיקס</h3>
+                <p>מדדים, גרפים, ביצועים מתקדמים</p>
+                <a href="backoffice/analytics.html">צפה בעמוד ←</a>
+            </div>
+            <div class="wireframe-card">
+                <span class="status-badge status-ready">✓ מוכן</span>
+                <h3>הגדרות מערכת</h3>
+                <p>קונפיגורציה, אינטגרציות, אבטחה</p>
+                <a href="backoffice/settings.html">צפה בעמוד ←</a>
+            </div>
+        </div>
+
+        <!-- Student LMS Section -->
+        <div class="section-header">
+            <h2 style="margin: 0; border: none;">🎓 פורטל תלמידים - LMS</h2>
+        </div>
+        <div class="wireframe-grid">
+            <div class="wireframe-card">
+                <span class="status-badge status-ready">✓ מוכן</span>
+                <h3>דשבורד תלמיד</h3>
+                <p>התקדמות, משימות, ביצועים, המלצות AI</p>
+                <a href="student-lms/dashboard.html">צפה בעמוד ←</a>
+            </div>
+            <div class="wireframe-card">
+                <span class="status-badge status-pending">בפיתוח</span>
+                <h3>הקורסים שלי</h3>
+                <p>רשימת קורסים והתקדמות</p>
+                <a href="#">בקרוב</a>
+            </div>
+            <div class="wireframe-card">
+                <span class="status-badge status-pending">בפיתוח</span>
+                <h3>נגן קורס</h3>
+                <p>צפייה בשיעורים, הערות, מבחנים</p>
+                <a href="#">בקרוב</a>
+            </div>
+            <div class="wireframe-card">
+                <span class="status-badge status-pending">בפיתוח</span>
+                <h3>יומן מסחר</h3>
+                <p>רישום עסקאות וניתוח ביצועים</p>
+                <a href="#">בקרוב</a>
+            </div>
+            <div class="wireframe-card">
+                <span class="status-badge status-pending">בפיתוח</span>
+                <h3>קהילה</h3>
+                <p>פורום, צ'אט, חדרי מסחר</p>
+                <a href="#">בקרוב</a>
+            </div>
+            <div class="wireframe-card">
+                <span class="status-badge status-pending">בפיתוח</span>
+                <h3>סימולטור מסחר</h3>
+                <p>תרגול מסחר וירטואלי</p>
+                <a href="#">בקרוב</a>
+            </div>
+        </div>
+
+        <!-- Features Overview -->
+        <div class="card">
+            <div class="card-header">
+                <h2 style="border: none; margin: 0;">✨ תכונות עיקריות</h2>
+            </div>
+            <div class="card-body">
+                <div class="grid grid-2">
+                    <div>
+                        <h4>🎯 למשתמש הקצה</h4>
+                        <ul style="padding-right: 20px;">
+                            <li>למידה מדורגת ומובנית</li>
+                            <li>יומן מסחר עם ניתוחים</li>
+                            <li>סימולטור מסחר בזמן אמת</li>
+                            <li>גמיפיקציה ותמריצים</li>
+                            <li>קהילה תומכת 24/7</li>
+                            <li>AI מנטור דיגיטלי</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>💼 למנהל המערכת</h4>
+                        <ul style="padding-right: 20px;">
+                            <li>דשבורד בזמן אמת</li>
+                            <li>ניהול CRM מתקדם</li>
+                            <li>אוטומציות שיווק ומכירות</li>
+                            <li>ניתוחים ו-AI insights</li>
+                            <li>ניהול צוות ועמלות</li>
+                            <li>דוחות מותאמים אישית</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Next Steps -->
+        <div class="card" style="background: #f9f9f9;">
+            <div class="card-header">
+                <h2 style="border: none; margin: 0;">🚀 השלבים הבאים</h2>
+            </div>
+            <div class="card-body">
+                <div class="grid grid-4">
+                    <div style="text-align: center;">
+                        <div style="font-size: 32px; margin-bottom: 10px;">1️⃣</div>
+                        <strong>אישור Wireframes</strong>
+                        <p style="font-size: 14px; color: #666;">סקירה ואישור המבנה</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 32px; margin-bottom: 10px;">2️⃣</div>
+                        <strong>עיצוב UI/UX</strong>
+                        <p style="font-size: 14px; color: #666;">עיצוב ויזואלי מלא</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 32px; margin-bottom: 10px;">3️⃣</div>
+                        <strong>פיתוח Frontend</strong>
+                        <p style="font-size: 14px; color: #666;">React + Next.js</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 32px; margin-bottom: 10px;">4️⃣</div>
+                        <strong>Backend + DB</strong>
+                        <p style="font-size: 14px; color: #666;">Supabase integration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div style="text-align: center; padding: 40px 0;">
+            <h2>יש שאלות או הערות?</h2>
+            <p style="margin: 20px 0;">נשמח לקבל את המשוב שלך על ה-Wireframes</p>
+            <div>
+                <button class="btn btn-primary btn-large">אשר את המבנה</button>
+                <button class="btn btn-large">בקש שינויים</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 פלטפורמת לימוד מסחר - Wireframes v1.0</p>
+            <p style="margin-top: 10px; font-size: 14px; color: #666;">
+                נבנה עם ❤️ עבור הלקוח
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

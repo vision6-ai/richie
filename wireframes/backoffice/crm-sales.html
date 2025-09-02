@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM ומכירות - Backoffice</title>
+    <link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="navbar">
+        <div class="container-fluid" style="max-width: 100%; padding: 0 20px;">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h3>Backoffice - מערכת ניהול</h3>
+                </div>
+                <div class="nav-actions">
+                    <span>שלום, אדמין</span>
+                    <a href="#" class="btn">הגדרות</a>
+                    <a href="../marketing/home.html" class="btn">יציאה</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="layout" style="max-width: 100%; margin: 0; padding: 0 20px;">
+        <!-- Sidebar -->
+        <aside class="layout-sidebar sidebar">
+            <ul class="sidebar-menu">
+                <li>📊 <a href="dashboard.html">לוח בקרה</a></li>
+                <li style="background: #000; color: #fff;">👥 CRM ומכירות</li>
+                <li>📚 <a href="courses.html">ניהול קורסים</a></li>
+                <li>💰 <a href="financial.html">ניהול פיננסי</a></li>
+                <li>🎧 <a href="support.html">תמיכה</a></li>
+                <li>👨‍🏫 <a href="team.html">ניהול צוות</a></li>
+                <li>📢 <a href="marketing.html">מרכז שיווק</a></li>
+                <li>🤖 <a href="automation.html">אוטומציה ו-AI</a></li>
+                <li>📈 <a href="analytics.html">אנליטיקס</a></li>
+                <li>⚙️ <a href="settings.html">הגדרות מערכת</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="layout-main">
+            <h1>CRM וניהול מכירות</h1>
+            
+            <!-- Pipeline Overview -->
+            <div class="card">
+                <div class="card-header">
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>Pipeline מכירות - ינואר 2024</span>
+                        <div>
+                            <button class="btn">+ ליד חדש</button>
+                            <button class="btn">ייבוא לידים</button>
+                            <button class="btn">ייצוא</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div style="display: flex; gap: 20px; overflow-x: auto; padding-bottom: 20px;">
+                        <!-- Stage 1: New Leads -->
+                        <div style="min-width: 250px; border: 2px solid #ccc; padding: 15px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                                <h4>לידים חדשים (47)</h4>
+                                <span>₪235,000</span>
+                            </div>
+                            <div class="list-item" style="margin-bottom: 10px;">
+                                <strong>דני כהן</strong>
+                                <p style="font-size: 14px;">₪5,000 | קורס מתחילים</p>
+                                <small>נוסף לפני 2 שעות</small>
+                            </div>
+                            <div class="list-item" style="margin-bottom: 10px;">
+                                <strong>מיכל לוי</strong>
+                                <p style="font-size: 14px;">₪8,000 | קורס מתקדמים</p>
+                                <small>נוסף לפני 5 שעות</small>
+                            </div>
+                            <div class="list-item" style="margin-bottom: 10px;">
+                                <strong>רון אברהם</strong>
+                                <p style="font-size: 14px;">₪15,000 | VIP</p>
+                                <small>נוסף היום</small>
+                            </div>
+                            <button class="btn" style="width: 100%;">ראה עוד...</button>
+                        </div>
+
+                        <!-- Stage 2: Qualified -->
+                        <div style="min-width: 250px; border: 2px solid #ccc; padding: 15px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                                <h4>באיכות (23)</h4>
+                                <span>₪138,000</span>
+                            </div>
+                            <div class="list-item" style="margin-bottom: 10px;">
+                                <strong>שרה ישראלי</strong>
+                                <p style="font-size: 14px;">₪6,000 | קורס מתחילים</p>
+                                <small>3 ימים בשלב</small>
+                            </div>
+                            <div class="list-item" style="margin-bottom: 10px;">
+                                <strong>יוסי כהן</strong>
+                                <p style="font-size: 14px;">₪10,000 | קורס מתקדמים</p>
+                                <small>5 ימים בשלב</small>
+                            </div>
+                        </div>
+
+                        <!-- Stage 3: Demo -->
+                        <div style="min-width: 250px; border: 2px solid #ccc; padding: 15px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                                <h4>הדגמה (15)</h4>
+                                <span>₪105,000</span>
+                            </div>
+                            <div class="list-item" style="margin-bottom: 10px;">
+                                <strong>נועה רבינוביץ</strong>
+                                <p style="font-size: 14px;">₪7,000 | קורס מתחילים</p>
+                                <small>מחר 14:00</small>
+                            </div>
+                        </div>
+
+                        <!-- Stage 4: Negotiation -->
+                        <div style="min-width: 250px; border: 2px solid #ccc; padding: 15px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                                <h4>משא ומתן (8)</h4>
+                                <span>₪72,000</span>
+                            </div>
+                            <div class="list-item" style="margin-bottom: 10px;">
+                                <strong>אבי מזרחי</strong>
+                                <p style="font-size: 14px;">₪9,000 | קורס מתקדמים</p>
+                                <small>ממתין לאישור</small>
+                            </div>
+                        </div>
+
+                        <!-- Stage 5: Closed Won -->
+                        <div style="min-width: 250px; border: 2px solid green; padding: 15px; background: #f0fff0;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                                <h4>נסגר - זכייה (12)</h4>
+                                <span style="color: green;">₪96,000</span>
+                            </div>
+                            <div class="list-item" style="margin-bottom: 10px;">
+                                <strong>רחל גולדברג</strong>
+                                <p style="font-size: 14px;">₪8,000 | קורס מתקדמים</p>
+                                <small>נסגר היום ✓</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lead Details & Actions -->
+            <div class="grid grid-2">
+                <!-- Lead Details -->
+                <div class="card">
+                    <div class="card-header">פרטי ליד - דני כהן</div>
+                    <div class="card-body">
+                        <div class="grid grid-2">
+                            <div>
+                                <label style="font-weight: bold;">שם מלא:</label>
+                                <p>דני כהן</p>
+                            </div>
+                            <div>
+                                <label style="font-weight: bold;">טלפון:</label>
+                                <p>052-1234567</p>
+                            </div>
+                            <div>
+                                <label style="font-weight: bold;">אימייל:</label>
+                                <p>danny@gmail.com</p>
+                            </div>
+                            <div>
+                                <label style="font-weight: bold;">מקור:</label>
+                                <p>Google Ads</p>
+                            </div>
+                            <div>
+                                <label style="font-weight: bold;">תאריך יצירה:</label>
+                                <p>01/01/2024</p>
+                            </div>
+                            <div>
+                                <label style="font-weight: bold;">ערך פוטנציאלי:</label>
+                                <p>₪5,000</p>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 20px;">
+                            <label style="font-weight: bold;">הערות:</label>
+                            <textarea class="form-textarea" rows="3">מעוניין בקורס למתחילים, ביקש מידע על אפשרויות תשלום</textarea>
+                        </div>
+                        
+                        <div style="margin-top: 20px;">
+                            <label style="font-weight: bold;">Lead Score:</label>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%;">75/100</div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 20px; display: flex; gap: 10px;">
+                            <button class="btn btn-primary">המר ללקוח</button>
+                            <button class="btn">שלח אימייל</button>
+                            <button class="btn">התקשר</button>
+                            <button class="btn">זמן פגישה</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity Timeline -->
+                <div class="card">
+                    <div class="card-header">היסטוריית פעילות</div>
+                    <div class="card-body">
+                        <div style="border-right: 3px solid #ccc; padding-right: 20px;">
+                            <div style="margin-bottom: 20px;">
+                                <strong>היום 14:32</strong>
+                                <p>📧 נשלח אימייל מעקב</p>
+                            </div>
+                            <div style="margin-bottom: 20px;">
+                                <strong>היום 10:15</strong>
+                                <p>📞 שיחה - משך 5 דקות</p>
+                                <p style="font-size: 14px; color: #666;">מעוניין, ביקש זמן לחשוב</p>
+                            </div>
+                            <div style="margin-bottom: 20px;">
+                                <strong>אתמול 16:45</strong>
+                                <p>📝 הוקצה לנציג: יוסי</p>
+                            </div>
+                            <div style="margin-bottom: 20px;">
+                                <strong>אתמול 16:30</strong>
+                                <p>🎯 ליד חדש נוסף למערכת</p>
+                                <p style="font-size: 14px; color: #666;">מקור: טופס באתר</p>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 30px;">
+                            <h4>הוסף פעילות:</h4>
+                            <select class="form-select" style="margin-bottom: 10px;">
+                                <option>שיחת טלפון</option>
+                                <option>אימייל</option>
+                                <option>פגישה</option>
+                                <option>הערה</option>
+                            </select>
+                            <textarea class="form-textarea" rows="2" placeholder="תיאור הפעילות..."></textarea>
+                            <button class="btn btn-primary" style="margin-top: 10px;">הוסף</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Automation Rules -->
+            <div class="card">
+                <div class="card-header">
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>חוקי אוטומציה פעילים</span>
+                        <button class="btn">+ חוק חדש</button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>שם החוק</th>
+                                <th>טריגר</th>
+                                <th>פעולה</th>
+                                <th>סטטוס</th>
+                                <th>פעולות</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Welcome Series</td>
+                                <td>ליד חדש נוצר</td>
+                                <td>שלח סדרת אימיילים (7 ימים)</td>
+                                <td><span style="color: green;">✓ פעיל</span></td>
+                                <td>
+                                    <button class="btn" style="padding: 5px 10px;">ערוך</button>
+                                    <button class="btn" style="padding: 5px 10px;">השהה</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Lead Scoring</td>
+                                <td>כל אינטראקציה</td>
+                                <td>עדכן ניקוד ליד</td>
+                                <td><span style="color: green;">✓ פעיל</span></td>
+                                <td>
+                                    <button class="btn" style="padding: 5px 10px;">ערוך</button>
+                                    <button class="btn" style="padding: 5px 10px;">השהה</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Hot Lead Alert</td>
+                                <td>Lead Score > 80</td>
+                                <td>התראה למנהל מכירות</td>
+                                <td><span style="color: green;">✓ פעיל</span></td>
+                                <td>
+                                    <button class="btn" style="padding: 5px 10px;">ערוך</button>
+                                    <button class="btn" style="padding: 5px 10px;">השהה</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Sales Metrics -->
+            <div class="grid grid-4">
+                <div class="widget">
+                    <div class="widget-title">המרות החודש</div>
+                    <div class="widget-value">24%</div>
+                    <div class="widget-label">↑ 5% מחודש שעבר</div>
+                </div>
+                <div class="widget">
+                    <div class="widget-title">זמן המרה ממוצע</div>
+                    <div class="widget-value">8.5</div>
+                    <div class="widget-label">ימים</div>
+                </div>
+                <div class="widget">
+                    <div class="widget-title">ערך עסקה ממוצע</div>
+                    <div class="widget-value">₪7,250</div>
+                    <div class="widget-label">↑ ₪500 מחודש שעבר</div>
+                </div>
+                <div class="widget">
+                    <div class="widget-title">יעד חודשי</div>
+                    <div class="widget-value">68%</div>
+                    <div class="progress" style="margin-top: 10px;">
+                        <div class="progress-bar" style="width: 68%;">₪340K / ₪500K</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

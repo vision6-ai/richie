@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אנליטיקס ודוחות - Backoffice</title>
+    <link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="navbar">
+        <div class="container-fluid" style="max-width: 100%; padding: 0 20px;">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h3>Backoffice - מערכת ניהול</h3>
+                </div>
+                <div class="nav-actions">
+                    <span>שלום, אדמין</span>
+                    <a href="#" class="btn">הגדרות</a>
+                    <a href="../marketing/home.html" class="btn">יציאה</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="layout" style="max-width: 100%; margin: 0; padding: 0 20px;">
+        <!-- Sidebar -->
+        <aside class="layout-sidebar sidebar">
+            <ul class="sidebar-menu">
+                <li>📊 <a href="dashboard.html">לוח בקרה</a></li>
+                <li>👥 <a href="crm-sales.html">CRM ומכירות</a></li>
+                <li>📚 <a href="courses.html">ניהול קורסים</a></li>
+                <li>💰 <a href="financial.html">ניהול פיננסי</a></li>
+                <li>🎧 <a href="support.html">תמיכה</a></li>
+                <li>👨‍🏫 <a href="team.html">ניהול צוות</a></li>
+                <li>📢 <a href="marketing.html">מרכז שיווק</a></li>
+                <li>🤖 <a href="automation.html">אוטומציה ו-AI</a></li>
+                <li style="background: #000; color: #fff;">📈 אנליטיקס</li>
+                <li>⚙️ <a href="settings.html">הגדרות מערכת</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="layout-main">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+                <h1>דוחות ואנליטיקס מתקדמת</h1>
+                <div>
+                    <select style="padding: 8px 15px; margin-left: 10px;">
+                        <option>השבוע האחרון</option>
+                        <option>החודש האחרון</option>
+                        <option>3 חודשים אחרונים</option>
+                        <option>השנה האחרונה</option>
+                        <option>מותאם אישית</option>
+                    </select>
+                    <button class="btn">ייצא דוח</button>
+                    <button class="btn btn-primary">רענן נתונים</button>
+                </div>
+            </div>
+
+            <!-- Key Performance Indicators -->
+            <div class="grid grid-4">
+                <div class="widget">
+                    <div class="widget-title">סה"כ הכנסות</div>
+                    <div class="widget-value">₪284,730</div>
+                    <div class="widget-label">↗ +18.5% מחודש שעבר</div>
+                </div>
+                <div class="widget">
+                    <div class="widget-title">תלמידים פעילים</div>
+                    <div class="widget-value">1,847</div>
+                    <div class="widget-label">↗ +127 החודש</div>
+                </div>
+                <div class="widget">
+                    <div class="widget-title">קורסים נמכרו</div>
+                    <div class="widget-value">342</div>
+                    <div class="widget-label">↗ +23.4% מחודש שעבר</div>
+                </div>
+                <div class="widget">
+                    <div class="widget-title">שביעות רצון</div>
+                    <div class="widget-value">4.8/5</div>
+                    <div class="widget-label">מ-1,234 ביקורות</div>
+                </div>
+            </div>
+
+            <!-- Revenue Analytics -->
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="card-header">
+                        <div style="display: flex; justify-content: space-between;">
+                            <span>מגמות הכנסות</span>
+                            <select style="padding: 5px 10px;">
+                                <option>לפי חודש</option>
+                                <option>לפי שבוע</option>
+                                <option>לפי יום</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="placeholder-img" style="height: 300px;">
+                            גרף קו - הכנסות חודשיות:<br>
+                            ינואר: ₪186K | פברואר: ₪203K<br>
+                            מרץ: ₪234K | אפריל: ₪267K<br>
+                            מאי: ₪285K | יוני: ₪315K
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">פילוח הכנסות לפי קורס</div>
+                    <div class="card-body">
+                        <div class="placeholder-img" style="height: 300px;">
+                            גרף עוגה:<br><br>
+                            🟦 מסחר למתחילים: 35% (₪99,655)<br>
+                            🟩 ניתוח טכני מתקדם: 28% (₪79,724)<br>
+                            🟨 אופציות ונגזרים: 22% (₪62,641)<br>
+                            🟧 מסחר יומי: 15% (₪42,710)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Behavior Analytics -->
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="card-header">התקדמות תלמידים</div>
+                    <div class="card-body">
+                        <div style="margin-bottom: 20px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <span>השלמת קורסים מלאה</span>
+                                <strong>23.4%</strong>
+                            </div>
+                            <div class="progress" style="height: 20px;">
+                                <div class="progress-bar" style="width: 23.4%; background: green;">23.4%</div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <span>השלמה חלקית (50%+)</span>
+                                <strong>41.7%</strong>
+                            </div>
+                            <div class="progress" style="height: 20px;">
+                                <div class="progress-bar" style="width: 41.7%; background: orange;">41.7%</div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <span>התחלה בלבד (10%-)</span>
+                                <strong>34.9%</strong>
+                            </div>
+                            <div class="progress" style="height: 20px;">
+                                <div class="progress-bar" style="width: 34.9%; background: red;">34.9%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">זמני למידה ופעילות</div>
+                    <div class="card-body">
+                        <div class="placeholder-img" style="height: 200px;">
+                            גרף עמודות - שעות פעילות יומיות:<br><br>
+                            🕘 09:00-12:00: 156 תלמידים<br>
+                            🕐 13:00-16:00: 234 תלמידים<br>
+                            🕕 17:00-20:00: 412 תלמידים<br>
+                            🕘 21:00-23:00: 287 תלמידים
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conversion & Marketing Analytics -->
+            <div class="card">
+                <div class="card-header">ניתוח המרות ושיווק</div>
+                <div class="card-body">
+                    <div class="grid grid-3">
+                        <div>
+                            <h4>משפך המרות</h4>
+                            <div style="border: 1px solid #ccc; padding: 15px;">
+                                <div style="margin-bottom: 15px;">
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <span>1. ביקורים באתר</span>
+                                        <strong>12,847</strong>
+                                    </div>
+                                    <div class="progress" style="height: 15px; margin-top: 5px;">
+                                        <div class="progress-bar" style="width: 100%;">100%</div>
+                                    </div>
+                                </div>
+                                
+                                <div style="margin-bottom: 15px;">
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <span>2. הרשמה לרשימת תפוצה</span>
+                                        <strong>3,847</strong>
+                                    </div>
+                                    <div class="progress" style="height: 15px; margin-top: 5px;">
+                                        <div class="progress-bar" style="width: 30%;">30%</div>
+                                    </div>
+                                </div>
+                                
+                                <div style="margin-bottom: 15px;">
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <span>3. השתתפות בוובינר</span>
+                                        <strong>1,234</strong>
+                                    </div>
+                                    <div class="progress" style="height: 15px; margin-top: 5px;">
+                                        <div class="progress-bar" style="width: 10%;">32%</div>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <span>4. רכישת קורס</span>
+                                        <strong>342</strong>
+                                    </div>
+                                    <div class="progress" style="height: 15px; margin-top: 5px;">
+                                        <div class="progress-bar" style="width: 3%;">28%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4>מקורות תנועה</h4>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>חיפוש אורגני (Google)</td>
+                                        <td>42.3%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>פייסבוק מודעות</td>
+                                        <td>28.7%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Google Ads</td>
+                                        <td>15.2%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>הפניות ישירות</td>
+                                        <td>8.9%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>יוטיוב</td>
+                                        <td>4.9%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div>
+                            <h4>ROI קמפיינים</h4>
+                            <div style="border: 1px solid #ccc; padding: 15px;">
+                                <div style="margin-bottom: 15px;">
+                                    <strong style="color: green;">קמפיין "מתחילים"</strong><br>
+                                    <small>השקעה: ₪15,000 | החזר: ₪67,500</small><br>
+                                    <span style="color: green; font-size: 18px;">ROI: 350%</span>
+                                </div>
+                                
+                                <div style="margin-bottom: 15px;">
+                                    <strong style="color: green;">קמפיין "מתקדמים"</strong><br>
+                                    <small>השקעה: ₪22,000 | החזר: ₪89,600</small><br>
+                                    <span style="color: green; font-size: 18px;">ROI: 307%</span>
+                                </div>
+                                
+                                <div>
+                                    <strong style="color: orange;">קמפיין "אופציות"</strong><br>
+                                    <small>השקעה: ₪8,500 | החזר: ₪18,700</small><br>
+                                    <span style="color: orange; font-size: 18px;">ROI: 120%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Performance Tables -->
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="card-header">
+                        <div style="display: flex; justify-content: space-between;">
+                            <span>ביצועי קורסים מפורטים</span>
+                            <button class="btn" style="padding: 5px 10px;">ייצא CSV</button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>קורס</th>
+                                    <th>נרשמים</th>
+                                    <th>השלמה</th>
+                                    <th>הכנסות</th>
+                                    <th>דירוג</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>מסחר למתחילים</td>
+                                    <td>523</td>
+                                    <td>72%</td>
+                                    <td>₪99,655</td>
+                                    <td>⭐ 4.8</td>
+                                </tr>
+                                <tr>
+                                    <td>ניתוח טכני מתקדם</td>
+                                    <td>342</td>
+                                    <td>65%</td>
+                                    <td>₪79,724</td>
+                                    <td>⭐ 4.9</td>
+                                </tr>
+                                <tr>
+                                    <td>אופציות ונגזרים</td>
+                                    <td>156</td>
+                                    <td>58%</td>
+                                    <td>₪62,641</td>
+                                    <td>⭐ 4.7</td>
+                                </tr>
+                                <tr>
+                                    <td>מסחר יומי</td>
+                                    <td>234</td>
+                                    <td>45%</td>
+                                    <td>₪42,710</td>
+                                    <td>⭐ 4.6</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">נקודות בעייתיות ומסקנות</div>
+                    <div class="card-body">
+                        <div style="margin-bottom: 20px;">
+                            <h4 style="color: red; font-size: 16px;">⚠ נקודות לשיפור:</h4>
+                            <ul style="padding-right: 20px;">
+                                <li>34.9% מהתלמידים נוטשים אחרי השיעור הראשון</li>
+                                <li>קורס "מסחר יומי" - שיעור השלמה נמוך (45%)</li>
+                                <li>קמפיין "אופציות" - ROI נמוך יחסית (120%)</li>
+                                <li>פעילות נמוכה בסוף השבוע</li>
+                            </ul>
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <h4 style="color: green; font-size: 16px;">✅ נקודות חוזק:</h4>
+                            <ul style="padding-right: 20px;">
+                                <li>עלייה מתמשכת בהכנסות (+18.5%)</li>
+                                <li>דירוג גבוה על כל הקורסים (4.6-4.9)</li>
+                                <li>ROI מצוין על קמפיינים עיקריים (+300%)</li>
+                                <li>שעות הערב - פעילות גבוהה ביותר</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 style="color: blue; font-size: 16px;">🎯 המלצות:</h4>
+                            <ul style="padding-right: 20px;">
+                                <li>שפר שיעור ראשון בקורס "מסחר יומי"</li>
+                                <li>הוסף תוכן מעשי בשיעורים הראשונים</li>
+                                <li>הגבר השקעה בקמפיין "מתחילים"</li>
+                                <li>פתח קורסים קצרים לסוף השבוע</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Insights -->
+            <div class="card">
+                <div class="card-header">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span>🤖 תובנות AI ותחזיות</span>
+                        <small style="color: #666;">עודכן לאחרונה: היום 14:32</small>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="grid grid-3">
+                        <div style="border: 1px solid #ccc; padding: 15px;">
+                            <h4>תחזית הכנסות</h4>
+                            <div style="font-size: 24px; color: green; margin: 10px 0;">₪367K</div>
+                            <small>צפוי לחודש הבא (+29% לעומת החודש הנוכחי)</small>
+                        </div>
+                        
+                        <div style="border: 1px solid #ccc; padding: 15px;">
+                            <h4>תלמידים חדשים צפויים</h4>
+                            <div style="font-size: 24px; color: blue; margin: 10px 0;">+198</div>
+                            <small>בהתבסס על מגמות נוכחיות ופעילות שיווקית</small>
+                        </div>
+                        
+                        <div style="border: 1px solid #ccc; padding: 15px;">
+                            <h4>סיכון נטישה</h4>
+                            <div style="font-size: 24px; color: red; margin: 10px 0;">67 תלמידים</div>
+                            <small>בסיכון גבוה לנטישה בשבועיים הקרובים</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

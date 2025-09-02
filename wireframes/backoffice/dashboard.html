@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>לוח בקרה - Backoffice</title>
+    <link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="navbar">
+        <div class="container-fluid" style="max-width: 100%; padding: 0 20px;">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h3>Backoffice - מערכת ניהול</h3>
+                </div>
+                <div class="nav-actions">
+                    <span>שלום, אדמין</span>
+                    <a href="#" class="btn">הגדרות</a>
+                    <a href="../marketing/home.html" class="btn">יציאה</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="layout" style="max-width: 100%; margin: 0; padding: 0 20px;">
+        <!-- Sidebar -->
+        <aside class="layout-sidebar sidebar">
+            <ul class="sidebar-menu">
+                <li style="background: #000; color: #fff;">📊 לוח בקרה</li>
+                <li><a href="crm-sales.html">👥 CRM ומכירות</a></li>
+                <li><a href="courses.html">📚 ניהול קורסים</a></li>
+                <li><a href="financial.html">💰 ניהול פיננסי</a></li>
+                <li><a href="support.html">🎧 תמיכה</a></li>
+                <li><a href="team.html">👨‍🏫 ניהול צוות</a></li>
+                <li><a href="marketing.html">📢 מרכז שיווק</a></li>
+                <li><a href="automation.html">🤖 אוטומציה ו-AI</a></li>
+                <li><a href="analytics.html">📈 אנליטיקס</a></li>
+                <li><a href="settings.html">⚙️ הגדרות מערכת</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="layout-main">
+            <!-- Header with Date and Refresh -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+                <h1>תמונת מצב כללית - 1 בינואר 2024</h1>
+                <button class="btn">🔄 רענן נתונים</button>
+            </div>
+
+            <!-- KPI Cards -->
+            <div class="grid grid-4">
+                <div class="widget">
+                    <div class="widget-title">💰 הכנסות היום</div>
+                    <div class="widget-value">₪45,320</div>
+                    <div class="widget-label" style="color: green;">↑ 23% מאתמול</div>
+                </div>
+                <div class="widget">
+                    <div class="widget-title">👥 משתמשים פעילים</div>
+                    <div class="widget-value">1,247</div>
+                    <div class="widget-label">34 חדשים היום</div>
+                </div>
+                <div class="widget">
+                    <div class="widget-title">📚 קורסים</div>
+                    <div class="widget-value">89%</div>
+                    <div class="widget-label">השלמה ממוצעת - 12 בתהליך</div>
+                </div>
+                <div class="widget">
+                    <div class="widget-title">🎧 תמיכה</div>
+                    <div class="widget-value">17</div>
+                    <div class="widget-label">פניות פתוחות</div>
+                </div>
+            </div>
+
+            <!-- Revenue Chart -->
+            <div class="card">
+                <div class="card-header">
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>גרף הכנסות - 30 ימים אחרונים</span>
+                        <div>
+                            <button class="btn" style="padding: 5px 10px;">יום</button>
+                            <button class="btn btn-primary" style="padding: 5px 10px;">שבוע</button>
+                            <button class="btn" style="padding: 5px 10px;">חודש</button>
+                            <button class="btn" style="padding: 5px 10px;">שנה</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="placeholder-img" style="height: 300px;">
+                        גרף הכנסות - עקומה עולה
+                    </div>
+                </div>
+            </div>
+
+            <!-- Two Column Layout -->
+            <div class="grid grid-2">
+                <!-- User Activity Map -->
+                <div class="card">
+                    <div class="card-header">מפת חום - פעילות משתמשים</div>
+                    <div class="card-body">
+                        <div class="placeholder-img" style="height: 250px;">
+                            מפת ישראל עם נקודות חמות
+                        </div>
+                        <div style="margin-top: 15px;">
+                            <small>🔴 תל אביב (423) | 🟡 ירושלים (201) | 🟢 חיפה (156)</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Real-time Activity -->
+                <div class="card">
+                    <div class="card-header">פעילות בזמן אמת</div>
+                    <div class="card-body">
+                        <div class="list-item">
+                            <div style="display: flex; justify-content: space-between;">
+                                <span>🟢 דני כהן נרשם לקורס פרימיום</span>
+                                <small>לפני דקה</small>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div style="display: flex; justify-content: space-between;">
+                                <span>🔵 מיכל לוי השלימה מודול 3</span>
+                                <small>לפני 3 דקות</small>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div style="display: flex; justify-content: space-between;">
+                                <span>🟡 רון אברהם פתח פנייה לתמיכה</span>
+                                <small>לפני 5 דקות</small>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div style="display: flex; justify-content: space-between;">
+                                <span>🔴 כשל בתשלום - יוסי לוי</span>
+                                <small>לפני 7 דקות</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs Section -->
+            <div class="tabs">
+                <div class="tab-nav">
+                    <button class="tab-button active">סטודנטים מובילים</button>
+                    <button class="tab-button">מנטורים מובילים</button>
+                    <button class="tab-button">קורסים פופולריים</button>
+                    <button class="tab-button">התראות קריטיות</button>
+                </div>
+                <div class="tab-content">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>דירוג</th>
+                                <th>שם</th>
+                                <th>התקדמות</th>
+                                <th>נקודות XP</th>
+                                <th>זמן למידה השבוע</th>
+                                <th>פעולות</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>🥇 1</td>
+                                <td>שרה ישראלי</td>
+                                <td>
+                                    <div class="progress" style="height: 20px; margin: 0;">
+                                        <div class="progress-bar" style="width: 95%;">95%</div>
+                                    </div>
+                                </td>
+                                <td>2,450</td>
+                                <td>12.5 שעות</td>
+                                <td><button class="btn" style="padding: 5px 10px;">צפה</button></td>
+                            </tr>
+                            <tr>
+                                <td>🥈 2</td>
+                                <td>משה כהן</td>
+                                <td>
+                                    <div class="progress" style="height: 20px; margin: 0;">
+                                        <div class="progress-bar" style="width: 88%;">88%</div>
+                                    </div>
+                                </td>
+                                <td>2,180</td>
+                                <td>10.2 שעות</td>
+                                <td><button class="btn" style="padding: 5px 10px;">צפה</button></td>
+                            </tr>
+                            <tr>
+                                <td>🥉 3</td>
+                                <td>רחל לוי</td>
+                                <td>
+                                    <div class="progress" style="height: 20px; margin: 0;">
+                                        <div class="progress-bar" style="width: 82%;">82%</div>
+                                    </div>
+                                </td>
+                                <td>1,920</td>
+                                <td>9.7 שעות</td>
+                                <td><button class="btn" style="padding: 5px 10px;">צפה</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Three Column Stats -->
+            <div class="grid grid-3">
+                <!-- Sales Pipeline -->
+                <div class="card">
+                    <div class="card-header">Pipeline מכירות</div>
+                    <div class="card-body">
+                        <div class="list-item">
+                            <div style="display: flex; justify-content: space-between;">
+                                <span>לידים חדשים</span>
+                                <strong>47</strong>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div style="display: flex; justify-content: space-between;">
+                                <span>בתהליך איכות</span>
+                                <strong>23</strong>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div style="display: flex; justify-content: space-between;">
+                                <span>הדגמה מתוזמנת</span>
+                                <strong>15</strong>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div style="display: flex; justify-content: space-between;">
+                                <span>משא ומתן</span>
+                                <strong>8</strong>
+                            </div>
+                        </div>
+                        <div style="margin-top: 20px; text-align: center;">
+                            <strong>צפי חודשי: ₪125,000</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Support Metrics -->
+                <div class="card">
+                    <div class="card-header">מדדי תמיכה</div>
+                    <div class="card-body">
+                        <div class="stat-item" style="margin: 0; border: none; padding: 10px 0;">
+                            <span class="stat-number">2:34</span>
+                            <span class="stat-label">זמן תגובה ממוצע</span>
+                        </div>
+                        <div class="stat-item" style="margin: 0; border: none; padding: 10px 0;">
+                            <span class="stat-number">94%</span>
+                            <span class="stat-label">שביעות רצון</span>
+                        </div>
+                        <div class="stat-item" style="margin: 0; border: none; padding: 10px 0;">
+                            <span class="stat-number">142</span>
+                            <span class="stat-label">פניות נפתרו השבוע</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Insights -->
+                <div class="card">
+                    <div class="card-header">🤖 תובנות AI</div>
+                    <div class="card-body">
+                        <div class="list-item" style="background: #fff3cd;">
+                            <strong>⚠️ חיזוי נטישה</strong>
+                            <p style="margin-top: 5px; font-size: 14px;">12 תלמידים בסיכון גבוה לנטישה</p>
+                            <button class="btn" style="margin-top: 10px; padding: 5px 10px;">צפה ברשימה</button>
+                        </div>
+                        <div class="list-item" style="background: #d4edda;">
+                            <strong>📈 הזדמנות Upsell</strong>
+                            <p style="margin-top: 5px; font-size: 14px;">23 לקוחות מוכנים לשדרוג</p>
+                            <button class="btn" style="margin-top: 10px; padding: 5px 10px;">התחל קמפיין</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="card">
+                <div class="card-header">פעולות מהירות</div>
+                <div class="card-body">
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                        <button class="btn btn-primary">+ הוסף תלמיד</button>
+                        <button class="btn">+ צור קורס חדש</button>
+                        <button class="btn">📧 שלח ניוזלטר</button>
+                        <button class="btn">📊 הפק דוח חודשי</button>
+                        <button class="btn">🎯 התחל קמפיין</button>
+                        <button class="btn">💬 פתח צ'אט תמיכה</button>
+                        <button class="btn">📹 תזמן וובינר</button>
+                        <button class="btn">🎁 צור קופון הנחה</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
